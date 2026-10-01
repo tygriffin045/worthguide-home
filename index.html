@@ -56,40 +56,18 @@
     <p class="tagline">Honest picks that are actually worth the money — real tradeoffs spelled out, no invented scores, no hype.</p>
   </section>
   <section class="wrap" aria-label="Our guides">
-    <ul class="grid" id="sites"></ul>
-    <noscript><ul class="grid">
-        <li><a class="card" href="https://desk.theworthguide.com/"><h2>DeskWorth</h2><p>Home office gear: desks, chairs, monitors and more.</p></a></li>
-        <li><a class="card" href="https://brew.theworthguide.com/"><h2>BrewWorth</h2><p>Home coffee gear: espresso, grinders and pour-over.</p></a></li>
-        <li><a class="card" href="https://sleep.theworthguide.com/"><h2>SleepWorth</h2><p>Sleep gear: pillows, toppers, sheets and more.</p></a></li>
-        <li><a class="card" href="https://pet.theworthguide.com/"><h2>PetWorth</h2><p>Dog and cat gear: beds, feeders, harnesses and more.</p></a></li>
-        <li><a class="card" href="https://tech.theworthguide.com/"><h2>TechWorth</h2><p>Headphones, earbuds, chargers, power banks, and portable storage.</p></a></li>
-        <li><a class="card" href="https://car.theworthguide.com/"><h2>CarWorth</h2><p>Dash cams, jump starters, inflators, and mounts.</p></a></li>
-    </ul></noscript>
-  </section>
+    <ul class="grid" id="sites">
+        <li><a class="card" href="https://desk.theworthguide.com/"><div class="icon" aria-hidden="true">🖥️</div><h2>DeskWorth</h2><p>Standing desks, ergonomic chairs, monitors and keyboards for a better home office.</p><span class="go">Visit DeskWorth →</span></a></li>
+        <li><a class="card" href="https://brew.theworthguide.com/"><div class="icon" aria-hidden="true">☕</div><h2>BrewWorth</h2><p>Espresso machines, grinders and pour-over gear for better coffee at home.</p><span class="go">Visit BrewWorth →</span></a></li>
+        <li><a class="card" href="https://sleep.theworthguide.com/"><div class="icon" aria-hidden="true">🌙</div><h2>SleepWorth</h2><p>Pillows, toppers, sheets and bedroom tools for deeper, cooler sleep.</p><span class="go">Visit SleepWorth →</span></a></li>
+        <li><a class="card" href="https://pet.theworthguide.com/"><div class="icon" aria-hidden="true">🐾</div><h2>PetWorth</h2><p>Beds, feeders, harnesses and toys for happier dogs and cats.</p><span class="go">Visit PetWorth →</span></a></li>
+        <li><a class="card" href="https://tech.theworthguide.com/"><div class="icon" aria-hidden="true">🎧</div><h2>TechWorth</h2><p>Headphones, earbuds, chargers, power banks, and portable storage that are worth the money.</p><span class="go">Visit TechWorth →</span></a></li>
+        <li><a class="card" href="https://car.theworthguide.com/"><div class="icon" aria-hidden="true">🚗</div><h2>CarWorth</h2><p>Dash cams, jump starters, inflators, and mounts that are worth the money.</p><span class="go">Visit CarWorth →</span></a></li>
+    </ul>
+    </section>
 </main>
 <footer><div class="wrap">
   <p>As an Amazon Associate we earn from qualifying purchases.</p>
-  <p>&copy; <span id="yr">2026</span> The Worth Guide</p>
+  <p>&copy; 2026 The Worth Guide</p>
 </div></footer>
-<script>
-  const SITES = [
-    { name: "DeskWorth",  icon: "🖥️", url: "https://desk.theworthguide.com/",  desc: "Standing desks, ergonomic chairs, monitors and keyboards for a better home office." },
-    { name: "BrewWorth",  icon: "☕",  url: "https://brew.theworthguide.com/",  desc: "Espresso machines, grinders and pour-over gear for better coffee at home." },
-    { name: "SleepWorth", icon: "🌙", url: "https://sleep.theworthguide.com/", desc: "Pillows, toppers, sheets and bedroom tools for deeper, cooler sleep." },
-    { name: "PetWorth",   icon: "🐾", url: "https://pet.theworthguide.com/",   desc: "Beds, feeders, harnesses and toys for happier dogs and cats." },
-    { name: "TechWorth",  icon: "🎧", url: "https://tech.theworthguide.com/",  desc: "Headphones, earbuds, chargers, power banks, and portable storage that are worth the money." },
-    { name: "CarWorth",   icon: "🚗", url: "https://car.theworthguide.com/",   desc: "Dash cams, jump starters, inflators, and mounts that are worth the money." },
-  ];
-
-  const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&","<":"<",">":">",'"':""","'":"&#39;"}[c]));
-  document.getElementById("sites").innerHTML = SITES.map(s => `
-    <li><a class="card" href="${esc(s.url)}">
-      <div class="icon" aria-hidden="true">${esc(s.icon)}</div>
-      <h2>${esc(s.name)}</h2>
-      <p>${esc(s.desc)}</p>
-      <span class="go">Visit ${esc(s.name)} &rarr;</span>
-    </a></li>`).join("");
-  document.getElementById("yr").textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
+</body></html>
