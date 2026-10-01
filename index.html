@@ -18,15 +18,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Worth Guide","url":"https://theworthguide.com/"}</script>
 <style>
-  :root{--bg:#f7f4ef;--card:#fffdf9;--line:#e7e1d6;--ink:#1c1917;--muted:#57534e;--accent:#c45c26;--accent-dark:#a84c1f;--tint:#efe8dc}
+  :root{--bg:#f4f1ea;--card:#fffdf9;--line:#e7e1d6;--ink:#1c1917;--muted:#57534e;--gold:#d4af37; --terra:#c45c26;--accent-dark:#a84c1f;--tint:#efe8dc}
   *{box-sizing:border-box}
   html,body{margin:0}
   body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
   .wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 20px}
   header{border-bottom:1px solid var(--line)}
   header .wrap{display:flex;align-items:baseline;gap:10px;padding-top:16px;padding-bottom:16px}
-  .brand{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
-  .brand span{color:var(--accent)}
+  .brand{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em;display:inline-flex;align-items:center;gap:8px}.brand span{color:#d4af37}.brand-check{flex:none}
+  .brand span{color:var(--terra)}
   main{flex:1}
   .hero{padding:64px 0 36px;text-align:center}
   .eyebrow{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);background:var(--tint);padding:4px 12px;border-radius:999px;margin-bottom:18px}
@@ -38,7 +38,7 @@
   .icon{width:48px;height:48px;border-radius:12px;background:var(--tint);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
   .card h2{font-family:"Source Serif 4",Georgia,serif;font-size:1.35rem;font-weight:700;margin:0 0 6px;letter-spacing:-.01em}
   .card p{margin:0 0 18px;color:var(--muted);font-size:.98rem;flex:1}
-  .go{font-weight:600;color:var(--accent);font-size:.95rem}
+  .go{font-weight:600;color:var(--terra);font-size:.95rem}
   .card:hover .go{color:var(--accent-dark)}
   footer{border-top:1px solid var(--line);background:var(--tint)}
   footer .wrap{padding-top:22px;padding-bottom:26px;font-size:.9rem;color:var(--muted);text-align:center}
@@ -48,7 +48,7 @@
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="/">The Worth <span>Guide</span></a></div></header>
+<header><div class="wrap"><a class="brand" href="/"><svg class="brand-check" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="9" fill="none" stroke="#d4af37" stroke-width="1.8"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth <span>Guide</span></a></div></header>
 <main>
   <section class="hero wrap">
     <div class="eyebrow">Independent reviews</div>
