@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KitchenWorth — The Worth Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
+  a{color:inherit}
+  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
+  .mark{width:28px;height:28px;flex:none}
+  nav{display:flex;gap:26px;margin-left:28px}
+  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
+  nav a:hover{color:var(--ink)}
+  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
+  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
+  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
+  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
+  .quote-wrap{display:grid;place-items:center}
+  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
+  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
+  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
+  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
+  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
+  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
+  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
+  .card:hover{border-color:#d3c6b4}
+  .art{background:#f3eee6;overflow:hidden}
+  .art img{width:100%;height:100%;object-fit:cover;display:block}
+  .copy{padding:22px 18px 16px}
+  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
+  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
+  .go{color:#a56a62;font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
+  .page{padding:48px 0 80px;max-width:720px}
+  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
+  .page p{color:#4a453f;font-size:1.05rem}
+  form{display:flex;gap:8px;margin-top:18px}
+  input,button{font:inherit;padding:10px 12px}
+  input{border:1px solid var(--line);background:#fff;flex:1}
+  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
+  @media(max-width:860px){
+    nav{display:none}
+    .hero{grid-template-columns:1fr;padding-top:36px}
+    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
+    .grid{grid-template-columns:1fr}
+    .card{grid-template-columns:120px 1fr}
+  }
+ main{padding:48px 0 64px} h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:3.4rem;margin:0 0 16px}</style>
+</head><body><header><div class="wrap bar">
+  <a class="brand" href="/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
+  <nav>
+    <a href="/guides.html">Guides</a>
+    <a href="/value.html">Value Picks</a>
+    <a href="/categories.html">Categories</a>
+    <a href="/about.html">About</a>
+  </nav>
+  <a class="sub" href="/subscribe.html">SUBSCRIBE</a>
+</div></header>
+<main><div class="wrap"><h1>KitchenWorth</h1><p>Knives, pans, and the board. A top 10 for the counter, not the gadget drawer.</p><p>In every top 10: our pick, the value pick, and the one people already buy most.</p><p><a href="/">← All guides</a></p></div></main>
+<footer><div class="wrap">As an Amazon Associate we earn from qualifying purchases.<br>© 2026 The Worth Guide</div></footer>
+</body></html>
