@@ -41,8 +41,8 @@
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
   .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
   .card:hover{border-color:#d3c6b4}
-  .art{background:#f3eee6;display:grid;place-items:center;overflow:hidden}
-  .art svg{width:100%;height:100%}
+  .art{background:#f3eee6;overflow:hidden}
+  .art img{width:100%;height:100%;object-fit:cover;display:block}
   .copy{padding:22px 18px 16px}
   .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
   .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
@@ -93,27 +93,27 @@
   <section class="wrap" aria-label="Guides">
     <div class="grid">
       <a class="card" href="https://desk.theworthguide.com/">
-        <div class="art" aria-hidden="true"><svg viewBox="0 0 160 168"><rect width="160" height="168" fill="#f3eee6"/><rect x="18" y="108" width="124" height="10" rx="1" fill="#c4a882"/><rect x="28" y="78" width="46" height="8" fill="#d9cfc2"/><rect x="28" y="88" width="46" height="8" fill="#efe6da"/><rect x="28" y="98" width="46" height="8" fill="#e4d8c8"/><path d="M96 108 V62" stroke="#8d847a" stroke-width="3"/><path d="M96 64 h28" stroke="#8d847a" stroke-width="3"/><ellipse cx="128" cy="78" rx="14" ry="8" fill="#7d746c"/><rect x="78" y="92" width="22" height="16" rx="2" fill="#efe8dc" stroke="#cfc4b6"/></svg></div>
+        <div class="art"><img src="img/desk.jpg" alt="Desk lamp, books, and a mug on a wood desk"></div>
         <div class="copy"><h2>DeskWorth</h2><p>The desk gear that makes work better, every day.</p><span class="go">View guide →</span></div>
       </a>
       <a class="card" href="https://brew.theworthguide.com/">
-        <div class="art" aria-hidden="true"><svg viewBox="0 0 160 168"><rect width="160" height="168" fill="#f3eee6"/><ellipse cx="78" cy="112" rx="36" ry="8" fill="#e4d5c4"/><path d="M52 78 h46 v28 a23 23 0 0 1 -46 0z" fill="#f7f1ea" stroke="#cbbba8"/><path d="M98 86 h12 a10 10 0 0 1 0 20 h-12" fill="none" stroke="#cbbba8"/><ellipse cx="75" cy="78" rx="22" ry="6" fill="#6b4b32"/><circle cx="112" cy="124" r="4" fill="#5c4030"/><circle cx="124" cy="116" r="3" fill="#5c4030"/><circle cx="118" cy="132" r="3" fill="#5c4030"/></svg></div>
+        <div class="art"><img src="img/brew.jpg" alt="Coffee cup and beans"></div>
         <div class="copy"><h2>BrewWorth</h2><p>Coffee makers and brew tools that deliver every time.</p><span class="go">View guide →</span></div>
       </a>
       <a class="card" href="https://sleep.theworthguide.com/">
-        <div class="art" aria-hidden="true"><svg viewBox="0 0 160 168"><rect width="160" height="168" fill="#f3eee6"/><rect x="22" y="78" width="116" height="46" rx="4" fill="#e7dccd"/><rect x="28" y="62" width="34" height="24" rx="4" fill="#f7f1ea" stroke="#e0d4c6"/><rect x="66" y="62" width="34" height="24" rx="4" fill="#fbf7f2" stroke="#e0d4c6"/><path d="M22 100 q58 18 116 0" fill="none" stroke="#d8cbbd" stroke-width="8"/></svg></div>
+        <div class="art"><img src="img/sleep.jpg" alt="Bed with white pillows and a linen blanket"></div>
         <div class="copy"><h2>SleepWorth</h2><p>Mattresses, pillows, and sleep essentials that last.</p><span class="go">View guide →</span></div>
       </a>
       <a class="card" href="https://pet.theworthguide.com/">
-        <div class="art" aria-hidden="true"><svg viewBox="0 0 160 168"><rect width="160" height="168" fill="#f3eee6"/><ellipse cx="70" cy="118" rx="40" ry="14" fill="#e4d7c6"/><path d="M40 104 a30 24 0 0 1 60 0 v8 H40z" fill="#f7f1ea" stroke="#d9cbb8"/><circle cx="112" cy="112" r="8" fill="#2b2926"/></svg></div>
+        <div class="art"><img src="img/pet.jpg" alt="Ceramic pet bowl on a woven mat"></div>
         <div class="copy"><h2>PetWorth</h2><p>Pet beds, bowls, and gear built for the long run.</p><span class="go">View guide →</span></div>
       </a>
       <a class="card" href="https://tech.theworthguide.com/">
-        <div class="art" aria-hidden="true"><svg viewBox="0 0 160 168"><rect width="160" height="168" fill="#f3eee6"/><rect x="36" y="48" width="70" height="46" rx="3" fill="#cfc8be"/><rect x="42" y="54" width="58" height="34" fill="#8d877e"/><rect x="58" y="94" width="26" height="6" fill="#cfc8be"/><rect x="48" y="100" width="46" height="4" fill="#b7b0a6"/><rect x="92" y="108" width="28" height="16" rx="2" fill="#2c2a28"/><rect x="108" y="122" width="16" height="6" rx="2" fill="#4a4744"/></svg></div>
+        <div class="art"><img src="img/tech.jpg" alt="Phone on a desk"></div>
         <div class="copy"><h2>TechWorth</h2><p>Phones, chargers, headphones, and tech that holds up.</p><span class="go">View guide →</span></div>
       </a>
       <a class="card" href="https://car.theworthguide.com/">
-        <div class="art" aria-hidden="true"><svg viewBox="0 0 160 168"><rect width="160" height="168" fill="#f3eee6"/><rect x="28" y="70" width="54" height="32" rx="4" fill="#2c2a28"/><circle cx="46" cy="86" r="6" fill="#111"/><rect x="58" y="78" width="16" height="10" rx="1" fill="#5c5854"/><rect x="96" y="78" width="36" height="28" rx="3" fill="#9a2b2b"/><rect x="102" y="84" width="24" height="8" fill="#d8d4ce"/><rect x="108" y="94" width="12" height="6" fill="#1c1917"/></svg></div>
+        <div class="art"><img src="img/car.jpg" alt="Dash cam mounted in a car"></div>
         <div class="copy"><h2>CarWorth</h2><p>Dash cam, jump pack, and the roadside kit for the trunk.</p><span class="go">View guide →</span></div>
       </a>
     </div>
