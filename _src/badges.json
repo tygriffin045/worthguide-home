@@ -1,0 +1,1103 @@
+{
+ "generated": "2026-10-04",
+ "method": "Premium = highest-priced well-regarded (rating>=4.3, 50+ ratings) in-stock Top 10 item; Value = lowest-priced well-regarded; Bang for the Buck = middle price band, Amazon Best Seller preferred, then rating. Prices are live amazon.com buy-box prices on the checked date.",
+ "pages": {
+  "kitchen": {
+   "site": "hub",
+   "page": "kitchen",
+   "checked": "2026-10-04",
+   "dropped": [],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0113UZJE2",
+     "slug": "B0113UZJE2",
+     "price": 9.99,
+     "rating": 4.6,
+     "ratings": 177535,
+     "bestseller": true
+    },
+    {
+     "asin": "B00004OCIP",
+     "slug": "B00004OCIP",
+     "price": 11.0,
+     "rating": 4.8,
+     "ratings": 52848,
+     "bestseller": false
+    },
+    {
+     "asin": "B00004OCKT",
+     "slug": "B00004OCKT",
+     "price": 11.75,
+     "rating": 4.7,
+     "ratings": 13545,
+     "bestseller": false
+    },
+    {
+     "asin": "B07YP2VH4B",
+     "slug": "B07YP2VH4B",
+     "price": 14.99,
+     "rating": 4.6,
+     "ratings": 89775,
+     "bestseller": true
+    },
+    {
+     "asin": "B00006JSUA",
+     "slug": "B00006JSUA",
+     "price": 20.92,
+     "rating": 4.6,
+     "ratings": 87465,
+     "bestseller": false
+    },
+    {
+     "asin": "B009HBKPD0",
+     "slug": "B009HBKPD0",
+     "price": 22.49,
+     "rating": 4.6,
+     "ratings": 27097,
+     "bestseller": true
+    },
+    {
+     "asin": "B079M8FPTW",
+     "slug": "B079M8FPTW",
+     "price": 23.73,
+     "rating": 4.7,
+     "ratings": 59767,
+     "bestseller": true
+    },
+    {
+     "asin": "B008M5U1C2",
+     "slug": "B008M5U1C2",
+     "price": 45.92,
+     "rating": 4.8,
+     "ratings": 14984,
+     "bestseller": false
+    },
+    {
+     "asin": "B00FLYWNYQ",
+     "slug": "B00FLYWNYQ",
+     "price": 109.99,
+     "rating": 4.7,
+     "ratings": 186190,
+     "bestseller": false
+    },
+    {
+     "asin": "B00005UP2P",
+     "slug": "B00005UP2P",
+     "price": 379.95,
+     "rating": 4.7,
+     "ratings": 22850,
+     "bestseller": false
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B00005UP2P",
+     "slug": "B00005UP2P",
+     "name": "KitchenAid Artisan 5-Qt Tilt Head Stand Mixer",
+     "price": 379.95,
+     "line": "Highest-end pick in this Top 10: a 5-quart tilt-head stand mixer."
+    },
+    "bang": {
+     "asin": "B079M8FPTW",
+     "slug": "B079M8FPTW",
+     "name": "Rubbermaid Brilliance Food Storage Containers",
+     "price": 23.73,
+     "line": "Mid-priced Amazon Best Seller: a set of 5 BPA-free Tritan containers with airtight lids."
+    },
+    "value": {
+     "asin": "B0113UZJE2",
+     "slug": "B0113UZJE2",
+     "name": "Etekcity Food Kitchen Scale, Digital Grams and Ounces",
+     "price": 9.99,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon: weighs in grams and ounces, up to 11 lb."
+    }
+   }
+  },
+  "clean": {
+   "site": "hub",
+   "page": "clean",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0DJMP6T3N",
+     "slug": "B0DJMP6T3N",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CB6B2JWG",
+     "slug": "B0CB6B2JWG",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B07KG2X2GZ",
+     "slug": "B07KG2X2GZ",
+     "price": 24.99,
+     "rating": 4.3,
+     "ratings": 48995,
+     "bestseller": true
+    },
+    {
+     "asin": "B07YQDD94M",
+     "slug": "B07YQDD94M",
+     "price": 31.99,
+     "rating": 4.6,
+     "ratings": 64185,
+     "bestseller": true
+    },
+    {
+     "asin": "B00WSWGVZQ",
+     "slug": "B00WSWGVZQ",
+     "price": 37.2,
+     "rating": 4.6,
+     "ratings": 196426,
+     "bestseller": true
+    },
+    {
+     "asin": "B07VVK39F7",
+     "slug": "B07VVK39F7",
+     "price": 80.99,
+     "rating": 4.7,
+     "ratings": 108930,
+     "bestseller": false
+    },
+    {
+     "asin": "B004Q4DRJW",
+     "slug": "B004Q4DRJW",
+     "price": 129.99,
+     "rating": 4.4,
+     "ratings": 31089,
+     "bestseller": true
+    },
+    {
+     "asin": "B07S652B12",
+     "slug": "B07S652B12",
+     "price": 149.99,
+     "rating": 4.0,
+     "ratings": 16050,
+     "bestseller": true
+    },
+    {
+     "asin": "B0H34W2MS8",
+     "slug": "B0H34W2MS8",
+     "price": 199.99,
+     "rating": 4.4,
+     "ratings": 5217,
+     "bestseller": true
+    },
+    {
+     "asin": "B09YS9N7H2",
+     "slug": "B09YS9N7H2",
+     "price": 400.59,
+     "rating": 4.2,
+     "ratings": 3938,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0H34W2MS8",
+     "slug": "B0H34W2MS8",
+     "name": "iRobot Roomba 115X Combo Robot Vacuum & Mop",
+     "price": 199.99,
+     "line": "Among the highest-end picks in this Top 10 \u2014 AutoEmpty dock, self-empties for 90 days."
+    },
+    "bang": {
+     "asin": "B00WSWGVZQ",
+     "slug": "B00WSWGVZQ",
+     "name": "O-Cedar EasyWring Microfiber Spin Mop & Bucket",
+     "price": 37.2,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 bucket floor cleaning system."
+    },
+    "value": {
+     "asin": "B07KG2X2GZ",
+     "slug": "B07KG2X2GZ",
+     "name": "BLACK+DECKER dustbuster Cordless Handheld Vacuum",
+     "price": 24.99,
+     "line": "Lowest-priced pick in this Top 10 \u2014 portable car vacuum cordless rechargeable, wall mount."
+    }
+   }
+  },
+  "tool": {
+   "site": "hub",
+   "page": "tool",
+   "checked": "2026-10-04",
+   "dropped": [],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B002JWSNIS",
+     "slug": "B002JWSNIS",
+     "price": 9.98,
+     "rating": 4.8,
+     "ratings": 35376,
+     "bestseller": true
+    },
+    {
+     "asin": "B097SXK3FG",
+     "slug": "B097SXK3FG",
+     "price": 9.98,
+     "rating": 4.8,
+     "ratings": 11144,
+     "bestseller": true
+    },
+    {
+     "asin": "B07V844YR8",
+     "slug": "B07V844YR8",
+     "price": 10.49,
+     "rating": 4.7,
+     "ratings": 28930,
+     "bestseller": true
+    },
+    {
+     "asin": "B0015SBILG",
+     "slug": "B0015SBILG",
+     "price": 15.97,
+     "rating": 4.8,
+     "ratings": 28529,
+     "bestseller": false
+    },
+    {
+     "asin": "B001JT87RY",
+     "slug": "B001JT87RY",
+     "price": 19.89,
+     "rating": 4.5,
+     "ratings": 365,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BLMQ8BXB",
+     "slug": "B0BLMQ8BXB",
+     "price": 29.99,
+     "rating": 4.6,
+     "ratings": 2439,
+     "bestseller": true
+    },
+    {
+     "asin": "B00002N5NA",
+     "slug": "B00002N5NA",
+     "price": 31.79,
+     "rating": 4.8,
+     "ratings": 1809,
+     "bestseller": false
+    },
+    {
+     "asin": "B07QXWG93C",
+     "slug": "B07QXWG93C",
+     "price": 49.99,
+     "rating": 4.4,
+     "ratings": 10183,
+     "bestseller": true
+    },
+    {
+     "asin": "B00ET5VMTU",
+     "slug": "B00ET5VMTU",
+     "price": 119.0,
+     "rating": 4.8,
+     "ratings": 49851,
+     "bestseller": true
+    },
+    {
+     "asin": "B00IJ0ALYS",
+     "slug": "B00IJ0ALYS",
+     "price": 149.0,
+     "rating": 4.7,
+     "ratings": 61030,
+     "bestseller": true
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B00IJ0ALYS",
+     "slug": "B00IJ0ALYS",
+     "name": "DEWALT 20V MAX Cordless Drill and Impact Driver Combo Kit",
+     "price": 149.0,
+     "line": "Highest-end pick in this Top 10: drill and impact driver kit with 2 batteries, a charger, and a bag."
+    },
+    "bang": {
+     "asin": "B0BLMQ8BXB",
+     "slug": "B0BLMQ8BXB",
+     "name": "HOTO 25-Piece Electric Screwdriver Kit",
+     "price": 29.99,
+     "line": "Mid-priced Amazon Best Seller: a 25-piece cordless electric screwdriver kit."
+    },
+    "value": {
+     "asin": "B002JWSNIS",
+     "slug": "B002JWSNIS",
+     "name": "DEWALT Screwdriver Bit Set, 45-Piece (DW2166)",
+     "price": 9.98,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon: 45 bits in a tough case."
+    }
+   }
+  },
+  "yard": {
+   "site": "hub",
+   "page": "yard",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CLSDLM57",
+     "slug": "B0CLSDLM57",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B004S0PGPM",
+     "slug": "B004S0PGPM",
+     "price": 8.94,
+     "rating": 4.8,
+     "ratings": 8478,
+     "bestseller": true
+    },
+    {
+     "asin": "B00002N66H",
+     "slug": "B00002N66H",
+     "price": 12.98,
+     "rating": 4.6,
+     "ratings": 52433,
+     "bestseller": true
+    },
+    {
+     "asin": "B000E28UQU",
+     "slug": "B000E28UQU",
+     "price": 15.49,
+     "rating": 4.4,
+     "ratings": 104768,
+     "bestseller": true
+    },
+    {
+     "asin": "B000BX1IB6",
+     "slug": "B000BX1IB6",
+     "price": 17.46,
+     "rating": 4.8,
+     "ratings": 13460,
+     "bestseller": true
+    },
+    {
+     "asin": "B001D1FFZA",
+     "slug": "B001D1FFZA",
+     "price": 39.97,
+     "rating": 4.5,
+     "ratings": 68755,
+     "bestseller": true
+    },
+    {
+     "asin": "B00OHRTKLM",
+     "slug": "B00OHRTKLM",
+     "price": 42.98,
+     "rating": 4.3,
+     "ratings": 18826,
+     "bestseller": false
+    },
+    {
+     "asin": "B002YPS1KK",
+     "slug": "B002YPS1KK",
+     "price": 56.99,
+     "rating": 4.6,
+     "ratings": 23423,
+     "bestseller": false
+    },
+    {
+     "asin": "B018S68U40",
+     "slug": "B018S68U40",
+     "price": 75.99,
+     "rating": 4.3,
+     "ratings": 28528,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BLT8L937",
+     "slug": "B0BLT8L937",
+     "price": 499.0,
+     "rating": 4.5,
+     "ratings": 2206,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "1 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0BLT8L937",
+     "slug": "B0BLT8L937",
+     "name": "EGO POWER+ 21\" Cordless Electric Lawn Mower, LM2114",
+     "price": 499.0,
+     "line": "Highest-end pick in this Top 10 \u2014 exceeds the power of gas."
+    },
+    "bang": {
+     "asin": "B000BX1IB6",
+     "slug": "B000BX1IB6",
+     "name": "Fiskars 28\" Bypass Loppers",
+     "price": 17.46,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 tree trimmer, 1.5\" cut capacity."
+    },
+    "value": {
+     "asin": "B004S0PGPM",
+     "slug": "B004S0PGPM",
+     "name": "Fiskars Ergo Garden Trowel",
+     "price": 8.94,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 heavy duty hand tool for digging and planting."
+    }
+   }
+  },
+  "bag": {
+   "site": "hub",
+   "page": "bag",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0D14QYX9Y",
+     "slug": "B0D14QYX9Y",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CV5R46SM",
+     "slug": "B0CV5R46SM",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B07YNKH8BZ",
+     "slug": "B07YNKH8BZ",
+     "price": 29.73,
+     "rating": 4.4,
+     "ratings": 9720,
+     "bestseller": true
+    },
+    {
+     "asin": "B0007QCQGI",
+     "slug": "B0007QCQGI",
+     "price": 31.75,
+     "rating": 4.6,
+     "ratings": 45361,
+     "bestseller": true
+    },
+    {
+     "asin": "B006HFJA12",
+     "slug": "B006HFJA12",
+     "price": 59.39,
+     "rating": 4.6,
+     "ratings": 28180,
+     "bestseller": true
+    },
+    {
+     "asin": "B071VG5N9D",
+     "slug": "B071VG5N9D",
+     "price": 63.7,
+     "rating": 4.4,
+     "ratings": 62604,
+     "bestseller": true
+    },
+    {
+     "asin": "B002P3XFJ8",
+     "slug": "B002P3XFJ8",
+     "price": 76.71,
+     "rating": 4.6,
+     "ratings": 34580,
+     "bestseller": false
+    },
+    {
+     "asin": "B01M0A3BKH",
+     "slug": "B01M0A3BKH",
+     "price": 129.99,
+     "rating": 4.3,
+     "ratings": 19270,
+     "bestseller": true
+    },
+    {
+     "asin": "B07BL7JXHV",
+     "slug": "B07BL7JXHV",
+     "price": 160.0,
+     "rating": 4.4,
+     "ratings": 12561,
+     "bestseller": false
+    },
+    {
+     "asin": "B09KQ262GM",
+     "slug": "B09KQ262GM",
+     "price": 198.0,
+     "rating": 4.6,
+     "ratings": 2638,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "2 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B09KQ262GM",
+     "slug": "B09KQ262GM",
+     "name": "Osprey Farpoint 40L Travel Backpack",
+     "price": 198.0,
+     "line": "Highest-end pick in this Top 10."
+    },
+    "bang": {
+     "asin": "B006HFJA12",
+     "slug": "B006HFJA12",
+     "name": "SWISSGEAR 1900 ScanSmart Laptop Backpack",
+     "price": 59.39,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 fits most 17-Inch laptops, tsa-friendly lay-flat design."
+    },
+    "value": {
+     "asin": "B07YNKH8BZ",
+     "slug": "B07YNKH8BZ",
+     "name": "Wrangler 22.5\" Hardside Spinner Carry-On",
+     "price": 29.73,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "groom": {
+   "site": "hub",
+   "page": "groom",
+   "checked": "2026-10-04",
+   "dropped": [],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0000532A2",
+     "slug": "B0000532A2",
+     "price": 6.34,
+     "rating": 4.6,
+     "ratings": 50009,
+     "bestseller": true
+    },
+    {
+     "asin": "B0001LQGPG",
+     "slug": "B0001LQGPG",
+     "price": 6.97,
+     "rating": 4.6,
+     "ratings": 22378,
+     "bestseller": true
+    },
+    {
+     "asin": "B00837ZOI0",
+     "slug": "B00837ZOI0",
+     "price": 10.0,
+     "rating": 4.7,
+     "ratings": 14494,
+     "bestseller": false
+    },
+    {
+     "asin": "B09SGK9FWZ",
+     "slug": "B09SGK9FWZ",
+     "price": 24.98,
+     "rating": 4.7,
+     "ratings": 35756,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BZQTSBWZ",
+     "slug": "B0BZQTSBWZ",
+     "price": 29.96,
+     "rating": 4.4,
+     "ratings": 14109,
+     "bestseller": false
+    },
+    {
+     "asin": "B00006IVEN",
+     "slug": "B00006IVEN",
+     "price": 39.23,
+     "rating": 4.5,
+     "ratings": 32923,
+     "bestseller": true
+    },
+    {
+     "asin": "B01N0993NM",
+     "slug": "B01N0993NM",
+     "price": 40.49,
+     "rating": 4.5,
+     "ratings": 83553,
+     "bestseller": true
+    },
+    {
+     "asin": "B002A8JO1Q",
+     "slug": "B002A8JO1Q",
+     "price": 52.0,
+     "rating": 4.5,
+     "ratings": 8486,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BJ15Z14D",
+     "slug": "B0BJ15Z14D",
+     "price": 64.95,
+     "rating": 4.5,
+     "ratings": 33935,
+     "bestseller": false
+    },
+    {
+     "asin": "B0FYRVMDXR",
+     "slug": "B0FYRVMDXR",
+     "price": 169.99,
+     "rating": 4.2,
+     "ratings": 254,
+     "bestseller": false
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B0BJ15Z14D",
+     "slug": "B0BJ15Z14D",
+     "name": "Andis 04780 Professional T-Outliner Trimmer",
+     "price": 64.95,
+     "line": "Among the highest-end picks in this Top 10: a professional beard and hair outliner."
+    },
+    "bang": {
+     "asin": "B09SGK9FWZ",
+     "slug": "B09SGK9FWZ",
+     "name": "Harry's Original Razor Blades for Men, 10 Count",
+     "price": 24.98,
+     "line": "Mid-priced Amazon Best Seller: a 10-count pack of Harry's original blades."
+    },
+    "value": {
+     "asin": "B0000532A2",
+     "slug": "B0000532A2",
+     "name": "Revlon Expert Slant Tip Tweezer",
+     "price": 6.34,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon: a slant-tip tweezer."
+    }
+   }
+  },
+  "fit": {
+   "site": "hub",
+   "page": "fit",
+   "checked": "2026-10-04",
+   "dropped": [],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B01LR5RG08",
+     "slug": "B01LR5RG08",
+     "price": 9.45,
+     "rating": 4.8,
+     "ratings": 13246,
+     "bestseller": true
+    },
+    {
+     "asin": "B09DF9NWC7",
+     "slug": "B09DF9NWC7",
+     "price": 9.99,
+     "rating": 4.4,
+     "ratings": 25297,
+     "bestseller": true
+    },
+    {
+     "asin": "B07KQP1X5T",
+     "slug": "B07KQP1X5T",
+     "price": 13.95,
+     "rating": 4.5,
+     "ratings": 47604,
+     "bestseller": true
+    },
+    {
+     "asin": "B07BB3VQ42",
+     "slug": "B07BB3VQ42",
+     "price": 14.95,
+     "rating": 4.7,
+     "ratings": 26906,
+     "bestseller": true
+    },
+    {
+     "asin": "B07DK9QZV9",
+     "slug": "B07DK9QZV9",
+     "price": 17.99,
+     "rating": 4.6,
+     "ratings": 45351,
+     "bestseller": true
+    },
+    {
+     "asin": "B0BYFFX51Z",
+     "slug": "B0BYFFX51Z",
+     "price": 19.29,
+     "rating": 4.7,
+     "ratings": 22211,
+     "bestseller": false
+    },
+    {
+     "asin": "B0731DFTR2",
+     "slug": "B0731DFTR2",
+     "price": 20.4,
+     "rating": 4.8,
+     "ratings": 28426,
+     "bestseller": false
+    },
+    {
+     "asin": "B0040EGNIU",
+     "slug": "B0040EGNIU",
+     "price": 39.95,
+     "rating": 4.7,
+     "ratings": 23728,
+     "bestseller": false
+    },
+    {
+     "asin": "B0FRNG2N5H",
+     "slug": "B0FRNG2N5H",
+     "price": 399.0,
+     "rating": 4.7,
+     "ratings": 284,
+     "bestseller": false
+    },
+    {
+     "asin": "B00NH9WEUA",
+     "slug": "B00NH9WEUA",
+     "price": 990.0,
+     "rating": 4.9,
+     "ratings": 13078,
+     "bestseller": false
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B00NH9WEUA",
+     "slug": "B00NH9WEUA",
+     "name": "Concept2 RowErg Indoor Rowing Machine",
+     "price": 990.0,
+     "line": "Highest-end pick in this Top 10: an air-resistance rower with a PM5 monitor and device holder."
+    },
+    "bang": {
+     "asin": "B07BB3VQ42",
+     "slug": "B07BB3VQ42",
+     "name": "Gymreapers Lifting Wrist Straps",
+     "price": 14.95,
+     "line": "Mid-priced Amazon Best Seller: padded neoprene lifting straps for deadlifts and strength training."
+    },
+    "value": {
+     "asin": "B01LR5RG08",
+     "slug": "B01LR5RG08",
+     "name": "Amazon Basics Neoprene Dumbbell Hand Weights",
+     "price": 9.45,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon: neoprene dumbbells for exercise and toning."
+    }
+   }
+  },
+  "bath": {
+   "site": "hub",
+   "page": "bath",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CFGYFCYL",
+     "slug": "B0CFGYFCYL",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0DQHJR1YB",
+     "slug": "B0DQHJR1YB",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CVNGWWX6",
+     "slug": "B0CVNGWWX6",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B08QRFZ6TH",
+     "slug": "B08QRFZ6TH",
+     "price": 8.95,
+     "rating": 4.5,
+     "ratings": 101285,
+     "bestseller": true
+    },
+    {
+     "asin": "B010S5VXKC",
+     "slug": "B010S5VXKC",
+     "price": 16.72,
+     "rating": 4.6,
+     "ratings": 76015,
+     "bestseller": true
+    },
+    {
+     "asin": "B01HI1W1V4",
+     "slug": "B01HI1W1V4",
+     "price": 16.83,
+     "rating": 4.7,
+     "ratings": 349595,
+     "bestseller": true
+    },
+    {
+     "asin": "B00Q7JESL0",
+     "slug": "B00Q7JESL0",
+     "price": 18.39,
+     "rating": 4.4,
+     "ratings": 26872,
+     "bestseller": true
+    },
+    {
+     "asin": "B001EHVERG",
+     "slug": "B001EHVERG",
+     "price": 30.81,
+     "rating": 4.8,
+     "ratings": 2862,
+     "bestseller": false
+    },
+    {
+     "asin": "B08LBN2JPS",
+     "slug": "B08LBN2JPS",
+     "price": 35.99,
+     "rating": 4.2,
+     "ratings": 25357,
+     "bestseller": true
+    },
+    {
+     "asin": "B01N28QIJM",
+     "slug": "B01N28QIJM",
+     "price": 80.0,
+     "rating": 4.6,
+     "ratings": 822,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B01N28QIJM",
+     "slug": "B01N28QIJM",
+     "name": "simplehuman Butterfly Step Can, 10L Bathroom Trash Can",
+     "price": 80.0,
+     "line": "Highest-end pick in this Top 10 \u2014 10L / 2.6 gallon compact bathroom trash can, low lid clearance."
+    },
+    "bang": {
+     "asin": "B01HI1W1V4",
+     "slug": "B01HI1W1V4",
+     "name": "Etekcity Digital Body Weight Bathroom Scale",
+     "price": 16.83,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 6mm tempered glass, 400 lbs."
+    },
+    "value": {
+     "asin": "B08QRFZ6TH",
+     "slug": "B08QRFZ6TH",
+     "name": "Barossa Design Shower Curtain Liner, Clear",
+     "price": 8.95,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon."
+    }
+   }
+  },
+  "travel": {
+   "site": "hub",
+   "page": "travel",
+   "checked": "2026-10-04",
+   "dropped": [
+    {
+     "asin": "B0CCZ26B5V",
+     "slug": "B0CCZ26B5V",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0CZ9M6X8Q",
+     "slug": "B0CZ9M6X8Q",
+     "why": "not fetched"
+    },
+    {
+     "asin": "B0D3V61JC8",
+     "slug": "B0D3V61JC8",
+     "why": "not fetched"
+    }
+   ],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B0051U7W32",
+     "slug": "B0051U7W32",
+     "price": 9.89,
+     "rating": 4.5,
+     "ratings": 51715,
+     "bestseller": false
+    },
+    {
+     "asin": "B07QFTGGYF",
+     "slug": "B07QFTGGYF",
+     "price": 9.99,
+     "rating": 4.7,
+     "ratings": 22173,
+     "bestseller": true
+    },
+    {
+     "asin": "B07SL2RKJK",
+     "slug": "B07SL2RKJK",
+     "price": 11.99,
+     "rating": 4.8,
+     "ratings": 64822,
+     "bestseller": true
+    },
+    {
+     "asin": "B08S35399Y",
+     "slug": "B08S35399Y",
+     "price": 16.99,
+     "rating": 4.6,
+     "ratings": 44220,
+     "bestseller": true
+    },
+    {
+     "asin": "B0B27HX6P7",
+     "slug": "B0B27HX6P7",
+     "price": 23.99,
+     "rating": 4.6,
+     "ratings": 7937,
+     "bestseller": true
+    },
+    {
+     "asin": "B0GJTXVN9Z",
+     "slug": "B0GJTXVN9Z",
+     "price": 89.0,
+     "rating": 4.6,
+     "ratings": 11487,
+     "bestseller": false
+    },
+    {
+     "asin": "B09XS7JWHH",
+     "slug": "B09XS7JWHH",
+     "price": 298.0,
+     "rating": 4.2,
+     "ratings": 20119,
+     "bestseller": false
+    }
+   ],
+   "skipped_picks_reason": "3 Top 10 item(s) not priced before Amazon access was stopped; badges not shipped",
+   "draft_picks_incomplete_data": {
+    "premium": {
+     "asin": "B0GJTXVN9Z",
+     "slug": "B0GJTXVN9Z",
+     "name": "Apple AirTag (2nd Generation), 4 Pack",
+     "price": 89.0,
+     "line": "Among the highest-end picks in this Top 10 \u2014 - 4 pack: tracker for keychain, and more."
+    },
+    "bang": {
+     "asin": "B07SL2RKJK",
+     "slug": "B07SL2RKJK",
+     "name": "BAGSMART Toiletry Bag with Hanging Hook",
+     "price": 11.99,
+     "line": "Mid-priced and an Amazon Best Seller \u2014 full-size container."
+    },
+    "value": {
+     "asin": "B0051U7W32",
+     "slug": "B0051U7W32",
+     "name": "Mack's Ultra Soft Foam Earplugs, 50 Pair",
+     "price": 9.89,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon \u2014 33dB highest NRR, made in USA."
+    }
+   }
+  },
+  "watch": {
+   "site": "hub",
+   "page": "watch",
+   "checked": "2026-10-04",
+   "dropped": [],
+   "notes": [],
+   "prices": [
+    {
+     "asin": "B000GAWSDG",
+     "slug": "B000GAWSDG",
+     "price": 21.92,
+     "rating": 4.5,
+     "ratings": 42671,
+     "bestseller": true
+    },
+    {
+     "asin": "B08VNR3NRW",
+     "slug": "B08VNR3NRW",
+     "price": 23.97,
+     "rating": 4.6,
+     "ratings": 24125,
+     "bestseller": true
+    },
+    {
+     "asin": "B071RN6K8C",
+     "slug": "B071RN6K8C",
+     "price": 40.69,
+     "rating": 4.3,
+     "ratings": 30883,
+     "bestseller": true
+    },
+    {
+     "asin": "B004VR9HP2",
+     "slug": "B004VR9HP2",
+     "price": 53.6,
+     "rating": 4.5,
+     "ratings": 24447,
+     "bestseller": false
+    },
+    {
+     "asin": "B0094B79CI",
+     "slug": "B0094B79CI",
+     "price": 54.95,
+     "rating": 4.6,
+     "ratings": 14990,
+     "bestseller": true
+    },
+    {
+     "asin": "B009KYJAJY",
+     "slug": "B009KYJAJY",
+     "price": 68.99,
+     "rating": 4.7,
+     "ratings": 32084,
+     "bestseller": true
+    },
+    {
+     "asin": "B07WJFS6LH",
+     "slug": "B07WJFS6LH",
+     "price": 94.5,
+     "rating": 4.6,
+     "ratings": 2428,
+     "bestseller": false
+    },
+    {
+     "asin": "B09X1B645K",
+     "slug": "B09X1B645K",
+     "price": 174.89,
+     "rating": 4.7,
+     "ratings": 473,
+     "bestseller": false
+    },
+    {
+     "asin": "B07ZJW4WZG",
+     "slug": "B07ZJW4WZG",
+     "price": 316.0,
+     "rating": 4.1,
+     "ratings": 343,
+     "bestseller": false
+    },
+    {
+     "asin": "B0BS1T9J4Y",
+     "slug": "B0BS1T9J4Y",
+     "price": 431.0,
+     "rating": 4.7,
+     "ratings": 3121,
+     "bestseller": false
+    }
+   ],
+   "picks": {
+    "premium": {
+     "asin": "B0BS1T9J4Y",
+     "slug": "B0BS1T9J4Y",
+     "name": "Garmin Forerunner 265 Running Smartwatch",
+     "price": 431.0,
+     "line": "Highest-end pick in this Top 10: a 46mm Garmin running smartwatch."
+    },
+    "bang": {
+     "asin": "B009KYJAJY",
+     "slug": "B009KYJAJY",
+     "name": "Casio MDV106 Analog Watch",
+     "price": 68.99,
+     "line": "Mid-priced Amazon Best Seller: 200M water resistance, a stainless steel case, and a date display."
+    },
+    "value": {
+     "asin": "B000GAWSDG",
+     "slug": "B000GAWSDG",
+     "name": "Casio F91W Digital Watch",
+     "price": 21.92,
+     "line": "Lowest-priced pick in this Top 10, still well rated on Amazon: water resistant, with an LED light and stopwatch."
+    }
+   }
+  }
+ }
+}

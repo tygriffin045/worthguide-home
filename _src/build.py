@@ -5,6 +5,8 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,os.path.join(ROOT,'_src'))
 from data import CATS,TAGS
 VER=json.load(open(os.path.join(ROOT,'_src/verified.json')))
+BADGES=json.load(open(os.path.join(ROOT,'_src/badges.json')))['pages']  # picks + Amazon prices by date; refresh via /workspace/top10/badges
+BADGE_LABEL={'premium':'Premium Pick','bang':'Bang for the Buck','value':'Value Pick'}
 CSS=open(os.path.join(ROOT,'_src/cat.css')).read()
 HUB='https://theworthguide.com'
 LASTMOD='2026-10-03'
@@ -12,6 +14,15 @@ e=lambda s:html.escape(s,quote=True)
 MARK='<svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 FOOTER='<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>'
 def link(asin,tag): return f'https://www.amazon.com/dp/{asin}?tag={tag}'
+def badges(c,v,tag):
+    b=BADGES.get(c,{}).get('picks')
+    if not b: return ''
+    names={x[0]:x[1] for x in v['items']}
+    cards=[]
+    for k in ('premium','bang','value'):
+        a=b[k]['asin']; assert a in names, (c,a)
+        cards.append(f'<article class="pick"><span class="badge b-{k}">{BADGE_LABEL[k]}</span><img src="{e(VER[a]["img"])}" alt="{e(names[a])}"><h3>{e(names[a])}</h3><p>{e(b[k]["line"])}</p><a class="btn" href="{link(a,tag)}" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></article>')
+    return f'<section class="picks" data-badge-picks><h2>Our three standout picks</h2><p class="pk-sub">Chosen from the Top 10 below: one premium, one mid-priced, one budget.</p><div class="pick-grid">{"".join(cards)}</div></section>'
 def page(c,v):
     tag=TAGS[c]; rows=[]
     for i,(a,name,blurb,labels,bs) in enumerate(v['items'],1):
@@ -42,6 +53,7 @@ def page(c,v):
 <p class="kicker">TOP 10</p>
 <h1>{v["name"]}</h1>
 <p>{e(v["lede"])}</p>
+{badges(c,v,tag)}
 <div class="list">{"".join(rows)}</div>
 <h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:2.4rem;margin-top:42px">Vs review</h2>
 <p>{e(txt)}</p>
@@ -78,10 +90,14 @@ def validate():
         if m:
             n=h.count('<article class="row">'); a=re.findall(r'<article class="row">.*?dp/(\w+)',h)
             if n!=10 or len(set(a))!=10: err.append(f'{rel}: top10 count {n}/{len(set(a))}')
+            pk=re.findall(r'<article class="pick">.*?dp/(\w+)',h)
+            want_pk=3 if BADGES.get(m.group(1),{}).get('picks') else 0
+            if len(pk)!=want_pk or len(set(pk))!=want_pk or not set(pk)<=set(a): err.append(f'{rel}: badge picks {pk}')
+            if '$' in re.sub(r'<style>.*?</style>','',h,flags=re.S): err.append(f'{rel}: price shown')
     for c in CATS:
         for x in ('index.html','sitemap.xml','robots.txt'):
             if not os.path.exists(os.path.join(ROOT,'c',c,x)): err.append(f'missing c/{c}/{x}')
     json.load(open(os.path.join(ROOT,'vercel.json')))
     if err: print('\n'.join(err)); sys.exit(1)
-    print('build ok:',len(CATS),'category pages, 10 picks each')
+    print('build ok:',len(CATS),'category pages, 10 picks each;',sum(1 for c in CATS if BADGES.get(c,{}).get('picks')),'with 3 badge picks')
 if __name__=='__main__': main()
