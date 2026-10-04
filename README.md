@@ -1,6 +1,9 @@
 # worthguide-home
 
-Static home page for https://theworthguide.com (Vercel project `worthguide-home`, team theateam20).
+Static hub for https://theworthguide.com (Vercel project `worthguide-home`). Push to `main` to deploy.
 
-To add a category card, append one object to the `SITES` array near the bottom of `index.html`
-(and, optionally, the matching `<noscript>` fallback line). Push to `main` to deploy.
+- Hub pages: `index.html`, `guides.html`, `value.html`, `categories.html` (served at `/`, `/guides`, `/value`, `/categories`).
+- Category Top 10s are served on their own subdomains (kitchen, clean, tool, yard, bag, groom, fit, bath, travel, watch `.theworthguide.com`).
+  They are generated into `c/<cat>/` (index.html, sitemap.xml, robots.txt) from `_src/data.py` by `python3 _src/build.py`,
+  which also validates tags, disclosures, and Top 10 counts. Host routing and redirects live in `vercel.json`.
+- Amazon tracking IDs: `<cat>worth20-20` on each category; `theworthguide20-20` on any other hub page.

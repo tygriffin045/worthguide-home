@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanWorth Top 10 — The Worth Guide</title>
+<meta name="description" content="CleanWorth: Floor tools that still work after a year.">
+<link rel="canonical" href="https://clean.theworthguide.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
+  a{color:inherit}
+  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
+  .mark{width:28px;height:28px;flex:none}
+  nav{display:flex;gap:26px;margin-left:28px}
+  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
+  nav a:hover{color:var(--ink)}
+  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
+  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
+  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
+  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
+  .quote-wrap{display:grid;place-items:center}
+  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
+  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
+  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
+  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
+  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
+  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
+  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
+  .card:hover{border-color:#d3c6b4}
+  .art{background:#f3eee6;overflow:hidden}
+  .art img{width:100%;height:100%;object-fit:cover;display:block}
+  .copy{padding:22px 18px 16px}
+  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
+  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
+  .go{color:#a56a62;font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
+  .page{padding:48px 0 80px;max-width:720px}
+  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
+  .page p{color:#4a453f;font-size:1.05rem}
+  form{display:flex;gap:8px;margin-top:18px}
+  input,button{font:inherit;padding:10px 12px}
+  input{border:1px solid var(--line);background:#fff;flex:1}
+  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
+  @media(max-width:860px){
+    nav{display:none}
+    .hero{grid-template-columns:1fr;padding-top:36px}
+    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
+    .grid{grid-template-columns:1fr}
+    .card{grid-template-columns:120px 1fr}
+  }
+
+.page{padding:42px 0 72px}
+.page h1{font-size:clamp(2.8rem,6vw,4.4rem);margin-bottom:8px}
+.kicker{letter-spacing:.16em;font-size:.72rem;font-weight:600;color:#8c6d32}
+.list{display:grid;gap:14px;margin-top:28px}
+.row{display:grid;grid-template-columns:120px 1fr;gap:16px;background:#fffdf9;border:1px solid #e6dfd4;padding:12px}
+.row img{width:120px;height:96px;object-fit:contain;background:#f3eee6}
+.tags{display:flex;gap:6px;margin-bottom:6px}
+.tag{font-size:.68rem;letter-spacing:.08em;font-weight:600;border:1px solid #e6dfd4;padding:2px 6px;color:#8c6d32}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.vs a{background:#fffdf9;border:1px solid #e6dfd4;padding:16px;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin-top:18px;background:#fffdf9}
+th,td{border-bottom:1px solid #e6dfd4;text-align:left;padding:10px;font-size:.95rem}
+@media(max-width:700px){.row,.vs{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap bar">
+  <a class="brand" href="https://theworthguide.com/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
+  <nav>
+    <a href="https://theworthguide.com/guides">Guides</a>
+    <a href="https://theworthguide.com/value">Value Picks</a>
+    <a href="https://theworthguide.com/categories">Categories</a>
+  </nav>
+</div></header>
+<main class="wrap page">
+<p class="kicker">TOP 10</p>
+<h1>CleanWorth</h1>
+<p>Floor tools that still work after a year.</p>
+<div class="list"><article class="row"><img src="https://m.media-amazon.com/images/I/61FHRTjiT3L._AC_SL1500_.jpg" alt="Shark Navigator Lift-Away Upright Vacuum, NV352" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#1 Shark Navigator Lift-Away Upright Vacuum, NV352</h2><p>The upright most homes end up with. Lifts off for stairs.</p><p><a href="https://www.amazon.com/dp/B004Q4DRJW?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71ogkstXJ3L._AC_SL1500_.jpg" alt="Shark Pet Cordless Stick Vacuum, IX141" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#2 Shark Pet Cordless Stick Vacuum, IX141</h2><p>Grab-and-go cleanup without the cord.</p><p><a href="https://www.amazon.com/dp/B07S652B12?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61Fa7yuBwKL._AC_SL1500_.jpg" alt="Dyson V8 Cordless Vacuum" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#3 Dyson V8 Cordless Vacuum</h2><p>The cordless stick that converts to a handheld.</p><p><a href="https://www.amazon.com/dp/B09YS9N7H2?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71Zg+lIkXeL._AC_SL1500_.jpg" alt="BISSELL Little Green Mini Portable Carpet Cleaner" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#4 BISSELL Little Green Mini Portable Carpet Cleaner</h2><p>The spot cleaner for spills, pets, and car seats.</p><p><a href="https://www.amazon.com/dp/B0DJMP6T3N?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71m-IwdVvsL._AC_SL1500_.jpg" alt="iRobot Roomba 115X Combo Robot Vacuum &amp; Mop" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#5 iRobot Roomba 115X Combo Robot Vacuum &amp; Mop</h2><p>A robot that vacuums, mops, and empties itself.</p><p><a href="https://www.amazon.com/dp/B0H34W2MS8?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71iS-sWLrNL._AC_SL1500_.jpg" alt="Levoit Cordless Vacuum Cleaner, Anti-Tangle" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#6 Levoit Cordless Vacuum Cleaner, Anti-Tangle</h2><p>A cordless stick built for pet hair.</p><p><a href="https://www.amazon.com/dp/B0CB6B2JWG?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51O-5anSyWL._AC_SL1500_.jpg" alt="BLACK+DECKER dustbuster Cordless Handheld Vacuum" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#7 BLACK+DECKER dustbuster Cordless Handheld Vacuum</h2><p>The small one you keep on the counter.</p><p><a href="https://www.amazon.com/dp/B07KG2X2GZ?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/819wSV5AEEL._AC_SL1500_.jpg" alt="O-Cedar EasyWring Microfiber Spin Mop &amp; Bucket" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#8 O-Cedar EasyWring Microfiber Spin Mop &amp; Bucket</h2><p>The spin mop people actually keep using.</p><p><a href="https://www.amazon.com/dp/B00WSWGVZQ?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/817arIc2UOL._AC_SL1500_.jpg" alt="Swiffer WetJet Spray Mop Starter Kit" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#9 Swiffer WetJet Spray Mop Starter Kit</h2><p>Quick weekday floors without a bucket.</p><p><a href="https://www.amazon.com/dp/B07YQDD94M?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71t-9BTIg9L._AC_SL1500_.jpg" alt="Levoit Air Purifier for Home" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#10 Levoit Air Purifier for Home</h2><p>A quiet purifier for the bedroom.</p><p><a href="https://www.amazon.com/dp/B07VVK39F7?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article></div>
+<h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:2.4rem;margin-top:42px">Vs review</h2>
+<p>Buy the Navigator if you want one corded upright for the whole house. Buy the cordless stick if you clean in short bursts and hate the cord.</p>
+<div class="vs"><a href="https://www.amazon.com/dp/B004Q4DRJW?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61FHRTjiT3L._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Shark Navigator</h3><p>Our pick</p></a>
+<a href="https://www.amazon.com/dp/B07S652B12?tag=cleanworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/71ogkstXJ3L._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Shark Pet cordless</h3><p>Value pick</p></a></div>
+<table><tbody><tr><th>Job</th><td>Whole-house cleaning</td><td>Quick daily pickups</td></tr><tr><th>Power</th><td>Corded</td><td>Battery</td></tr><tr><th>Buy if</th><td>You want one main vacuum</td><td>You want grab-and-go</td></tr></tbody></table>
+<p><a href="https://theworthguide.com/">← All guides</a></p>
+</main>
+<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>
+</body></html>

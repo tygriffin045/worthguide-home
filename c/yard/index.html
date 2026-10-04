@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YardWorth Top 10 — The Worth Guide</title>
+<meta name="description" content="YardWorth: The outdoor tools that survive a season.">
+<link rel="canonical" href="https://yard.theworthguide.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
+  a{color:inherit}
+  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
+  .mark{width:28px;height:28px;flex:none}
+  nav{display:flex;gap:26px;margin-left:28px}
+  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
+  nav a:hover{color:var(--ink)}
+  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
+  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
+  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
+  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
+  .quote-wrap{display:grid;place-items:center}
+  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
+  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
+  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
+  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
+  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
+  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
+  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
+  .card:hover{border-color:#d3c6b4}
+  .art{background:#f3eee6;overflow:hidden}
+  .art img{width:100%;height:100%;object-fit:cover;display:block}
+  .copy{padding:22px 18px 16px}
+  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
+  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
+  .go{color:#a56a62;font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
+  .page{padding:48px 0 80px;max-width:720px}
+  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
+  .page p{color:#4a453f;font-size:1.05rem}
+  form{display:flex;gap:8px;margin-top:18px}
+  input,button{font:inherit;padding:10px 12px}
+  input{border:1px solid var(--line);background:#fff;flex:1}
+  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
+  @media(max-width:860px){
+    nav{display:none}
+    .hero{grid-template-columns:1fr;padding-top:36px}
+    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
+    .grid{grid-template-columns:1fr}
+    .card{grid-template-columns:120px 1fr}
+  }
+
+.page{padding:42px 0 72px}
+.page h1{font-size:clamp(2.8rem,6vw,4.4rem);margin-bottom:8px}
+.kicker{letter-spacing:.16em;font-size:.72rem;font-weight:600;color:#8c6d32}
+.list{display:grid;gap:14px;margin-top:28px}
+.row{display:grid;grid-template-columns:120px 1fr;gap:16px;background:#fffdf9;border:1px solid #e6dfd4;padding:12px}
+.row img{width:120px;height:96px;object-fit:contain;background:#f3eee6}
+.tags{display:flex;gap:6px;margin-bottom:6px}
+.tag{font-size:.68rem;letter-spacing:.08em;font-weight:600;border:1px solid #e6dfd4;padding:2px 6px;color:#8c6d32}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.vs a{background:#fffdf9;border:1px solid #e6dfd4;padding:16px;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin-top:18px;background:#fffdf9}
+th,td{border-bottom:1px solid #e6dfd4;text-align:left;padding:10px;font-size:.95rem}
+@media(max-width:700px){.row,.vs{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap bar">
+  <a class="brand" href="https://theworthguide.com/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
+  <nav>
+    <a href="https://theworthguide.com/guides">Guides</a>
+    <a href="https://theworthguide.com/value">Value Picks</a>
+    <a href="https://theworthguide.com/categories">Categories</a>
+  </nav>
+</div></header>
+<main class="wrap page">
+<p class="kicker">TOP 10</p>
+<h1>YardWorth</h1>
+<p>The outdoor tools that survive a season.</p>
+<div class="list"><article class="row"><img src="https://m.media-amazon.com/images/I/71MuqlXmfdL._AC_SL1500_.jpg" alt="EGO POWER+ 21&quot; Cordless Electric Lawn Mower, LM2114" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#1 EGO POWER+ 21&quot; Cordless Electric Lawn Mower, LM2114</h2><p>The cordless mower that ends the gas can.</p><p><a href="https://www.amazon.com/dp/B0BLT8L937?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71qPn3Ic0BL._AC_SL1500_.jpg" alt="Greenworks 40V 21in Self-Propelled Lawn Mower" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#2 Greenworks 40V 21in Self-Propelled Lawn Mower</h2><p>Self-propelled and cordless for less.</p><p><a href="https://www.amazon.com/dp/B0CLSDLM57?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61XJalfNcTL._AC_SL1500_.jpg" alt="WORX 20V 12&quot; 2-in-1 Cordless String Trimmer &amp; Edger" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#3 WORX 20V 12&quot; 2-in-1 Cordless String Trimmer &amp; Edger</h2><p>Trims and edges with one tool.</p><p><a href="https://www.amazon.com/dp/B018S68U40?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/712oOsznuxL._AC_SL1500_.jpg" alt="Fiskars Bypass Pruning Shears" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#4 Fiskars Bypass Pruning Shears</h2><p>The pruners in most garden sheds.</p><p><a href="https://www.amazon.com/dp/B00002N66H?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61pFXu5ytLL._AC_SL1500_.jpg" alt="Fiskars 28&quot; Bypass Loppers" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#5 Fiskars 28&quot; Bypass Loppers</h2><p>For the branches the pruners cannot take.</p><p><a href="https://www.amazon.com/dp/B000BX1IB6?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71t68gVD+KL._AC_SL1500_.jpg" alt="Fiskars Ergo Garden Trowel" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#6 Fiskars Ergo Garden Trowel</h2><p>A trowel that digs without bending.</p><p><a href="https://www.amazon.com/dp/B004S0PGPM?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/718DYJIqv4L._AC_SL1500_.jpg" alt="Grampa&#x27;s Weeder Original Stand Up Weed Puller" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#7 Grampa&#x27;s Weeder Original Stand Up Weed Puller</h2><p>Pull weeds by the root without kneeling.</p><p><a href="https://www.amazon.com/dp/B001D1FFZA?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/718OyZm+ZXL._AC_SL1500_.jpg" alt="CHAPIN 20004 SureSpray 1-Gallon Pump Sprayer" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#8 CHAPIN 20004 SureSpray 1-Gallon Pump Sprayer</h2><p>A simple sprayer for lawn and garden.</p><p><a href="https://www.amazon.com/dp/B000E28UQU?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71bC75hZ8IL._AC_SL1500_.jpg" alt="Flexzilla Garden Hose with SwivelGrip, 5/8 in. x 50 ft." loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#9 Flexzilla Garden Hose with SwivelGrip, 5/8 in. x 50 ft.</h2><p>The hose that does not fight you.</p><p><a href="https://www.amazon.com/dp/B00OHRTKLM?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51nuGG4UMgL._AC_SL1500_.jpg" alt="Scotts Turf Builder EdgeGuard Mini Broadcast Spreader" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#10 Scotts Turf Builder EdgeGuard Mini Broadcast Spreader</h2><p>Even coverage for small and mid-size lawns.</p><p><a href="https://www.amazon.com/dp/B002YPS1KK?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article></div>
+<h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:2.4rem;margin-top:42px">Vs review</h2>
+<p>Buy the EGO if you want the cordless mower people keep for years. Buy the Greenworks if you want self-propelled for less.</p>
+<div class="vs"><a href="https://www.amazon.com/dp/B0BLT8L937?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/71MuqlXmfdL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>EGO 21&quot; mower</h3><p>Our pick</p></a>
+<a href="https://www.amazon.com/dp/B0CLSDLM57?tag=yardworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/71qPn3Ic0BL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Greenworks 40V mower</h3><p>Value pick</p></a></div>
+<table><tbody><tr><th>Job</th><td>Weekly mowing</td><td>Weekly mowing</td></tr><tr><th>Power</th><td>Battery</td><td>Battery</td></tr><tr><th>Buy if</th><td>You want the top pick</td><td>You want value</td></tr></tbody></table>
+<p><a href="https://theworthguide.com/">← All guides</a></p>
+</main>
+<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>
+</body></html>

@@ -1,4 +1,376 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+ "routes": [
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "kitchen.theworthguide.com"
+    }
+   ],
+   "dest": "/c/kitchen/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "kitchen.theworthguide.com"
+    }
+   ],
+   "dest": "/c/kitchen/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "kitchen.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "clean.theworthguide.com"
+    }
+   ],
+   "dest": "/c/clean/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "clean.theworthguide.com"
+    }
+   ],
+   "dest": "/c/clean/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "clean.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "tool.theworthguide.com"
+    }
+   ],
+   "dest": "/c/tool/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "tool.theworthguide.com"
+    }
+   ],
+   "dest": "/c/tool/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "tool.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "yard.theworthguide.com"
+    }
+   ],
+   "dest": "/c/yard/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "yard.theworthguide.com"
+    }
+   ],
+   "dest": "/c/yard/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "yard.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bag.theworthguide.com"
+    }
+   ],
+   "dest": "/c/bag/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bag.theworthguide.com"
+    }
+   ],
+   "dest": "/c/bag/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bag.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "groom.theworthguide.com"
+    }
+   ],
+   "dest": "/c/groom/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "groom.theworthguide.com"
+    }
+   ],
+   "dest": "/c/groom/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "groom.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "fit.theworthguide.com"
+    }
+   ],
+   "dest": "/c/fit/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "fit.theworthguide.com"
+    }
+   ],
+   "dest": "/c/fit/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "fit.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bath.theworthguide.com"
+    }
+   ],
+   "dest": "/c/bath/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bath.theworthguide.com"
+    }
+   ],
+   "dest": "/c/bath/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bath.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "travel.theworthguide.com"
+    }
+   ],
+   "dest": "/c/travel/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "travel.theworthguide.com"
+    }
+   ],
+   "dest": "/c/travel/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "travel.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/$",
+   "has": [
+    {
+     "type": "host",
+     "value": "watch.theworthguide.com"
+    }
+   ],
+   "dest": "/c/watch/index.html"
+  },
+  {
+   "src": "^/(sitemap\\.xml|robots\\.txt)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "watch.theworthguide.com"
+    }
+   ],
+   "dest": "/c/watch/$1"
+  },
+  {
+   "src": "^/(?!img/|favicon)(.+)$",
+   "has": [
+    {
+     "type": "host",
+     "value": "watch.theworthguide.com"
+    }
+   ],
+   "status": 308,
+   "headers": {
+    "Location": "https://theworthguide.com/$1"
+   }
+  },
+  {
+   "src": "^/(kitchen|clean|tool|yard|bag|groom|fit|bath|travel|watch)(?:\\.html)?/?$",
+   "status": 308,
+   "headers": {
+    "Location": "https://$1.theworthguide.com/"
+   }
+  },
+  {
+   "src": "^/c/(kitchen|clean|tool|yard|bag|groom|fit|bath|travel|watch)(?:/.*)?$",
+   "status": 308,
+   "headers": {
+    "Location": "https://$1.theworthguide.com/"
+   }
+  },
+  {
+   "src": "^/(about|subscribe)(?:\\.html)?/?$",
+   "status": 308,
+   "headers": {
+    "Location": "/"
+   }
+  },
+  {
+   "src": "^/index(?:\\.html)?$",
+   "status": 308,
+   "headers": {
+    "Location": "/"
+   }
+  },
+  {
+   "src": "^/(guides|value|categories)\\.html$",
+   "status": 308,
+   "headers": {
+    "Location": "/$1"
+   }
+  },
+  {
+   "handle": "filesystem"
+  },
+  {
+   "src": "^/(guides|value|categories)/?$",
+   "dest": "/$1.html"
+  }
+ ]
 }

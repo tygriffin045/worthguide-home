@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KitchenWorth Top 10 — The Worth Guide</title>
+<meta name="description" content="KitchenWorth: The counter tools people already buy. Our pick, the value pick, and the one that sells most.">
+<link rel="canonical" href="https://kitchen.theworthguide.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
+  a{color:inherit}
+  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
+  .mark{width:28px;height:28px;flex:none}
+  nav{display:flex;gap:26px;margin-left:28px}
+  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
+  nav a:hover{color:var(--ink)}
+  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
+  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
+  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
+  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
+  .quote-wrap{display:grid;place-items:center}
+  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
+  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
+  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
+  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
+  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
+  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
+  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
+  .card:hover{border-color:#d3c6b4}
+  .art{background:#f3eee6;overflow:hidden}
+  .art img{width:100%;height:100%;object-fit:cover;display:block}
+  .copy{padding:22px 18px 16px}
+  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
+  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
+  .go{color:#a56a62;font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
+  .page{padding:48px 0 80px;max-width:720px}
+  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
+  .page p{color:#4a453f;font-size:1.05rem}
+  form{display:flex;gap:8px;margin-top:18px}
+  input,button{font:inherit;padding:10px 12px}
+  input{border:1px solid var(--line);background:#fff;flex:1}
+  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
+  @media(max-width:860px){
+    nav{display:none}
+    .hero{grid-template-columns:1fr;padding-top:36px}
+    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
+    .grid{grid-template-columns:1fr}
+    .card{grid-template-columns:120px 1fr}
+  }
+
+.page{padding:42px 0 72px}
+.page h1{font-size:clamp(2.8rem,6vw,4.4rem);margin-bottom:8px}
+.kicker{letter-spacing:.16em;font-size:.72rem;font-weight:600;color:#8c6d32}
+.list{display:grid;gap:14px;margin-top:28px}
+.row{display:grid;grid-template-columns:120px 1fr;gap:16px;background:#fffdf9;border:1px solid #e6dfd4;padding:12px}
+.row img{width:120px;height:96px;object-fit:contain;background:#f3eee6}
+.tags{display:flex;gap:6px;margin-bottom:6px}
+.tag{font-size:.68rem;letter-spacing:.08em;font-weight:600;border:1px solid #e6dfd4;padding:2px 6px;color:#8c6d32}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.vs a{background:#fffdf9;border:1px solid #e6dfd4;padding:16px;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin-top:18px;background:#fffdf9}
+th,td{border-bottom:1px solid #e6dfd4;text-align:left;padding:10px;font-size:.95rem}
+@media(max-width:700px){.row,.vs{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap bar">
+  <a class="brand" href="https://theworthguide.com/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
+  <nav>
+    <a href="https://theworthguide.com/guides">Guides</a>
+    <a href="https://theworthguide.com/value">Value Picks</a>
+    <a href="https://theworthguide.com/categories">Categories</a>
+  </nav>
+</div></header>
+<main class="wrap page">
+<p class="kicker">TOP 10</p>
+<h1>KitchenWorth</h1>
+<p>The counter tools people already buy. Our pick, the value pick, and the one that sells most.</p>
+<div class="list"><article class="row"><img src="https://m.media-amazon.com/images/I/41Xx3Xy7NhL._AC_SL1080_.jpg" alt="Victorinox Fibrox Pro 8-Inch Chef&#x27;s Knife" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#1 Victorinox Fibrox Pro 8-Inch Chef&#x27;s Knife</h2><p>The knife most home cooks end up keeping. Easy to sharpen, hard to outgrow.</p><p><a href="https://www.amazon.com/dp/B008M5U1C2?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71iH2iNxTZL._AC_SL1500_.jpg" alt="Lodge Pre-Seasoned Cast Iron Skillet, 10.25 Inches" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#2 Lodge Pre-Seasoned Cast Iron Skillet, 10.25 Inches</h2><p>The cast iron pan people keep for decades.</p><p><a href="https://www.amazon.com/dp/B00006JSUA?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51cqwftxmvL._AC_SL1500_.jpg" alt="Tramontina Professional 8-Inch Non Stick Frying Pan" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#3 Tramontina Professional 8-Inch Non Stick Frying Pan</h2><p>A small nonstick pan for eggs.</p><p><a href="https://www.amazon.com/dp/B009HBKPD0?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/91YrLTBnMcL._AC_SL1500_.jpg" alt="Etekcity Food Kitchen Scale, Digital Grams and Ounces" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#4 Etekcity Food Kitchen Scale, Digital Grams and Ounces</h2><p>Weigh it once and baking stops being guesswork.</p><p><a href="https://www.amazon.com/dp/B0113UZJE2?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51C5YC8mf3L._AC_SL1500_.jpg" alt="OXO Good Grips Swivel Vegetable Peeler" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#5 OXO Good Grips Swivel Vegetable Peeler</h2><p>The peeler that replaced the drawer of cheap ones.</p><p><a href="https://www.amazon.com/dp/B00004OCIP?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51yO+bt+mqL._AC_SL1500_.jpg" alt="KitchenAid Classic Multifunction Can Opener" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#6 KitchenAid Classic Multifunction Can Opener</h2><p>A plain can opener that keeps working.</p><p><a href="https://www.amazon.com/dp/B07YP2VH4B?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/81qikuKGJZL._AC_SL1500_.jpg" alt="Rubbermaid Brilliance Food Storage Containers" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#7 Rubbermaid Brilliance Food Storage Containers</h2><p>Clear, stackable containers with lids that seal.</p><p><a href="https://www.amazon.com/dp/B079M8FPTW?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/71MLaYtMFOL._AC_SL1500_.jpg" alt="Instant Pot Duo 6 Qt 7-in-1 Electric Pressure Cooker" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#8 Instant Pot Duo 6 Qt 7-in-1 Electric Pressure Cooker</h2><p>The cooker people already have. Useful, not magical.</p><p><a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/615kwOY9+3L._AC_SL1280_.jpg" alt="KitchenAid Artisan 5-Qt Tilt Head Stand Mixer" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#9 KitchenAid Artisan 5-Qt Tilt Head Stand Mixer</h2><p>Buy it if you bake. Skip it if you do not.</p><p><a href="https://www.amazon.com/dp/B00005UP2P?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61RkOxSZqzL._AC_SL1500_.jpg" alt="OXO Good Grips Apple Slicer, Corer &amp; Cutter" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#10 OXO Good Grips Apple Slicer, Corer &amp; Cutter</h2><p>One press and the apple is done.</p><p><a href="https://www.amazon.com/dp/B00004OCKT?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article></div>
+<h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:2.4rem;margin-top:42px">Vs review</h2>
+<p>Buy the Lodge if you want one pan that sears and lasts for decades. Buy the Tramontina if you mostly cook eggs and delicate food and want easy release.</p>
+<div class="vs"><a href="https://www.amazon.com/dp/B00006JSUA?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/71iH2iNxTZL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Lodge cast iron</h3><p>Our pick</p></a>
+<a href="https://www.amazon.com/dp/B009HBKPD0?tag=kitchenworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/51cqwftxmvL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Tramontina nonstick</h3><p>Value pick</p></a></div>
+<table><tbody><tr><th>Job</th><td>Searing, roasting, everyday</td><td>Eggs, fish, quick sautés</td></tr><tr><th>Care</th><td>Keep it seasoned</td><td>Gentle utensils</td></tr><tr><th>Buy if</th><td>You want one pan for life</td><td>You want easy release</td></tr></tbody></table>
+<p><a href="https://theworthguide.com/">← All guides</a></p>
+</main>
+<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>
+</body></html>

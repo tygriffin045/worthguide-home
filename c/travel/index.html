@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TravelWorth Top 10 — The Worth Guide</title>
+<meta name="description" content="TravelWorth: The kit that earns the miles.">
+<link rel="canonical" href="https://travel.theworthguide.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
+  a{color:inherit}
+  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
+  .mark{width:28px;height:28px;flex:none}
+  nav{display:flex;gap:26px;margin-left:28px}
+  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
+  nav a:hover{color:var(--ink)}
+  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
+  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
+  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
+  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
+  .quote-wrap{display:grid;place-items:center}
+  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
+  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
+  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
+  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
+  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
+  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
+  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
+  .card:hover{border-color:#d3c6b4}
+  .art{background:#f3eee6;overflow:hidden}
+  .art img{width:100%;height:100%;object-fit:cover;display:block}
+  .copy{padding:22px 18px 16px}
+  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
+  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
+  .go{color:#a56a62;font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
+  .page{padding:48px 0 80px;max-width:720px}
+  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
+  .page p{color:#4a453f;font-size:1.05rem}
+  form{display:flex;gap:8px;margin-top:18px}
+  input,button{font:inherit;padding:10px 12px}
+  input{border:1px solid var(--line);background:#fff;flex:1}
+  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
+  @media(max-width:860px){
+    nav{display:none}
+    .hero{grid-template-columns:1fr;padding-top:36px}
+    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
+    .grid{grid-template-columns:1fr}
+    .card{grid-template-columns:120px 1fr}
+  }
+
+.page{padding:42px 0 72px}
+.page h1{font-size:clamp(2.8rem,6vw,4.4rem);margin-bottom:8px}
+.kicker{letter-spacing:.16em;font-size:.72rem;font-weight:600;color:#8c6d32}
+.list{display:grid;gap:14px;margin-top:28px}
+.row{display:grid;grid-template-columns:120px 1fr;gap:16px;background:#fffdf9;border:1px solid #e6dfd4;padding:12px}
+.row img{width:120px;height:96px;object-fit:contain;background:#f3eee6}
+.tags{display:flex;gap:6px;margin-bottom:6px}
+.tag{font-size:.68rem;letter-spacing:.08em;font-weight:600;border:1px solid #e6dfd4;padding:2px 6px;color:#8c6d32}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.vs a{background:#fffdf9;border:1px solid #e6dfd4;padding:16px;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin-top:18px;background:#fffdf9}
+th,td{border-bottom:1px solid #e6dfd4;text-align:left;padding:10px;font-size:.95rem}
+@media(max-width:700px){.row,.vs{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap bar">
+  <a class="brand" href="https://theworthguide.com/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
+  <nav>
+    <a href="https://theworthguide.com/guides">Guides</a>
+    <a href="https://theworthguide.com/value">Value Picks</a>
+    <a href="https://theworthguide.com/categories">Categories</a>
+  </nav>
+</div></header>
+<main class="wrap page">
+<p class="kicker">TOP 10</p>
+<h1>TravelWorth</h1>
+<p>The kit that earns the miles.</p>
+<div class="list"><article class="row"><img src="https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SL1500_.jpg" alt="Sony WH-1000XM5 Noise Cancelling Wireless Headphones" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#1 Sony WH-1000XM5 Noise Cancelling Wireless Headphones</h2><p>Noise cancelling for the plane.</p><p><a href="https://www.amazon.com/dp/B09XS7JWHH?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61windvlNZL._AC_SL1500_.jpg" alt="Bose QuietComfort Headphones" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#2 Bose QuietComfort Headphones</h2><p>Comfortable noise cancelling for long trips.</p><p><a href="https://www.amazon.com/dp/B0CCZ26B5V?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/611DjYhflAL._AC_SL1500_.jpg" alt="Apple AirTag (2nd Generation), 4 Pack" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#3 Apple AirTag (2nd Generation), 4 Pack</h2><p>Know where your bag is.</p><p><a href="https://www.amazon.com/dp/B0GJTXVN9Z?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61wj4AVKTGL._AC_SL1500_.jpg" alt="Anker Power Bank, 10,000mAh 30W" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#4 Anker Power Bank, 10,000mAh 30W</h2><p>A pocket battery for a long travel day.</p><p><a href="https://www.amazon.com/dp/B0CZ9M6X8Q?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61cl-IrRJbL._AC_SL1500_.jpg" alt="TESSAN European Travel Plug Adapter, 2 Pack" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#5 TESSAN European Travel Plug Adapter, 2 Pack</h2><p>Plug in across Europe.</p><p><a href="https://www.amazon.com/dp/B0B27HX6P7?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/618h550nUsL._AC_SL1500_.jpg" alt="travel inspira Digital Luggage Scale" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#6 travel inspira Digital Luggage Scale</h2><p>Weigh the bag before the airline does.</p><p><a href="https://www.amazon.com/dp/B07QFTGGYF?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61gMY7ZvcrL._SL1500_.jpg" alt="BAGSMART Toiletry Bag with Hanging Hook" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#7 BAGSMART Toiletry Bag with Hanging Hook</h2><p>Hang it up and find everything.</p><p><a href="https://www.amazon.com/dp/B07SL2RKJK?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61aFuRVWe3L._AC_SL1280_.jpg" alt="BAGAIL 8 Set Packing Cubes" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#8 BAGAIL 8 Set Packing Cubes</h2><p>Pack by cube, unpack in seconds.</p><p><a href="https://www.amazon.com/dp/B08S35399Y?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51vun8qtNlL._AC_SL1500_.jpg" alt="Loop Quiet 2 Reusable Ear Plugs" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#9 Loop Quiet 2 Reusable Ear Plugs</h2><p>Reusable plugs for sleeping on the road.</p><p><a href="https://www.amazon.com/dp/B0D3V61JC8?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61NaHIMe0dL._AC_SL1327_.jpg" alt="Mack&#x27;s Ultra Soft Foam Earplugs, 50 Pair" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#10 Mack&#x27;s Ultra Soft Foam Earplugs, 50 Pair</h2><p>Cheap foam plugs that work.</p><p><a href="https://www.amazon.com/dp/B0051U7W32?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article></div>
+<h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:2.4rem;margin-top:42px">Vs review</h2>
+<p>Buy the Sony if you want the noise cancelling most travelers pick. Buy the Bose if comfort on long flights matters most.</p>
+<div class="vs"><a href="https://www.amazon.com/dp/B09XS7JWHH?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Sony WH-1000XM5</h3><p>Our pick</p></a>
+<a href="https://www.amazon.com/dp/B0CCZ26B5V?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61windvlNZL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Bose QuietComfort</h3><p>Our pick</p></a></div>
+<table><tbody><tr><th>Job</th><td>Noise cancelling</td><td>Noise cancelling</td></tr><tr><th>Style</th><td>Over-ear</td><td>Over-ear</td></tr><tr><th>Buy if</th><td>You want our pick</td><td>You want comfort</td></tr></tbody></table>
+<p><a href="https://theworthguide.com/">← All guides</a></p>
+</main>
+<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>
+</body></html>
