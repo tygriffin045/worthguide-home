@@ -3,107 +3,166 @@
 <title>TravelWorth Top 10 — The Worth Guide</title>
 <meta name="description" content="TravelWorth: The kit that earns the miles.">
 <link rel="canonical" href="https://travel.theworthguide.com/">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
-  a{color:inherit}
-  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
-  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
-  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
-  .mark{width:28px;height:28px;flex:none}
-  nav{display:flex;gap:26px;margin-left:28px}
-  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
-  nav a:hover{color:var(--ink)}
-  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
-  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
-  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
-  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
-  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
-  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
-  .quote-wrap{display:grid;place-items:center}
-  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
-  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
-  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
-  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
-  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
-  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
-  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
-  .card:hover{border-color:#d3c6b4}
-  .art{background:#f3eee6;overflow:hidden}
-  .art img{width:100%;height:100%;object-fit:cover;display:block}
-  .copy{padding:22px 18px 16px}
-  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
-  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
-  .go{color:#a56a62;font-size:.92rem}
-  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
-  .page{padding:48px 0 80px;max-width:720px}
-  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
-  .page p{color:#4a453f;font-size:1.05rem}
-  form{display:flex;gap:8px;margin-top:18px}
-  input,button{font:inherit;padding:10px 12px}
-  input{border:1px solid var(--line);background:#fff;flex:1}
-  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
-  @media(max-width:860px){
-    nav{display:none}
-    .hero{grid-template-columns:1fr;padding-top:36px}
-    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
-    .grid{grid-template-columns:1fr}
-    .card{grid-template-columns:120px 1fr}
-  }
-
-.page{padding:42px 0 72px}
-.page h1{font-size:clamp(2.8rem,6vw,4.4rem);margin-bottom:8px}
-.kicker{letter-spacing:.16em;font-size:.72rem;font-weight:600;color:#8c6d32}
-.list{display:grid;gap:14px;margin-top:28px}
-.row{display:grid;grid-template-columns:120px 1fr;gap:16px;background:#fffdf9;border:1px solid #e6dfd4;padding:12px}
-.row img{width:120px;height:96px;object-fit:contain;background:#f3eee6}
-.tags{display:flex;gap:6px;margin-bottom:6px}
-.tag{font-size:.68rem;letter-spacing:.08em;font-weight:600;border:1px solid #e6dfd4;padding:2px 6px;color:#8c6d32}
-.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
-.vs a{background:#fffdf9;border:1px solid #e6dfd4;padding:16px;text-decoration:none}
-table{width:100%;border-collapse:collapse;margin-top:18px;background:#fffdf9}
-th,td{border-bottom:1px solid #e6dfd4;text-align:left;padding:10px;font-size:.95rem}
-@media(max-width:700px){.row,.vs{grid-template-columns:1fr}}
-
-  .picks{margin:26px 0 34px;padding:22px;border:1px solid #e3cf9f;border-radius:14px;background:#fbf5e8}
-  .picks h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.9rem;margin:0}
-  .pk-sub{margin:4px 0 16px;color:var(--muted);font-size:.95rem}
-  .pick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .pick{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
-  .pick img{width:100%;height:190px;object-fit:contain;margin:12px 0 8px}
-  .pick h3{font-size:1.05rem;margin:0 0 4px;line-height:1.3}
-  .pick p{flex:1;margin:0 0 14px;color:#4b443d;font-size:.93rem}
-  .badge{align-self:flex-start;border-radius:999px;padding:4px 12px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-  .b-premium{background:#1c1917;color:#f3d98b}.b-bang{background:#c45c26;color:#fff}.b-value{background:#2f6b4f;color:#fff}
-  .btn{display:inline-block;text-align:center;text-decoration:none;background:#c45c26;color:#fff;border-radius:999px;padding:10px 14px;font-weight:600;font-size:.92rem}
-  .btn:hover{background:#a84c1f}
-  @media(max-width:760px){.pick-grid{grid-template-columns:1fr}}
+<meta name="theme-color" content="#f4f1ea">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231c1917'/><circle cx='32' cy='32' r='19' fill='none' stroke='%23d4af37' stroke-width='4'/><path d='M22 32.5 29 39.5 42 25' fill='none' stroke='%23d4af37' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&display=swap" rel="stylesheet">
+<style>/* The Worth Guide brand system (see BRAND.md). Shared by hub pages and category pages via build.py. */
+:root{--bg:#f4f1ea;--paper:#fffdf9;--ink:#1c1917;--ink2:#44403c;--muted:#78716c;--line:#e7e1d6;--line2:#d8cbb8;--gold:#d4af37;--gold-deep:#8a6a22;--gold-soft:#f8f1de;--terra:#c45c26;--terra-deep:#a84c1f;--green:#047857;--accent:var(--terra);--r:16px;--sh:0 1px 2px rgba(28,25,23,.05),0 2px 8px rgba(28,25,23,.04);--sh2:0 10px 30px rgba(28,25,23,.10),0 2px 6px rgba(28,25,23,.05);--serif:"Source Serif 4",Georgia,serif;--sans:"Source Sans 3",system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);letter-spacing:-.02em;line-height:1.15;margin:0;font-weight:600}
+.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:8px 12px;border-radius:8px}
+:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(244,241,234,.88);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(216,203,184,.7)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px}
+.wm{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:600 1.4rem/1 var(--serif);letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.wm b{font-weight:600;color:var(--gold-deep)}.wm svg{width:24px;height:24px;flex:none}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{text-decoration:none;color:var(--ink2);font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:999px;transition:background .15s,color .15s}
+.nav a:hover{background:rgba(28,25,23,.06);color:var(--ink)}
+.nav a[aria-current=page]{background:var(--ink);color:#fafaf9}
+.nav .hub{color:var(--gold-deep)}
+.mbtn{display:none;background:none;border:1px solid var(--line2);border-radius:999px;width:42px;height:42px;cursor:pointer;color:var(--ink);align-items:center;justify-content:center}
+.mbtn svg{width:20px;height:20px}
+@media(max-width:760px){
+ .mbtn{display:inline-flex}
+ .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:2px;padding:10px 20px 18px;background:var(--bg);border-bottom:1px solid var(--line2);box-shadow:var(--sh2)}
+ .nav.open{display:flex}.nav a{padding:12px 14px;font-size:1.05rem}
+}
+/* hero */
+.note-top{font-size:.78rem;color:var(--muted);margin:0 0 14px}
+.hero{padding:56px 0 36px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero.solo{grid-template-columns:1fr;max-width:780px}
+.kicker{display:inline-block;font:700 .74rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--terra-deep);margin:0 0 14px}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.2rem);line-height:1.04;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--gold-deep);font-weight:600}
+.sub{font-size:1.2rem;color:var(--ink2);margin:18px 0 0;max-width:560px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding:0;list-style:none}
+.stats li{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600;color:var(--ink2)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:5/4}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r);box-shadow:var(--sh2)}
+.mosaic img:first-child{grid-row:span 2}
+.mosaic.prod img{object-fit:contain;background:#fff;padding:18px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:28px;padding:36px 0 24px}.mosaic{aspect-ratio:16/10}}
+/* sections */
+.sec{padding:20px 0 56px}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec-h h2{font-size:clamp(1.6rem,3vw,2.1rem)}.sec-h p{margin:6px 0 0;color:var(--muted);max-width:620px}
+.more{font-weight:600;color:var(--terra);text-decoration:none;white-space:nowrap}.more:hover{color:var(--terra-deep)}
+/* cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{position:relative;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh2);border-color:var(--line2)}
+.card .ph{aspect-ratio:4/3;background:#efe9df;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.04)}
+.card .bd{display:flex;flex-direction:column;flex:1;padding:18px 20px 20px}
+.card h3{font-size:1.35rem}.card h3 b{color:var(--gold-deep);font-weight:600}
+.card p{margin:6px 0 16px;color:var(--ink2);font-size:.98rem;flex:1}
+.card .cta{font-weight:600;color:var(--terra);font-size:.95rem}
+.card:hover .cta{color:var(--terra-deep)}
+.chip{display:inline-block;align-self:flex-start;font:700 .7rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:6px 10px;background:var(--gold-soft);color:var(--gold-deep)}
+.ph .chip{position:absolute;top:12px;left:12px;background:rgba(255,253,249,.94);color:var(--a,var(--gold-deep));box-shadow:var(--sh)}
+.guide .ph{aspect-ratio:2/3}
+.guide-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+/* product cards + badges */
+.pcard .ph{aspect-ratio:1;background:#fff;border-bottom:1px solid var(--line)}
+.pcard .ph img{object-fit:contain;padding:22px}
+.pcard h3{font:600 1.05rem/1.35 var(--sans);letter-spacing:0}
+.pcard .from{font-size:.8rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 4px;flex:none}
+.badge{display:inline-block;align-self:flex-start;border-radius:999px;padding:5px 12px;font:700 .72rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.ph .badge{position:absolute;top:12px;left:12px;box-shadow:var(--sh)}
+.b-premium{background:#1c1917;color:#fde68a}.b-bang{background:var(--terra);color:#fff}.b-value{background:var(--green);color:#fff}.b-worth{background:var(--gold-soft);color:var(--gold-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;background:var(--terra);color:#fff;border-radius:999px;padding:11px 18px;font-weight:600;font-size:.95rem;box-shadow:var(--sh);transition:background .15s,transform .15s}
+.btn:hover{background:var(--terra-deep);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line2);box-shadow:none}.btn.ghost:hover{background:var(--paper);border-color:var(--ink)}
+.band{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--sh)}
+.band+.band{margin-top:24px}
+.band .sec-h{margin-bottom:18px}
+.trio{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.trio{grid-template-columns:1fr}.band{padding:20px;border-radius:18px}}
+.explain{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0 0 36px;padding:0;list-style:none}
+.explain li{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.explain li p{margin:10px 0 0;color:var(--ink2);font-size:.96rem}
+@media(max-width:760px){.explain{grid-template-columns:1fr}}
+/* footer */
+.ftr{margin-top:40px;background:#1c1917;color:#d6d3d1}
+.ftr a{color:#d6d3d1;text-decoration:none}.ftr a:hover{color:#fff}
+.ftr .cols{display:grid;grid-template-columns:1.2fr 2fr;gap:36px;padding:48px 0 32px}
+.ftr .wm{color:#fafaf9}.ftr .wm b{color:var(--gold)}
+.ftr .about{color:#a8a29e;font-size:.95rem;margin:12px 0 0;max-width:340px}
+.flabel{font:700 .74rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#a8a29e;margin:0 0 14px}
+.fam{display:grid;grid-template-columns:repeat(4,1fr);gap:8px 18px;list-style:none;margin:0;padding:0;font-size:.93rem}
+.ftr .legal{border-top:1px solid #292524;padding:18px 0 26px;color:#a8a29e;font-size:.8rem;text-align:center}
+.ftr .disc{margin:0 0 4px}
+@media(max-width:760px){.ftr .cols{grid-template-columns:1fr}.fam{grid-template-columns:repeat(2,1fr)}}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0}
+.quote{text-align:center;margin:8px 0 48px}.quote p:first-child{font:italic 600 clamp(1.3rem,2.6vw,1.8rem)/1.3 var(--serif);margin:0}.quote .kicker{margin:14px 0 0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}.duo img{object-fit:contain!important;background:#fff;padding:16px}
+.vsc h3{font-size:1.2rem}.more-sec{padding-top:56px}
+.hero .note-top{grid-column:1/-1;margin:0 0 -26px}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 32px)}
+ .grid{grid-template-columns:1fr 1fr;gap:12px}
+ .grid .bd{padding:12px 12px 14px}.grid .card h3{font-size:1.08rem}.grid .card p{font-size:.88rem;margin:4px 0 10px}.grid .card .cta{font-size:.86rem}
+ .ph .chip{top:8px;left:8px;font-size:.6rem;padding:5px 7px}
+ .grid.one-m{grid-template-columns:1fr}
+ .grid .pcard .btn{padding:9px 10px;font-size:.84rem}.grid .pcard .ph img{padding:12px}.ph .badge{top:8px;left:8px;font-size:.6rem;padding:4px 8px}
+ .trio{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scroll-padding:16px}
+ .trio>*{scroll-snap-align:start}
+ .hero h1{font-size:2.35rem}.sub{font-size:1.08rem}.sec{padding-bottom:40px}
+ .fam{font-size:.88rem}
+}
+/* Category Top 10 page additions (on top of site.css) */
+.picks{margin:8px 0 40px;padding:26px;border:1px solid #ecd9a6;border-radius:22px;background:linear-gradient(180deg,#fbf5e6,#f8f0dc)}
+.picks h2{font-size:1.8rem}.pk-sub{margin:6px 0 18px;color:var(--muted)}
+.pick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pick{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--sh);transition:transform .2s,box-shadow .2s}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.pick img{width:100%;height:200px;object-fit:contain;margin:14px 0 10px}
+.pick h3{font:600 1.05rem/1.35 var(--sans);letter-spacing:0;margin:0 0 6px}
+.pick p{flex:1;margin:0 0 16px;color:var(--ink2);font-size:.95rem}
+.list{display:grid;gap:16px;margin:8px 0 20px;counter-reset:r}
+.row{display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--sh);transition:box-shadow .2s,border-color .2s}
+.row:hover{box-shadow:var(--sh2);border-color:var(--line2)}
+.row .im{position:relative;background:#fff;border-radius:12px;border:1px solid var(--line);aspect-ratio:1;display:grid;place-items:center;overflow:hidden}
+.row .im img{width:100%;height:100%;object-fit:contain;padding:14px}
+.rank{position:absolute;top:8px;left:8px;background:var(--ink);color:#fafaf9;font:700 .85rem/1 var(--sans);border-radius:999px;padding:6px 9px}
+.row h2{font-size:1.45rem;margin:8px 0 6px}
+.row p{margin:0 0 14px;color:var(--ink2)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font:700 .68rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:6px 10px;background:var(--gold-soft);color:var(--gold-deep)}
+.vs-sec{margin:44px 0 0;scroll-margin-top:90px}.vs-sec h2{font-size:2rem}.vs-sec>p{color:var(--ink2);max-width:760px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;position:relative}
+.vs a{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;text-decoration:none;box-shadow:var(--sh);transition:transform .2s,box-shadow .2s}
+.vs a:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.vs img{width:100%;height:160px;object-fit:contain}
+.vs h3{font-size:1.25rem;margin:14px 0 8px}
+.vs-or{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--ink);color:var(--gold);font:700 .85rem/1 var(--serif);border-radius:999px;width:44px;height:44px;display:grid;place-items:center;box-shadow:var(--sh2)}
+.tbl{overflow-x:auto;margin-top:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse}
+th,td{border-bottom:1px solid var(--line);text-align:left;padding:13px 16px;font-size:.96rem;vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:0}
+thead th{font:700 .74rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:#f8f4ec}
+tbody th{font-weight:600;color:var(--ink);width:22%}
+.back{margin:36px 0 0;display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:760px){.pick-grid{grid-template-columns:1fr}.row{grid-template-columns:104px 1fr;gap:14px;padding:14px;align-items:start}.row h2{font-size:1.18rem;margin-top:6px}.row .btn{padding:9px 14px;font-size:.88rem}.picks{padding:18px}.vs{gap:10px}.vs a{padding:14px}.vs img{height:110px}.vs h3{font-size:1.05rem}}
 </style></head><body>
-<header><div class="wrap bar">
-  <a class="brand" href="https://theworthguide.com/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
-  <nav>
-    <a href="https://theworthguide.com/guides">Guides</a>
-    <a href="https://theworthguide.com/value">Value Picks</a>
-    <a href="https://theworthguide.com/categories">Categories</a>
-  </nav>
-</div></header>
-<main class="wrap page">
-<p class="kicker">TOP 10</p>
-<h1>TravelWorth</h1>
-<p>The kit that earns the miles.</p>
+<a class="skip" href="#main">Skip to content</a><header class="hdr"><div class="wrap bar"><a class="wm" href="https://travel.theworthguide.com/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#d4af37" stroke-width="1.8"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Travel<b>Worth</b></a><button class="mbtn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav class="nav" id="nav" aria-label="Main"><a href="https://theworthguide.com/guides">Guides</a><a href="https://theworthguide.com/value">Value Picks</a><a href="https://theworthguide.com/categories">Categories</a><a class="hub" href="https://theworthguide.com/">The Worth Guide</a></nav></div></header>
+<main id="main" class="wrap">
+<section class="hero solo"><p class="note-top">We may earn a commission from qualifying purchases.</p><div><p class="kicker">Top 10 · Travel</p><h1>Travel<em>Worth</em></h1><p class="sub">The kit that earns the miles.</p></div></section>
 
-<div class="list"><article class="row"><img src="https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SL1500_.jpg" alt="Sony WH-1000XM5 Noise Cancelling Wireless Headphones" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#1 Sony WH-1000XM5 Noise Cancelling Wireless Headphones</h2><p>Noise cancelling for the plane.</p><p><a href="https://www.amazon.com/dp/B09XS7JWHH?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61windvlNZL._AC_SL1500_.jpg" alt="Bose QuietComfort Headphones" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#2 Bose QuietComfort Headphones</h2><p>Comfortable noise cancelling for long trips.</p><p><a href="https://www.amazon.com/dp/B0CCZ26B5V?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/611DjYhflAL._AC_SL1500_.jpg" alt="Apple AirTag (2nd Generation), 4 Pack" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#3 Apple AirTag (2nd Generation), 4 Pack</h2><p>Know where your bag is.</p><p><a href="https://www.amazon.com/dp/B0GJTXVN9Z?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61wj4AVKTGL._AC_SL1500_.jpg" alt="Anker Power Bank, 10,000mAh 30W" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#4 Anker Power Bank, 10,000mAh 30W</h2><p>A pocket battery for a long travel day.</p><p><a href="https://www.amazon.com/dp/B0CZ9M6X8Q?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61cl-IrRJbL._AC_SL1500_.jpg" alt="TESSAN European Travel Plug Adapter, 2 Pack" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#5 TESSAN European Travel Plug Adapter, 2 Pack</h2><p>Plug in across Europe.</p><p><a href="https://www.amazon.com/dp/B0B27HX6P7?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/618h550nUsL._AC_SL1500_.jpg" alt="travel inspira Digital Luggage Scale" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#6 travel inspira Digital Luggage Scale</h2><p>Weigh the bag before the airline does.</p><p><a href="https://www.amazon.com/dp/B07QFTGGYF?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61gMY7ZvcrL._SL1500_.jpg" alt="BAGSMART Toiletry Bag with Hanging Hook" loading="lazy"><div><div class="tags"><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#7 BAGSMART Toiletry Bag with Hanging Hook</h2><p>Hang it up and find everything.</p><p><a href="https://www.amazon.com/dp/B07SL2RKJK?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61aFuRVWe3L._AC_SL1280_.jpg" alt="BAGAIL 8 Set Packing Cubes" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#8 BAGAIL 8 Set Packing Cubes</h2><p>Pack by cube, unpack in seconds.</p><p><a href="https://www.amazon.com/dp/B08S35399Y?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/51vun8qtNlL._AC_SL1500_.jpg" alt="Loop Quiet 2 Reusable Ear Plugs" loading="lazy"><div><div class="tags"><span class="tag">Our pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#9 Loop Quiet 2 Reusable Ear Plugs</h2><p>Reusable plugs for sleeping on the road.</p><p><a href="https://www.amazon.com/dp/B0D3V61JC8?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article><article class="row"><img src="https://m.media-amazon.com/images/I/61NaHIMe0dL._AC_SL1327_.jpg" alt="Mack&#x27;s Ultra Soft Foam Earplugs, 50 Pair" loading="lazy"><div><div class="tags"><span class="tag">Value pick</span></div><h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.6rem;margin:0">#10 Mack&#x27;s Ultra Soft Foam Earplugs, 50 Pair</h2><p>Cheap foam plugs that work.</p><p><a href="https://www.amazon.com/dp/B0051U7W32?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon →</a></p></div></article></div>
-<h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:2.4rem;margin-top:42px">Vs review</h2>
-<p>Buy the Sony if you want the noise cancelling most travelers pick. Buy the Bose if comfort on long flights matters most.</p>
-<div class="vs"><a href="https://www.amazon.com/dp/B09XS7JWHH?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Sony WH-1000XM5</h3><p>Our pick</p></a>
-<a href="https://www.amazon.com/dp/B0CCZ26B5V?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61windvlNZL._AC_SL1500_.jpg" alt="" loading="lazy" style="width:100%;height:140px;object-fit:contain;background:#f3eee6"><h3>Bose QuietComfort</h3><p>Our pick</p></a></div>
-<table><tbody><tr><th>Job</th><td>Noise cancelling</td><td>Noise cancelling</td></tr><tr><th>Style</th><td>Over-ear</td><td>Over-ear</td></tr><tr><th>Buy if</th><td>You want our pick</td><td>You want comfort</td></tr></tbody></table>
-<p><a href="https://theworthguide.com/">← All guides</a></p>
+<div class="sec-h"><div><h2>The Top 10</h2><p>Labels show our pick, the value pick, and the one people already buy most.</p></div></div>
+<div class="list"><article class="row"><div class="im"><span class="rank">#1</span><img src="https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SL1500_.jpg" alt="Sony WH-1000XM5 Noise Cancelling Wireless Headphones" loading="lazy"></div><div><div class="tags"><span class="tag">Our pick</span></div><h2>Sony WH-1000XM5 Noise Cancelling Wireless Headphones</h2><p>Noise cancelling for the plane.</p><a class="btn" href="https://www.amazon.com/dp/B09XS7JWHH?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#2</span><img src="https://m.media-amazon.com/images/I/61windvlNZL._AC_SL1500_.jpg" alt="Bose QuietComfort Headphones" loading="lazy"></div><div><div class="tags"><span class="tag">Our pick</span></div><h2>Bose QuietComfort Headphones</h2><p>Comfortable noise cancelling for long trips.</p><a class="btn" href="https://www.amazon.com/dp/B0CCZ26B5V?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#3</span><img src="https://m.media-amazon.com/images/I/611DjYhflAL._AC_SL1500_.jpg" alt="Apple AirTag (2nd Generation), 4 Pack" loading="lazy"></div><div><div class="tags"><span class="tag">Our pick</span></div><h2>Apple AirTag (2nd Generation), 4 Pack</h2><p>Know where your bag is.</p><a class="btn" href="https://www.amazon.com/dp/B0GJTXVN9Z?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#4</span><img src="https://m.media-amazon.com/images/I/61wj4AVKTGL._AC_SL1500_.jpg" alt="Anker Power Bank, 10,000mAh 30W" loading="lazy"></div><div><div class="tags"><span class="tag">Value pick</span></div><h2>Anker Power Bank, 10,000mAh 30W</h2><p>A pocket battery for a long travel day.</p><a class="btn" href="https://www.amazon.com/dp/B0CZ9M6X8Q?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#5</span><img src="https://m.media-amazon.com/images/I/61cl-IrRJbL._AC_SL1500_.jpg" alt="TESSAN European Travel Plug Adapter, 2 Pack" loading="lazy"></div><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2>TESSAN European Travel Plug Adapter, 2 Pack</h2><p>Plug in across Europe.</p><a class="btn" href="https://www.amazon.com/dp/B0B27HX6P7?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#6</span><img src="https://m.media-amazon.com/images/I/618h550nUsL._AC_SL1500_.jpg" alt="travel inspira Digital Luggage Scale" loading="lazy"></div><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2>travel inspira Digital Luggage Scale</h2><p>Weigh the bag before the airline does.</p><a class="btn" href="https://www.amazon.com/dp/B07QFTGGYF?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#7</span><img src="https://m.media-amazon.com/images/I/61gMY7ZvcrL._SL1500_.jpg" alt="BAGSMART Toiletry Bag with Hanging Hook" loading="lazy"></div><div><div class="tags"><span class="tag">Most bought</span></div><h2>BAGSMART Toiletry Bag with Hanging Hook</h2><p>Hang it up and find everything.</p><a class="btn" href="https://www.amazon.com/dp/B07SL2RKJK?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#8</span><img src="https://m.media-amazon.com/images/I/61aFuRVWe3L._AC_SL1280_.jpg" alt="BAGAIL 8 Set Packing Cubes" loading="lazy"></div><div><div class="tags"><span class="tag">Value pick</span><span class="tag">Most bought</span></div><h2>BAGAIL 8 Set Packing Cubes</h2><p>Pack by cube, unpack in seconds.</p><a class="btn" href="https://www.amazon.com/dp/B08S35399Y?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#9</span><img src="https://m.media-amazon.com/images/I/51vun8qtNlL._AC_SL1500_.jpg" alt="Loop Quiet 2 Reusable Ear Plugs" loading="lazy"></div><div><div class="tags"><span class="tag">Our pick</span></div><h2>Loop Quiet 2 Reusable Ear Plugs</h2><p>Reusable plugs for sleeping on the road.</p><a class="btn" href="https://www.amazon.com/dp/B0D3V61JC8?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="row"><div class="im"><span class="rank">#10</span><img src="https://m.media-amazon.com/images/I/61NaHIMe0dL._AC_SL1327_.jpg" alt="Mack&#x27;s Ultra Soft Foam Earplugs, 50 Pair" loading="lazy"></div><div><div class="tags"><span class="tag">Value pick</span></div><h2>Mack&#x27;s Ultra Soft Foam Earplugs, 50 Pair</h2><p>Cheap foam plugs that work.</p><a class="btn" href="https://www.amazon.com/dp/B0051U7W32?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div>
+<section class="vs-sec" id="vs"><p class="kicker">Vs review</p><h2>Sony WH-1000XM5 vs Bose QuietComfort</h2><p>Buy the Sony if you want the noise cancelling most travelers pick. Buy the Bose if comfort on long flights matters most.</p>
+<div class="vs"><a href="https://www.amazon.com/dp/B09XS7JWHH?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SL1500_.jpg" alt="" loading="lazy"><h3>Sony WH-1000XM5</h3><span class="tag">Our pick</span></a>
+<a href="https://www.amazon.com/dp/B0CCZ26B5V?tag=travelworth20-20" rel="nofollow sponsored noopener" target="_blank"><img src="https://m.media-amazon.com/images/I/61windvlNZL._AC_SL1500_.jpg" alt="" loading="lazy"><h3>Bose QuietComfort</h3><span class="tag">Our pick</span></a><span class="vs-or" aria-hidden="true">vs</span></div>
+<div class="tbl"><table><thead><tr><th></th><th>Sony WH-1000XM5</th><th>Bose QuietComfort</th></tr></thead><tbody><tr><th>Job</th><td>Noise cancelling</td><td>Noise cancelling</td></tr><tr><th>Style</th><td>Over-ear</td><td>Over-ear</td></tr><tr><th>Buy if</th><td>You want our pick</td><td>You want comfort</td></tr></tbody></table></div></section>
+<p class="back"><a class="btn ghost" href="https://theworthguide.com/categories">← All categories</a><a class="btn ghost" href="https://theworthguide.com/value">Value Picks</a></p>
 </main>
-<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>
+<footer class="ftr"><div class="wrap cols"><div><a class="wm" href="https://travel.theworthguide.com/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#d4af37" stroke-width="1.8"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Travel<b>Worth</b></a><p class="about">Headphones, chargers, and kit that earn the miles.</p></div><div><p class="flabel">The Worth Guide family</p><ul class="fam"><li><a href="https://theworthguide.com/">The Worth Guide</a></li><li><a href="https://desk.theworthguide.com/">DeskWorth</a></li><li><a href="https://brew.theworthguide.com/">BrewWorth</a></li><li><a href="https://sleep.theworthguide.com/">SleepWorth</a></li><li><a href="https://pet.theworthguide.com/">PetWorth</a></li><li><a href="https://tech.theworthguide.com/">TechWorth</a></li><li><a href="https://car.theworthguide.com/">CarWorth</a></li><li><a href="https://kitchen.theworthguide.com/">KitchenWorth</a></li><li><a href="https://clean.theworthguide.com/">CleanWorth</a></li><li><a href="https://tool.theworthguide.com/">ToolWorth</a></li><li><a href="https://yard.theworthguide.com/">YardWorth</a></li><li><a href="https://bag.theworthguide.com/">BagWorth</a></li><li><a href="https://groom.theworthguide.com/">GroomWorth</a></li><li><a href="https://fit.theworthguide.com/">FitWorth</a></li><li><a href="https://bath.theworthguide.com/">BathWorth</a></li><li><a href="https://travel.theworthguide.com/">TravelWorth</a></li><li><a href="https://watch.theworthguide.com/">WatchWorth</a></li></ul></div></div><div class="legal"><div class="wrap"><p class="disc">We may earn a commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></div></footer>
+<script>document.querySelector(".mbtn").onclick=function(){var o=document.getElementById("nav").classList.toggle("open");this.setAttribute("aria-expanded",o)}</script>
 </body></html>

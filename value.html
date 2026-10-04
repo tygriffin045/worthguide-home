@@ -1,77 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Value Picks — The Worth Guide</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{--bg:#f7f4ef;--ink:#1c1917;--muted:#6f675f;--gold:#b08d4a;--gold-deep:#8c6d32;--line:#e6dfd4;--card:#fffdf9;--rose:#a56a62}
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.5}
-  a{color:inherit}
-  .wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
-  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
-  .bar{display:flex;align-items:center;gap:28px;min-height:74px}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.7rem;font-weight:600;color:#b08d4a;letter-spacing:.01em}
-  .mark{width:28px;height:28px;flex:none}
-  nav{display:flex;gap:26px;margin-left:28px}
-  nav a{text-decoration:none;color:#8a8178;font-size:.98rem}
-  nav a:hover{color:var(--ink)}
-  .sub{margin-left:auto;text-decoration:none;border:1px solid #cfc6b8;border-radius:4px;padding:8px 14px;font-size:.78rem;letter-spacing:.12em;color:#6d655c}
-  .sub:hover{border-color:var(--gold);color:var(--gold-deep)}
-  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0 36px}
-  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(4rem,8vw,6.4rem);line-height:.9;letter-spacing:-.03em;margin:0 0 22px}
-  .rule{width:220px;height:1px;background:#cfc4b4;margin:0 0 18px}
-  .lede{max-width:420px;font-size:1.2rem;color:#3f3a36;margin:0}
-  .quote-wrap{display:grid;place-items:center}
-  .bubble{width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:#f3eee6;display:flex;flex-direction:column;justify-content:center;padding:64px 54px}
-  .bubble q{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.7rem;line-height:1.25;quotes:none}
-  .bubble q:before{content:"“";display:block;color:#c4a574;font-size:2rem;font-style:normal}
-  .sig{margin-top:22px;color:#a56a62;letter-spacing:.16em;font-size:.72rem;font-weight:600}
-  .browse{display:flex;align-items:center;gap:16px;justify-content:center;color:#8a8178;letter-spacing:.18em;font-size:.72rem;font-weight:600;margin:10px 0 22px}
-  .browse:before,.browse:after{content:"";height:1px;width:72px;background:#d9d0c4}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:72px}
-  .card{display:grid;grid-template-columns:148px 1fr;background:var(--card);border:1px solid var(--line);text-decoration:none;min-height:168px}
-  .card:hover{border-color:#d3c6b4}
-  .art{background:#f3eee6;overflow:hidden}
-  .art img{width:100%;height:100%;object-fit:cover;display:block}
-  .copy{padding:22px 18px 16px}
-  .copy h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.7rem;color:#a56a62;margin:0 0 6px}
-  .copy p{margin:0 0 16px;color:#5c564f;font-size:.95rem}
-  .go{color:#a56a62;font-size:.92rem}
-  footer{border-top:1px solid var(--line);padding:28px 0 36px;color:#8a8178;font-size:.9rem;text-align:center}
-  .page{padding:48px 0 80px;max-width:720px}
-  .page h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:12px}
-  .page p{color:#4a453f;font-size:1.05rem}
-  form{display:flex;gap:8px;margin-top:18px}
-  input,button{font:inherit;padding:10px 12px}
-  input{border:1px solid var(--line);background:#fff;flex:1}
-  button{background:#1c1917;color:#fff;border:0;cursor:pointer}
-  @media(max-width:860px){
-    nav{display:none}
-    .hero{grid-template-columns:1fr;padding-top:36px}
-    .bubble{aspect-ratio:auto;border-radius:180px;padding:36px 28px}
-    .grid{grid-template-columns:1fr}
-    .card{grid-template-columns:120px 1fr}
-  }
-
-main{padding:48px 0 64px}
-h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:3.4rem;margin:0 0 16px}
-p,li{font-size:1.05rem;color:#3f3a36}
-</style>
-</head>
-<body>
-<header><div class="wrap bar">
-  <a class="brand" href="/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#c4a15a"/><path d="M9.5 16.4 13.8 20.6 22.4 11.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The Worth Guide</a>
-  <nav>
-    <a href="/guides">Guides</a>
-    <a href="/value">Value Picks</a>
-    <a href="/categories">Categories</a>
-  </nav>
-</div></header>
-<main><div class="wrap"><h1>Value Picks</h1><p>In every top 10 the middle label is the value pick: the cheaper one that still does the job. It is not the cheapest item in the category. It is the one we would buy if the top pick costs more than the job is worth.</p></div></main>
-<footer><div class="wrap"><p class="disc" style="font-size:.8rem;margin:0 0 6px">We earn a small commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></footer>
-</body>
-</html>
+<meta name="description" content="Premium Pick, Bang for the Buck and Value Pick from each Worth Guide Top 10, plus the value pick from every other list.">
+<link rel="canonical" href="https://theworthguide.com/value">
+<meta name="theme-color" content="#f4f1ea">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231c1917'/><circle cx='32' cy='32' r='19' fill='none' stroke='%23d4af37' stroke-width='4'/><path d='M22 32.5 29 39.5 42 25' fill='none' stroke='%23d4af37' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&display=swap" rel="stylesheet">
+<style>/* The Worth Guide brand system (see BRAND.md). Shared by hub pages and category pages via build.py. */
+:root{--bg:#f4f1ea;--paper:#fffdf9;--ink:#1c1917;--ink2:#44403c;--muted:#78716c;--line:#e7e1d6;--line2:#d8cbb8;--gold:#d4af37;--gold-deep:#8a6a22;--gold-soft:#f8f1de;--terra:#c45c26;--terra-deep:#a84c1f;--green:#047857;--accent:var(--terra);--r:16px;--sh:0 1px 2px rgba(28,25,23,.05),0 2px 8px rgba(28,25,23,.04);--sh2:0 10px 30px rgba(28,25,23,.10),0 2px 6px rgba(28,25,23,.05);--serif:"Source Serif 4",Georgia,serif;--sans:"Source Sans 3",system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);letter-spacing:-.02em;line-height:1.15;margin:0;font-weight:600}
+.wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:8px 12px;border-radius:8px}
+:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(244,241,234,.88);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(216,203,184,.7)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px}
+.wm{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:600 1.4rem/1 var(--serif);letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.wm b{font-weight:600;color:var(--gold-deep)}.wm svg{width:24px;height:24px;flex:none}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{text-decoration:none;color:var(--ink2);font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:999px;transition:background .15s,color .15s}
+.nav a:hover{background:rgba(28,25,23,.06);color:var(--ink)}
+.nav a[aria-current=page]{background:var(--ink);color:#fafaf9}
+.nav .hub{color:var(--gold-deep)}
+.mbtn{display:none;background:none;border:1px solid var(--line2);border-radius:999px;width:42px;height:42px;cursor:pointer;color:var(--ink);align-items:center;justify-content:center}
+.mbtn svg{width:20px;height:20px}
+@media(max-width:760px){
+ .mbtn{display:inline-flex}
+ .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:2px;padding:10px 20px 18px;background:var(--bg);border-bottom:1px solid var(--line2);box-shadow:var(--sh2)}
+ .nav.open{display:flex}.nav a{padding:12px 14px;font-size:1.05rem}
+}
+/* hero */
+.note-top{font-size:.78rem;color:var(--muted);margin:0 0 14px}
+.hero{padding:56px 0 36px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero.solo{grid-template-columns:1fr;max-width:780px}
+.kicker{display:inline-block;font:700 .74rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--terra-deep);margin:0 0 14px}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.2rem);line-height:1.04;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--gold-deep);font-weight:600}
+.sub{font-size:1.2rem;color:var(--ink2);margin:18px 0 0;max-width:560px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding:0;list-style:none}
+.stats li{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600;color:var(--ink2)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:5/4}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r);box-shadow:var(--sh2)}
+.mosaic img:first-child{grid-row:span 2}
+.mosaic.prod img{object-fit:contain;background:#fff;padding:18px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:28px;padding:36px 0 24px}.mosaic{aspect-ratio:16/10}}
+/* sections */
+.sec{padding:20px 0 56px}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec-h h2{font-size:clamp(1.6rem,3vw,2.1rem)}.sec-h p{margin:6px 0 0;color:var(--muted);max-width:620px}
+.more{font-weight:600;color:var(--terra);text-decoration:none;white-space:nowrap}.more:hover{color:var(--terra-deep)}
+/* cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{position:relative;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh2);border-color:var(--line2)}
+.card .ph{aspect-ratio:4/3;background:#efe9df;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.04)}
+.card .bd{display:flex;flex-direction:column;flex:1;padding:18px 20px 20px}
+.card h3{font-size:1.35rem}.card h3 b{color:var(--gold-deep);font-weight:600}
+.card p{margin:6px 0 16px;color:var(--ink2);font-size:.98rem;flex:1}
+.card .cta{font-weight:600;color:var(--terra);font-size:.95rem}
+.card:hover .cta{color:var(--terra-deep)}
+.chip{display:inline-block;align-self:flex-start;font:700 .7rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:6px 10px;background:var(--gold-soft);color:var(--gold-deep)}
+.ph .chip{position:absolute;top:12px;left:12px;background:rgba(255,253,249,.94);color:var(--a,var(--gold-deep));box-shadow:var(--sh)}
+.guide .ph{aspect-ratio:2/3}
+.guide-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+/* product cards + badges */
+.pcard .ph{aspect-ratio:1;background:#fff;border-bottom:1px solid var(--line)}
+.pcard .ph img{object-fit:contain;padding:22px}
+.pcard h3{font:600 1.05rem/1.35 var(--sans);letter-spacing:0}
+.pcard .from{font-size:.8rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 4px;flex:none}
+.badge{display:inline-block;align-self:flex-start;border-radius:999px;padding:5px 12px;font:700 .72rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.ph .badge{position:absolute;top:12px;left:12px;box-shadow:var(--sh)}
+.b-premium{background:#1c1917;color:#fde68a}.b-bang{background:var(--terra);color:#fff}.b-value{background:var(--green);color:#fff}.b-worth{background:var(--gold-soft);color:var(--gold-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;background:var(--terra);color:#fff;border-radius:999px;padding:11px 18px;font-weight:600;font-size:.95rem;box-shadow:var(--sh);transition:background .15s,transform .15s}
+.btn:hover{background:var(--terra-deep);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line2);box-shadow:none}.btn.ghost:hover{background:var(--paper);border-color:var(--ink)}
+.band{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--sh)}
+.band+.band{margin-top:24px}
+.band .sec-h{margin-bottom:18px}
+.trio{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.trio{grid-template-columns:1fr}.band{padding:20px;border-radius:18px}}
+.explain{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin:0 0 36px;padding:0;list-style:none}
+.explain li{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.explain li p{margin:10px 0 0;color:var(--ink2);font-size:.96rem}
+@media(max-width:760px){.explain{grid-template-columns:1fr}}
+/* footer */
+.ftr{margin-top:40px;background:#1c1917;color:#d6d3d1}
+.ftr a{color:#d6d3d1;text-decoration:none}.ftr a:hover{color:#fff}
+.ftr .cols{display:grid;grid-template-columns:1.2fr 2fr;gap:36px;padding:48px 0 32px}
+.ftr .wm{color:#fafaf9}.ftr .wm b{color:var(--gold)}
+.ftr .about{color:#a8a29e;font-size:.95rem;margin:12px 0 0;max-width:340px}
+.flabel{font:700 .74rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#a8a29e;margin:0 0 14px}
+.fam{display:grid;grid-template-columns:repeat(4,1fr);gap:8px 18px;list-style:none;margin:0;padding:0;font-size:.93rem}
+.ftr .legal{border-top:1px solid #292524;padding:18px 0 26px;color:#a8a29e;font-size:.8rem;text-align:center}
+.ftr .disc{margin:0 0 4px}
+@media(max-width:760px){.ftr .cols{grid-template-columns:1fr}.fam{grid-template-columns:repeat(2,1fr)}}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0}
+.quote{text-align:center;margin:8px 0 48px}.quote p:first-child{font:italic 600 clamp(1.3rem,2.6vw,1.8rem)/1.3 var(--serif);margin:0}.quote .kicker{margin:14px 0 0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}.duo img{object-fit:contain!important;background:#fff;padding:16px}
+.vsc h3{font-size:1.2rem}.more-sec{padding-top:56px}
+.hero .note-top{grid-column:1/-1;margin:0 0 -26px}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 32px)}
+ .grid{grid-template-columns:1fr 1fr;gap:12px}
+ .grid .bd{padding:12px 12px 14px}.grid .card h3{font-size:1.08rem}.grid .card p{font-size:.88rem;margin:4px 0 10px}.grid .card .cta{font-size:.86rem}
+ .ph .chip{top:8px;left:8px;font-size:.6rem;padding:5px 7px}
+ .grid.one-m{grid-template-columns:1fr}
+ .grid .pcard .btn{padding:9px 10px;font-size:.84rem}.grid .pcard .ph img{padding:12px}.ph .badge{top:8px;left:8px;font-size:.6rem;padding:4px 8px}
+ .trio{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scroll-padding:16px}
+ .trio>*{scroll-snap-align:start}
+ .hero h1{font-size:2.35rem}.sub{font-size:1.08rem}.sec{padding-bottom:40px}
+ .fam{font-size:.88rem}
+}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a><header class="hdr"><div class="wrap bar"><a class="wm" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#d4af37" stroke-width="1.8"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>The <b>Worth</b> Guide</a><button class="mbtn" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav class="nav" id="nav" aria-label="Main"><a href="/guides">Guides</a><a href="/value" aria-current=page>Value Picks</a><a href="/categories">Categories</a></nav></div></header>
+<main id="main" class="wrap"><section class="hero"><p class="note-top">We may earn a commission from qualifying purchases.</p><div><p class="kicker">Value Picks</p><h1>Worth it at<br><em>every budget.</em></h1><p class="sub">Three standout picks from each Top 10, one premium, one mid-priced and one budget, plus the value pick from every other list.</p></div><div class="mosaic prod" aria-hidden="true"><img src="https://m.media-amazon.com/images/I/615kwOY9+3L._AC_SL1280_.jpg" alt=""><img src="https://m.media-amazon.com/images/I/81XPDrUh9sL._AC_SL1500_.jpg" alt=""><img src="https://m.media-amazon.com/images/I/512XdPpkYrL._AC_SL1500_.jpg" alt=""></div></section>
+<ul class="explain"><li><span class="badge b-premium">Premium Pick</span><p>One of the highest-end picks in its Top 10.</p></li><li><span class="badge b-bang">Bang for the Buck</span><p>A mid-priced Amazon Best Seller from the Top 10.</p></li><li><span class="badge b-value">Value Pick</span><p>The lowest-priced pick in the Top 10 that is still well rated on Amazon.</p></li></ul>
+<section class="band"><div class="sec-h"><div><p class="kicker">KitchenWorth</p><h2>Three standout picks</h2><p>Chosen from the KitchenWorth Top 10: one premium, one mid-priced, one budget.</p></div><a class="more" href="https://kitchen.theworthguide.com/">See the full top 10 →</a></div><div class="trio"><article class="card pcard"><div class="ph"><span class="badge b-premium">Premium Pick</span><img src="https://m.media-amazon.com/images/I/615kwOY9+3L._AC_SL1280_.jpg" alt="KitchenAid Artisan 5-Qt Tilt Head Stand Mixer" loading="lazy"></div><div class="bd"><p class="from">KitchenWorth</p><h3>KitchenAid Artisan 5-Qt Tilt Head Stand Mixer</h3><p>Highest-end pick in this Top 10: a 5-quart tilt-head stand mixer.</p><a class="btn" href="https://www.amazon.com/dp/B00005UP2P?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-bang">Bang for the Buck</span><img src="https://m.media-amazon.com/images/I/81qikuKGJZL._AC_SL1500_.jpg" alt="Rubbermaid Brilliance Food Storage Containers" loading="lazy"></div><div class="bd"><p class="from">KitchenWorth</p><h3>Rubbermaid Brilliance Food Storage Containers</h3><p>Mid-priced Amazon Best Seller: a set of 5 BPA-free Tritan containers with airtight lids.</p><a class="btn" href="https://www.amazon.com/dp/B079M8FPTW?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-value">Value Pick</span><img src="https://m.media-amazon.com/images/I/91YrLTBnMcL._AC_SL1500_.jpg" alt="Etekcity Food Kitchen Scale, Digital Grams and Ounces" loading="lazy"></div><div class="bd"><p class="from">KitchenWorth</p><h3>Etekcity Food Kitchen Scale, Digital Grams and Ounces</h3><p>Lowest-priced pick in this Top 10, still well rated on Amazon: weighs in grams and ounces, up to 11 lb.</p><a class="btn" href="https://www.amazon.com/dp/B0113UZJE2?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div></section><section class="band"><div class="sec-h"><div><p class="kicker">ToolWorth</p><h2>Three standout picks</h2><p>Chosen from the ToolWorth Top 10: one premium, one mid-priced, one budget.</p></div><a class="more" href="https://tool.theworthguide.com/">See the full top 10 →</a></div><div class="trio"><article class="card pcard"><div class="ph"><span class="badge b-premium">Premium Pick</span><img src="https://m.media-amazon.com/images/I/81XPDrUh9sL._AC_SL1500_.jpg" alt="DEWALT 20V MAX Cordless Drill and Impact Driver Combo Kit" loading="lazy"></div><div class="bd"><p class="from">ToolWorth</p><h3>DEWALT 20V MAX Cordless Drill and Impact Driver Combo Kit</h3><p>Highest-end pick in this Top 10: drill and impact driver kit with 2 batteries, a charger, and a bag.</p><a class="btn" href="https://www.amazon.com/dp/B00IJ0ALYS?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-bang">Bang for the Buck</span><img src="https://m.media-amazon.com/images/I/711E-1W75iL._AC_SL1500_.jpg" alt="HOTO 25-Piece Electric Screwdriver Kit" loading="lazy"></div><div class="bd"><p class="from">ToolWorth</p><h3>HOTO 25-Piece Electric Screwdriver Kit</h3><p>Mid-priced Amazon Best Seller: a 25-piece cordless electric screwdriver kit.</p><a class="btn" href="https://www.amazon.com/dp/B0BLMQ8BXB?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-value">Value Pick</span><img src="https://m.media-amazon.com/images/I/81FHQxKgs7L._AC_SL1500_.jpg" alt="DEWALT Screwdriver Bit Set, 45-Piece (DW2166)" loading="lazy"></div><div class="bd"><p class="from">ToolWorth</p><h3>DEWALT Screwdriver Bit Set, 45-Piece (DW2166)</h3><p>Lowest-priced pick in this Top 10, still well rated on Amazon: 45 bits in a tough case.</p><a class="btn" href="https://www.amazon.com/dp/B002JWSNIS?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div></section><section class="band"><div class="sec-h"><div><p class="kicker">GroomWorth</p><h2>Three standout picks</h2><p>Chosen from the GroomWorth Top 10: one premium, one mid-priced, one budget.</p></div><a class="more" href="https://groom.theworthguide.com/">See the full top 10 →</a></div><div class="trio"><article class="card pcard"><div class="ph"><span class="badge b-premium">Premium Pick</span><img src="https://m.media-amazon.com/images/I/512XdPpkYrL._AC_SL1500_.jpg" alt="Andis 04780 Professional T-Outliner Trimmer" loading="lazy"></div><div class="bd"><p class="from">GroomWorth</p><h3>Andis 04780 Professional T-Outliner Trimmer</h3><p>Among the highest-end picks in this Top 10: a professional beard and hair outliner.</p><a class="btn" href="https://www.amazon.com/dp/B0BJ15Z14D?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-bang">Bang for the Buck</span><img src="https://m.media-amazon.com/images/I/71-sjaK14UL._SL1500_.jpg" alt="Harry&#x27;s Original Razor Blades for Men, 10 Count" loading="lazy"></div><div class="bd"><p class="from">GroomWorth</p><h3>Harry&#x27;s Original Razor Blades for Men, 10 Count</h3><p>Mid-priced Amazon Best Seller: a 10-count pack of Harry&#x27;s original blades.</p><a class="btn" href="https://www.amazon.com/dp/B09SGK9FWZ?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-value">Value Pick</span><img src="https://m.media-amazon.com/images/I/71zXvcuFZ0L._SL1500_.jpg" alt="Revlon Expert Slant Tip Tweezer" loading="lazy"></div><div class="bd"><p class="from">GroomWorth</p><h3>Revlon Expert Slant Tip Tweezer</h3><p>Lowest-priced pick in this Top 10, still well rated on Amazon: a slant-tip tweezer.</p><a class="btn" href="https://www.amazon.com/dp/B0000532A2?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div></section><section class="band"><div class="sec-h"><div><p class="kicker">FitWorth</p><h2>Three standout picks</h2><p>Chosen from the FitWorth Top 10: one premium, one mid-priced, one budget.</p></div><a class="more" href="https://fit.theworthguide.com/">See the full top 10 →</a></div><div class="trio"><article class="card pcard"><div class="ph"><span class="badge b-premium">Premium Pick</span><img src="https://m.media-amazon.com/images/I/61rf4bk1v0L._AC_SL1500_.jpg" alt="Concept2 RowErg Indoor Rowing Machine" loading="lazy"></div><div class="bd"><p class="from">FitWorth</p><h3>Concept2 RowErg Indoor Rowing Machine</h3><p>Highest-end pick in this Top 10: an air-resistance rower with a PM5 monitor and device holder.</p><a class="btn" href="https://www.amazon.com/dp/B00NH9WEUA?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-bang">Bang for the Buck</span><img src="https://m.media-amazon.com/images/I/61+UlXddzxL._AC_SL1000_.jpg" alt="Gymreapers Lifting Wrist Straps" loading="lazy"></div><div class="bd"><p class="from">FitWorth</p><h3>Gymreapers Lifting Wrist Straps</h3><p>Mid-priced Amazon Best Seller: padded neoprene lifting straps for deadlifts and strength training.</p><a class="btn" href="https://www.amazon.com/dp/B07BB3VQ42?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-value">Value Pick</span><img src="https://m.media-amazon.com/images/I/61UEXxKIlrL._AC_SL1500_.jpg" alt="Amazon Basics Neoprene Dumbbell Hand Weights" loading="lazy"></div><div class="bd"><p class="from">FitWorth</p><h3>Amazon Basics Neoprene Dumbbell Hand Weights</h3><p>Lowest-priced pick in this Top 10, still well rated on Amazon: neoprene dumbbells for exercise and toning.</p><a class="btn" href="https://www.amazon.com/dp/B01LR5RG08?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div></section><section class="band"><div class="sec-h"><div><p class="kicker">WatchWorth</p><h2>Three standout picks</h2><p>Chosen from the WatchWorth Top 10: one premium, one mid-priced, one budget.</p></div><a class="more" href="https://watch.theworthguide.com/">See the full top 10 →</a></div><div class="trio"><article class="card pcard"><div class="ph"><span class="badge b-premium">Premium Pick</span><img src="https://m.media-amazon.com/images/I/71rp-pRCpRL._AC_SL1500_.jpg" alt="Garmin Forerunner 265 Running Smartwatch" loading="lazy"></div><div class="bd"><p class="from">WatchWorth</p><h3>Garmin Forerunner 265 Running Smartwatch</h3><p>Highest-end pick in this Top 10: a 46mm Garmin running smartwatch.</p><a class="btn" href="https://www.amazon.com/dp/B0BS1T9J4Y?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-bang">Bang for the Buck</span><img src="https://m.media-amazon.com/images/I/61nHUVwR65L._AC_SL1102_.jpg" alt="Casio MDV106 Analog Watch" loading="lazy"></div><div class="bd"><p class="from">WatchWorth</p><h3>Casio MDV106 Analog Watch</h3><p>Mid-priced Amazon Best Seller: 200M water resistance, a stainless steel case, and a date display.</p><a class="btn" href="https://www.amazon.com/dp/B009KYJAJY?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-value">Value Pick</span><img src="https://m.media-amazon.com/images/I/51mu4w1lJwL._AC_SL1000_.jpg" alt="Casio F91W Digital Watch" loading="lazy"></div><div class="bd"><p class="from">WatchWorth</p><h3>Casio F91W Digital Watch</h3><p>Lowest-priced pick in this Top 10, still well rated on Amazon: water resistant, with an LED light and stopwatch.</p><a class="btn" href="https://www.amazon.com/dp/B000GAWSDG?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div></section>
+<section class="sec more-sec"><div class="sec-h"><div><h2>More value picks</h2><p>In every top 10 the middle label is the value pick: the cheaper one that still does the job. It is not the cheapest item in the category. It is the one we would buy if the top pick costs more than the job is worth.</p></div></div><div class="grid"><article class="card pcard"><div class="ph"><span class="badge b-worth">Value pick</span><img src="https://m.media-amazon.com/images/I/71ogkstXJ3L._AC_SL1500_.jpg" alt="Shark Pet Cordless Stick Vacuum, IX141" loading="lazy"></div><div class="bd"><p class="from">CleanWorth</p><h3>Shark Pet Cordless Stick Vacuum, IX141</h3><p>Grab-and-go cleanup without the cord.</p><a class="btn" href="https://www.amazon.com/dp/B07S652B12?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-worth">Value pick</span><img src="https://m.media-amazon.com/images/I/71qPn3Ic0BL._AC_SL1500_.jpg" alt="Greenworks 40V 21in Self-Propelled Lawn Mower" loading="lazy"></div><div class="bd"><p class="from">YardWorth</p><h3>Greenworks 40V 21in Self-Propelled Lawn Mower</h3><p>Self-propelled and cordless for less.</p><a class="btn" href="https://www.amazon.com/dp/B0CLSDLM57?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-worth">Value pick</span><img src="https://m.media-amazon.com/images/I/7172oCVbQ4L._AC_SL1500_.jpg" alt="Amazon Basics 21&quot; Hardside Carry-On Spinner" loading="lazy"></div><div class="bd"><p class="from">BagWorth</p><h3>Amazon Basics 21&quot; Hardside Carry-On Spinner</h3><p>The carry-on that does the job for less.</p><a class="btn" href="https://www.amazon.com/dp/B071VG5N9D?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-worth">Value pick</span><img src="https://m.media-amazon.com/images/I/71MvNzm6GiL._AC_SL1500_.jpg" alt="Amazon Basics 6-Piece Cotton Towel Set" loading="lazy"></div><div class="bd"><p class="from">BathWorth</p><h3>Amazon Basics 6-Piece Cotton Towel Set</h3><p>A full towel set for less.</p><a class="btn" href="https://www.amazon.com/dp/B00Q7JESL0?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article><article class="card pcard"><div class="ph"><span class="badge b-worth">Value pick</span><img src="https://m.media-amazon.com/images/I/61wj4AVKTGL._AC_SL1500_.jpg" alt="Anker Power Bank, 10,000mAh 30W" loading="lazy"></div><div class="bd"><p class="from">TravelWorth</p><h3>Anker Power Bank, 10,000mAh 30W</h3><p>A pocket battery for a long travel day.</p><a class="btn" href="https://www.amazon.com/dp/B0CZ9M6X8Q?tag=theworthguide20-20" rel="nofollow sponsored noopener" target="_blank">Check price on Amazon</a></div></article></div></section></main>
+<footer class="ftr"><div class="wrap cols"><div><a class="wm" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#d4af37" stroke-width="1.8"/><path d="M7.5 12.2 10.6 15.3 16.5 8.8" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>The <b>Worth</b> Guide</a><p class="about">Buy it once. Skip the rest. In every top 10: our pick, the value pick, and the one people already buy most.</p></div><div><p class="flabel">The Worth Guide family</p><ul class="fam"><li><a href="https://theworthguide.com/">The Worth Guide</a></li><li><a href="https://desk.theworthguide.com/">DeskWorth</a></li><li><a href="https://brew.theworthguide.com/">BrewWorth</a></li><li><a href="https://sleep.theworthguide.com/">SleepWorth</a></li><li><a href="https://pet.theworthguide.com/">PetWorth</a></li><li><a href="https://tech.theworthguide.com/">TechWorth</a></li><li><a href="https://car.theworthguide.com/">CarWorth</a></li><li><a href="https://kitchen.theworthguide.com/">KitchenWorth</a></li><li><a href="https://clean.theworthguide.com/">CleanWorth</a></li><li><a href="https://tool.theworthguide.com/">ToolWorth</a></li><li><a href="https://yard.theworthguide.com/">YardWorth</a></li><li><a href="https://bag.theworthguide.com/">BagWorth</a></li><li><a href="https://groom.theworthguide.com/">GroomWorth</a></li><li><a href="https://fit.theworthguide.com/">FitWorth</a></li><li><a href="https://bath.theworthguide.com/">BathWorth</a></li><li><a href="https://travel.theworthguide.com/">TravelWorth</a></li><li><a href="https://watch.theworthguide.com/">WatchWorth</a></li></ul></div></div><div class="legal"><div class="wrap"><p class="disc">We may earn a commission when you buy through links on this site. As an Amazon Associate I earn from qualifying purchases.</p>© 2026 The Worth Guide</div></div></footer>
+<script>document.querySelector(".mbtn").onclick=function(){var o=document.getElementById("nav").classList.toggle("open");this.setAttribute("aria-expanded",o)}</script>
+</body></html>
