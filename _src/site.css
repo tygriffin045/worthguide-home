@@ -108,3 +108,6 @@ h1,h2,h3{font-family:var(--serif);letter-spacing:-.02em;line-height:1.15;margin:
  .hero h1{font-size:2.35rem}.sub{font-size:1.08rem}.sec{padding-bottom:40px}
  .fam{font-size:.88rem}
 }
+.mosaic{grid-template-rows:repeat(2,minmax(0,1fr));max-height:480px}.mosaic img{min-height:0}
+.mosaic.prod{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none;aspect-ratio:auto;max-height:none;align-items:center}
+.mosaic.prod img{grid-row:auto!important;aspect-ratio:4/5;height:auto;max-height:260px;object-fit:contain;padding:14px}
