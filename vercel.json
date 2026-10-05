@@ -359,7 +359,7 @@
    }
   },
   {
-   "src": "^/(guides|value|categories|privacy)\\.html$",
+   "src": "^/(guides|value|categories|privacy|links)\\.html$",
    "status": 308,
    "headers": {
     "Location": "/$1"
@@ -369,7 +369,7 @@
    "handle": "filesystem"
   },
   {
-   "src": "^/(guides|value|categories|privacy)/?$",
+   "src": "^/(guides|value|categories|privacy|links)/?$",
    "dest": "/$1.html"
   }
  ]

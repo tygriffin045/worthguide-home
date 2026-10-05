@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the hub pages (index, guides, value, categories, privacy [unlinked, noindex]) and category pages for <cat>.theworthguide.com from one brand template (site.css; see BRAND.md), then validate. Run: python3 _src/build.py"""
+"""Generate the hub pages (index, guides, value, categories, privacy [unlinked, noindex], links [Gift Finds Daily link-in-bio, standalone, unlinked]) and category pages for <cat>.theworthguide.com from one brand template (site.css; see BRAND.md), then validate. Run: python3 _src/build.py"""
 import json,os,re,sys,html
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,os.path.join(ROOT,'_src'))
@@ -166,13 +166,65 @@ def build_privacy():
     m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Privacy</p><h1>Privacy policy.<br><em>Plain and short.</em></h1><p class="sub">We don't run accounts or forms, and we don't collect personal information. Here is exactly what does happen when you visit.</p><ul class="stats"><li>Last updated {PRIVACY_UPDATED}</li><li>No accounts · No forms</li></ul></div></section>
 <article class="band prose">{body}</article>'''
     return hub('privacy','Privacy Policy — The Worth Guide','How The Worth Guide handles privacy: no accounts or forms, no personal information collected, Amazon affiliate links, and the analytics and cookies our sites actually use.',m,'<meta name="robots" content="noindex">\n',PROSE_CSS)
+LINKS_CSS=open(os.path.join(ROOT,'_src/links.css')).read()
+LINKS_ETSY='https://www.etsy.com/shop/KettleAndKibbleCo'  # Tyler's Etsy shop (KettleAndKibbleCo); see /workspace/etsy/shop/shop-home.png
+LINKS_DISC='As an Amazon Associate we earn from qualifying purchases.'
+# Top 10 categories that have Gift Finds Daily videos, in this order: (subdomain key, label, emoji). pet = PetWorth (pet.theworthguide.com).
+LINKS_CATS=[('kitchen','Kitchen','🍳'),('tool','Tools','🛠️'),('clean','Cleaning','🧽'),('fit','Fitness','🏋️'),('travel','Travel','✈️'),('pet','Pets','🐾'),
+            ('bath','Bath','🛁'),('bag','Bags','🎒'),('yard','Yard','🌿'),('groom','Grooming','🪒'),('watch','Watches','⌚')]
+def build_links():
+    """/links: standalone link-in-bio page for the 'Gift Finds Daily' social account (@gift_finds_daily on Instagram/TikTok).
+    Own look (coral/teal/cream, _src/links.css), NOT in the hub nav, header or footer and not linked from any site page; listed in sitemap.xml."""
+    star=lambda: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c.7 6.4 3.6 9.6 12 12-8.4 2.4-11.3 5.6-12 12-.7-6.4-3.6-9.6-12-12C8.4 9.6 11.3 6.4 12 0Z"/></svg>'
+    arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
+    n=len(LINKS_CATS); odd=n%2
+    def tile(i,k,lab,ic):
+        w=odd and i==n-1
+        return (f'<a class="tile press{" wide" if w else ""}" href="{sub(k)}"><span class="ic" aria-hidden="true">{ic}</span>'
+                f'<span class="t"><b>{e(lab)}</b><small>Top 10 picks</small></span>'+(f'<span class="arr2" aria-hidden="true">{arrow}</span>' if w else '')+'</a>')
+    tiles='\n'.join(tile(i,*c) for i,c in enumerate(LINKS_CATS))
+    title='Gift Finds Daily'; desc='Gift ideas + top picks worth buying 🎁'
+    img=f'{HUB}/img/links/gift_finds_daily_pfp.png'
+    return f'''<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{title} — gift ideas + top picks</title>
+<meta name="description" content="{e(desc)}">
+<link rel="canonical" href="{HUB}/links">
+<meta name="theme-color" content="#F9604E">
+<meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{e(desc)}">
+<meta property="og:url" content="{HUB}/links"><meta property="og:image" content="{img}"><meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="48x48" href="/img/links/icon-48.png"><link rel="apple-touch-icon" href="/img/links/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,800,100,1;1,9..144,700,100,1&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/img/links/pfp-320.webp">
+<style>{LINKS_CSS}</style></head><body>
+<main class="page">
+<div class="band" aria-hidden="true"><span class="deco s1">{star()}</span><span class="deco s2">{star()}</span><span class="deco s3">{star()}</span><span class="deco s4">{star()}</span><span class="deco d1"></span><span class="deco d2"></span><span class="deco d3"></span><span class="deco d4"></span></div>
+<svg class="wave" viewBox="0 0 480 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 30C60 6 120 6 180 22s120 34 180 22 90-30 120-34V60H0Z"/></svg>
+<header class="prof">
+<span class="av"><img src="/img/links/pfp-320.webp" alt="Gift Finds Daily logo: a cream gift box with a teal ribbon" width="320" height="320"><span class="gift" aria-hidden="true">🎁</span></span>
+<h1>Gift Finds <em>Daily</em></h1>
+<span class="handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>gift_finds_daily</span>
+<p class="bio">{desc}</p>
+</header>
+<nav class="links" aria-label="Links">
+<a class="feat press" href="{LINKS_ETSY}" rel="noopener"><img src="/img/links/kettle-kibble-160.webp" alt="" width="64" height="64"><span class="t"><span class="tag">Featured shop</span><b>Dog breed sweatshirts &amp; mugs 🐶</b><small>KettleAndKibbleCo on Etsy</small></span><span class="arr" aria-hidden="true">{arrow}</span></a>
+<div class="sec"><span class="spark" aria-hidden="true">{star()}</span><h2><span class="k">Shop by category</span>Top 10 picks</h2><span class="rule" aria-hidden="true"></span></div>
+<div class="grid">
+{tiles}
+</div>
+<a class="all press" href="{HUB}"><span class="e" aria-hidden="true">📚</span>All guides<span aria-hidden="true">{arrow}</span></a>
+</nav>
+<footer class="foot"><span class="bow" aria-hidden="true">{star()}{star()}{star()}</span><p class="disc">{LINKS_DISC}</p></footer>
+</main>
+</body></html>
+'''
 def main():
     for c,v in CATS.items():
         d=os.path.join(ROOT,'c',c); os.makedirs(d,exist_ok=True)
         open(os.path.join(d,'index.html'),'w').write(page(c,v))
         open(os.path.join(d,'sitemap.xml'),'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://{c}.theworthguide.com/</loc><lastmod>{LASTMOD}</lastmod></url>\n</urlset>\n')
         open(os.path.join(d,'robots.txt'),'w').write(f'User-agent: *\nAllow: /\n\nSitemap: https://{c}.theworthguide.com/sitemap.xml\n')
-    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy)):
+    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy),('links.html',build_links)):
         open(os.path.join(ROOT,f),'w').write(fn())
     validate()
 def validate():
@@ -186,6 +238,12 @@ def validate():
         if any(t!=want for t in tags): err.append(f'{rel}: wrong tag {set(tags)}')
         if 'theworthguide-20' in h: err.append(f'{rel}: old tag')
         if re.search(r'mailto:|@theworthguide\.com',h): err.append(f'{rel}: email')
+        if rel!='links.html' and re.search(r'href="(?:https://theworthguide\.com)?/links\b',h): err.append(f'{rel}: links to /links (must stay unlinked)')
+        if rel=='links.html':  # standalone social page without the hub chrome: its own rules
+            if h.count(LINKS_DISC)!=1: err.append(f'{rel}: disclosure count')
+            if LINKS_ETSY not in h: err.append(f'{rel}: Etsy shop link')
+            if '$' in re.sub(r'<style>.*?</style>','',h,flags=re.S): err.append(f'{rel}: price shown')
+            continue
         if re.search(r'href="[^"]*about',h,re.I): err.append(f'{rel}: about link')
         if 'subscribe' in h.lower(): err.append(f'{rel}: subscribe')
         if h.count('As an Amazon Associate I earn from qualifying purchases.')!=1: err.append(f'{rel}: disclosure count')
@@ -202,6 +260,7 @@ def validate():
         for x in ('index.html','sitemap.xml','robots.txt'):
             if not os.path.exists(os.path.join(ROOT,'c',c,x)): err.append(f'missing c/{c}/{x}')
     json.load(open(os.path.join(ROOT,'vercel.json')))
+    if '<loc>https://theworthguide.com/links</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: /links missing')
     if err: print('\n'.join(err)); sys.exit(1)
     print('build ok:',len(CATS),'category pages, 10 picks each;',sum(1 for c in CATS if BADGES.get(c,{}).get('picks')),'with 3 badge picks')
 if __name__=='__main__': main()
