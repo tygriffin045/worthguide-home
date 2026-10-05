@@ -1,0 +1,8 @@
+/* Long-form text pages (privacy). Appended to site.css only on those pages by build.py. */
+.prose{max-width:780px;padding:12px 40px 36px;color:var(--ink2)}
+.prose section{padding-top:26px}.prose section+section{border-top:1px solid var(--line);margin-top:26px}
+.prose h2{font-size:clamp(1.35rem,2.4vw,1.65rem);color:var(--ink);margin:0 0 10px}
+.prose p,.prose li{max-width:68ch}.prose p{margin:0 0 12px}.prose ul{margin:0;padding-left:1.2em}.prose li{margin:0 0 8px}
+.prose a{color:var(--terra-deep);text-decoration:underline;text-underline-offset:2px}.prose a:hover{color:var(--terra)}
+.prose strong{color:var(--ink)}.prose .updated{font-weight:600;color:var(--muted);margin-top:18px}
+@media(max-width:600px){.prose{padding:4px 20px 24px}}

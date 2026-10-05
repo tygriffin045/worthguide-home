@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the hub pages (index, guides, value, categories) and category pages for <cat>.theworthguide.com from one brand template (site.css; see BRAND.md), then validate. Run: python3 _src/build.py"""
+"""Generate the hub pages (index, guides, value, categories, privacy [unlinked, noindex]) and category pages for <cat>.theworthguide.com from one brand template (site.css; see BRAND.md), then validate. Run: python3 _src/build.py"""
 import json,os,re,sys,html
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,os.path.join(ROOT,'_src'))
@@ -9,6 +9,7 @@ BADGES=json.load(open(os.path.join(ROOT,'_src/badges.json')))['pages']  # picks 
 BADGE_LABEL={'premium':'Premium Pick','bang':'Bang for the Buck','value':'Value Pick'}
 SITE_CSS=open(os.path.join(ROOT,'_src/site.css')).read()
 CAT_CSS=open(os.path.join(ROOT,'_src/cat.css')).read()
+PROSE_CSS=open(os.path.join(ROOT,'_src/prose.css')).read()
 from sites import SITES
 HUB='https://theworthguide.com'
 LASTMOD='2026-10-04'
@@ -83,10 +84,10 @@ def page(c,v):
 {footer(wordmark(f"{e(short)}<b>Worth</b>",sub(c)),v["card"])}'''
     return doc(f'{nm} Top 10 — The Worth Guide',f'{nm}: {v["lede"]}',sub(c),body,SITE_CSS+CAT_CSS)
 # ---------- hub pages ----------
-def hub(slug,title,desc,main,extra=''):
+def hub(slug,title,desc,main,extra='',css=''):
     canon=f'{HUB}/{slug}' if slug else f'{HUB}/'
     body=f'{header(active=slug)}\n<main id="main" class="wrap">{main}</main>\n{footer(wordmark("The <b>Worth</b> Guide","/"),HUB_ABOUT)}'
-    return doc(title,desc,canon,body,SITE_CSS,extra)
+    return doc(title,desc,canon,body,SITE_CSS+css,extra)
 def mosaic(keys): return '<div class="mosaic" aria-hidden="true">'+''.join(f'<img src="/img/t/{k}.webp" alt="" width="720" height="560">' for k in keys)+'</div>'
 def chip(s): return f'<span class="chip"{f" style=--a:{s[3]}" if s[3] else ""}>{e(s[2])}</span>'
 def cat_card(s,line,cta):
@@ -134,13 +135,44 @@ def build_value():
 {"".join(bands)}
 <section class="sec more-sec"><div class="sec-h"><div><h2>More value picks</h2><p>In every top 10 the middle label is the value pick: the cheaper one that still does the job. It is not the cheapest item in the category. It is the one we would buy if the top pick costs more than the job is worth.</p></div></div><div class="grid">{"".join(more)}</div></section>'''
     return hub('value','Value Picks — The Worth Guide','Premium Pick, Bang for the Buck and Value Pick from each Worth Guide Top 10, plus the value pick from every other list.',m)
+PRIVACY_UPDATED='October 4, 2026'
+def build_privacy():
+    fam=', '.join(f'{s[1]}Worth ({s[0]}.theworthguide.com)' for s in SITES)
+    sec=lambda i,h,b:f'<section id="{i}"><h2>{h}</h2>{b}</section>'
+    body=''.join((
+    sec('short','The short version','''<ul>
+<li>There are no accounts, sign-ups, comment boxes or forms on our sites. We don't ask for your name, email, phone number or address, and we don't collect personal information from you directly.</li>
+<li>Product links go to Amazon and carry our affiliate tag. Once you're on Amazon, Amazon's own privacy notice applies, and Amazon may set cookies.</li>
+<li>Our hub and category pages run no analytics and set no cookies. A few subsites use Vercel Web Analytics, which counts visits without cookies.</li>
+<li>We don't sell, rent or share personal information. We don't have any to sell.</li></ul>'''),
+    sec('covers','What this policy covers',f'<p>This policy covers theworthguide.com, every theworthguide.com subdomain ({fam}), and The Worth Guide&#39;s related Pinterest, YouTube and TikTok accounts. &ldquo;We&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; mean The Worth Guide.</p>'),
+    sec('collect','What we collect','''<p>We don't collect personal information directly. You can read every page without an account, and there is nothing to fill in: no sign-up, no newsletter, no contact form, no comments, no checkout. We never see what you buy on Amazon under your name.</p>
+<p>Like any website, our pages are delivered by a hosting provider. Ours is <a href="https://vercel.com/legal/privacy-policy" rel="noopener" target="_blank">Vercel</a>, which processes standard request data such as your IP address, browser type and the page requested in order to serve the site and keep it secure, and may keep short-lived server logs under its own privacy policy. We don't use those logs to identify anyone.</p>'''),
+    sec('cookies','Analytics and cookies','''<p><strong>Hub and category pages.</strong> theworthguide.com and the category subsites built with it (KitchenWorth, CleanWorth, ToolWorth, YardWorth, BagWorth, GroomWorth, FitWorth, BathWorth, TravelWorth and WatchWorth) load no analytics or tracking scripts and set no cookies. The only script on them opens the mobile menu.</p>
+<p><strong>Some subsites.</strong> A few subsites, such as DeskWorth, BrewWorth, SleepWorth and PetWorth, use <a href="https://vercel.com/docs/analytics/privacy-policy" rel="noopener" target="_blank">Vercel Web Analytics</a> to count page views and clicks on &ldquo;Check price on Amazon&rdquo; buttons. It does not use cookies. It reports aggregate numbers such as pages viewed, the referring site, country, and device and browser type, and Vercel says it identifies a visit only with a hash of the request that resets daily, so it can't follow you across sites or over time.</p>
+<p><strong>Fonts.</strong> Our pages load typefaces from <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Fonts</a>, so your browser sends Google a standard request, including your IP address, when it downloads them. We don't set any cookies through Google Fonts.</p>
+<p>We don't use advertising cookies, retargeting pixels or social media tracking pixels on our sites.</p>'''),
+    sec('amazon','Amazon links and our affiliate tag','''<p>When you click a product link or a &ldquo;Check price on Amazon&rdquo; button, you leave our site for Amazon.com. Those links include our Amazon Associates tracking tag so that Amazon can credit us if you buy something. Amazon may set cookies in your browser to do this and for its own purposes. That happens on Amazon, under the Amazon.com Privacy Notice (linked at the bottom of every Amazon page), not under this policy.</p>
+<p>Amazon gives us aggregate reports, such as which items were ordered through our links and the commission earned. Those reports don't include your name, address, payment details or account information.</p>'''),
+    sec('disclosure','Amazon Associate disclosure','''<p>The Worth Guide is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, The Worth Guide earns from qualifying purchases. This costs you nothing extra and doesn't change which products we pick.</p>'''),
+    sec('social','Pinterest, YouTube and TikTok','''<p>We post guides and product videos on Pinterest, YouTube and TikTok. When you view, like, save, comment on or follow our posts there, that activity is handled by each platform under its own privacy policy: <a href="https://policy.pinterest.com/privacy-policy" rel="noopener" target="_blank">Pinterest</a>, <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">YouTube (Google)</a> and <a href="https://www.tiktok.com/legal/privacy-policy" rel="noopener" target="_blank">TikTok</a>.</p>
+<p><strong>Pinterest API.</strong> We may use Pinterest's API, signed in to our own Pinterest account only, to publish pins to our own boards and to read performance stats (such as impressions, saves and outbound clicks) on our own pins. We use it only to manage our own content and see how it performs. We don't use it to collect personal information about the people who see or save our pins, and we don't sell or share anything it returns. The access keys for our account are kept private and used for nothing else.</p>
+<p>Any stats we look at on YouTube and TikTok are the aggregate numbers those platforms show every account owner, such as views and watch time.</p>'''),
+    sec('sharing','Selling and sharing','''<p>We don't sell, rent or trade personal information, and we don't share it with advertisers or data brokers. Because we don't collect it in the first place, there is nothing for us to hand over.</p>'''),
+    sec('choices','Your choices','''<p>You can block or delete cookies, including Amazon's, in your browser settings, and you can use private browsing or a content blocker. Our sites work the same either way. For anything about your Amazon account, orders or Amazon's cookies, use Amazon's own privacy settings.</p>'''),
+    sec('children',"Children's privacy",'''<p>Our sites and social accounts are meant for adults shopping for themselves and aren't directed at children under 13. We don't knowingly collect personal information from children.</p>'''),
+    sec('changes','Changes to this policy',f'<p>If what we do changes, for example if we add a new analytics tool, we&#39;ll update this page and the &ldquo;Last updated&rdquo; date below. Changes take effect when they&#39;re posted here.</p><p class="updated">Last updated {PRIVACY_UPDATED}</p>'),
+    ))
+    m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Privacy</p><h1>Privacy policy.<br><em>Plain and short.</em></h1><p class="sub">We don't run accounts or forms, and we don't collect personal information. Here is exactly what does happen when you visit.</p><ul class="stats"><li>Last updated {PRIVACY_UPDATED}</li><li>No accounts · No forms</li></ul></div></section>
+<article class="band prose">{body}</article>'''
+    return hub('privacy','Privacy Policy — The Worth Guide','How The Worth Guide handles privacy: no accounts or forms, no personal information collected, Amazon affiliate links, and the analytics and cookies our sites actually use.',m,'<meta name="robots" content="noindex">\n',PROSE_CSS)
 def main():
     for c,v in CATS.items():
         d=os.path.join(ROOT,'c',c); os.makedirs(d,exist_ok=True)
         open(os.path.join(d,'index.html'),'w').write(page(c,v))
         open(os.path.join(d,'sitemap.xml'),'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://{c}.theworthguide.com/</loc><lastmod>{LASTMOD}</lastmod></url>\n</urlset>\n')
         open(os.path.join(d,'robots.txt'),'w').write(f'User-agent: *\nAllow: /\n\nSitemap: https://{c}.theworthguide.com/sitemap.xml\n')
-    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories)):
+    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy)):
         open(os.path.join(ROOT,f),'w').write(fn())
     validate()
 def validate():
