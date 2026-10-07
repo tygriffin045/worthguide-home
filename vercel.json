@@ -1,6 +1,10 @@
 {
  "routes": [
   {
+   "src": "^/shop/?$",
+   "dest": "/shop.html"
+  },
+  {
    "src": "^/$",
    "has": [
     {
