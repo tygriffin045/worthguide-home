@@ -18,7 +18,7 @@
 - The Top 10 has exactly 10 distinct products (no near-duplicate variants).
 - **Allowed exceptions** (each must be listed explicitly in the site's validator, never a blanket pass):
   - *Optional Premium*: a category may omit Premium when no product in its Top 10 is a genuine step up from Best Overall. The page then shows "Our two picks". Approved case: brew `cleaning-maintenance` (Puly Caff is a same-price peer of Cafiza, not a step up).
-  - *Short Top 10*: a Top 10 may run 7–9 items when no further verified listing exists, with the reason recorded next to the category in the validator's exception list. **Pending Maya's acceptance**; until accepted, fewer than 10 still fails the build.
+  - *Short Top 10*: a Top 10 may run 7–9 items when no further verified listing exists, with the reason recorded next to the category in the validator's exception list. **Pending Maya's acceptance**: validators may allow a listed short category on previews (warning, not error), but no short list merges to production until Maya accepts it.
 
 ## Structured data
 - No `Product` JSON-LD (never offers/prices/ratings). Breadcrumb/ItemList/Organization are OK.
