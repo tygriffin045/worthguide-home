@@ -1,0 +1,77 @@
+=== WorthGuide sitemap crawl — start 2026-10-12 11:58:16 EDT ===
+Repo SHAs (HEAD / origin/main):
+  hub: e177cb8 / e177cb8  (/workspace/hub)
+  brew: d4ba8cc / d4ba8cc  (/workspace/top10/brewworth)
+  car: c4cfca8 / c4cfca8  (/workspace/top10/carworth)
+  desk: 9a3ceab / 9a3ceab  (/workspace/top10/deskworth)
+  pet: 4e090a1 / 4e090a1  (/workspace/top10/petworth)
+  sleep: b1f4a40 / b1f4a40  (/workspace/top10/sleepworth)
+  tech: c031de2 / c031de2  (/workspace/top10/techworth)
+Vercel production refs:
+  worthguide-home: latest prod https://worthguide-home-bwxvxn3fh-theateam20.vercel.app
+  brewworth: latest prod https://brewworth-g3qesk883-theateam20.vercel.app
+  carworth: latest prod https://carworth-nakkt5inv-theateam20.vercel.app
+  deskworth: latest prod https://deskworth-bhp9ydkwp-theateam20.vercel.app
+  petworth: latest prod https://petworth-8mo8m30m1-theateam20.vercel.app
+  sleepworth: latest prod https://sleepworth-m7e3yjul7-theateam20.vercel.app
+  techworth: latest prod https://techworth-8aw5h7l3d-theateam20.vercel.app
+Sitemaps discovered: 17
+  https://theworthguide.com/sitemap.xml: HTTP 200, 5 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://bag.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://bath.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://clean.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://fit.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://groom.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://kitchen.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://tool.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://travel.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://watch.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://yard.theworthguide.com/sitemap.xml: HTTP 200, 1 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://brew.theworthguide.com/sitemap.xml: HTTP 200, 129 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://car.theworthguide.com/sitemap.xml: HTTP 200, 14 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://desk.theworthguide.com/sitemap.xml: HTTP 200, 219 URLs, lastmod missing 219, invalid 0, dup locs 0
+  https://pet.theworthguide.com/sitemap.xml: HTTP 200, 208 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://sleep.theworthguide.com/sitemap.xml: HTTP 200, 155 URLs, lastmod missing 0, invalid 0, dup locs 0
+  https://tech.theworthguide.com/sitemap.xml: HTTP 200, 22 URLs, lastmod missing 0, invalid 0, dup locs 0
+robots.txt per host:
+  theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://theworthguide.com/sitemap.xml']
+  bag.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://bag.theworthguide.com/sitemap.xml']
+  bath.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://bath.theworthguide.com/sitemap.xml']
+  clean.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://clean.theworthguide.com/sitemap.xml']
+  fit.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://fit.theworthguide.com/sitemap.xml']
+  groom.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://groom.theworthguide.com/sitemap.xml']
+  kitchen.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://kitchen.theworthguide.com/sitemap.xml']
+  tool.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://tool.theworthguide.com/sitemap.xml']
+  travel.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://travel.theworthguide.com/sitemap.xml']
+  watch.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://watch.theworthguide.com/sitemap.xml']
+  yard.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://yard.theworthguide.com/sitemap.xml']
+  brew.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://brew.theworthguide.com/sitemap.xml']
+  car.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://car.theworthguide.com/sitemap.xml']
+  desk.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://desk.theworthguide.com/sitemap.xml']
+  pet.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://pet.theworthguide.com/sitemap.xml']
+  sleep.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://sleep.theworthguide.com/sitemap.xml']
+  tech.theworthguide.com: HTTP 200, Disallow-all no, Sitemap refs ['https://tech.theworthguide.com/sitemap.xml']
+
+Pages checked: 762
+Unique internal links found on sitemap pages: 765 (all fetched, no redirect follow); 6 are not in any sitemap and were also text-searched for Etsy/KettleAndKibble
+Dollar amounts in visible text per site (info only):
+  theworthguide.com: 0
+  bag.theworthguide.com: 0
+  bath.theworthguide.com: 0
+  clean.theworthguide.com: 0
+  fit.theworthguide.com: 0
+  groom.theworthguide.com: 0
+  kitchen.theworthguide.com: 0
+  tool.theworthguide.com: 0
+  travel.theworthguide.com: 0
+  watch.theworthguide.com: 0
+  yard.theworthguide.com: 0
+  brew.theworthguide.com: 132
+  car.theworthguide.com: 0
+  desk.theworthguide.com: 0
+  pet.theworthguide.com: 0
+  sleep.theworthguide.com: 0
+  tech.theworthguide.com: 0
+
+SUMMARY: sitemaps=17 urls=762 unique=762 non200=0 canonical_mismatch=0 noindex=0 etsy_kk_hits=0 cross_sitemap_dups=0 internal_links_checked=765 non_sitemap_internal=6 bad_internal_links=0
+=== end 2026-10-12 12:00:35 EDT — runtime 138.8s — exit code 0 ===
