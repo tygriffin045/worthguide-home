@@ -167,7 +167,6 @@ def build_privacy():
 <article class="band prose">{body}</article>'''
     return hub('privacy','Privacy Policy — The Worth Guide','How The Worth Guide handles privacy: no accounts or forms, no personal information collected, Amazon affiliate links, and the analytics and cookies our sites actually use.',m,'<meta name="robots" content="noindex">\n',PROSE_CSS)
 LINKS_CSS=open(os.path.join(ROOT,'_src/links.css')).read()
-LINKS_ETSY='https://www.etsy.com/shop/KettleAndKibbleCo'  # Tyler's Etsy shop (KettleAndKibbleCo); see /workspace/etsy/shop/shop-home.png
 LINKS_DISC='As an Amazon Associate we earn from qualifying purchases.'
 # Top 10 categories that have Gift Finds Daily videos, in this order: (subdomain key, label, emoji). pet = PetWorth (pet.theworthguide.com).
 LINKS_CATS=[('kitchen','Kitchen','🍳'),('tool','Tools','🛠️'),('clean','Cleaning','🧽'),('fit','Fitness','🏋️'),('travel','Travel','✈️'),('pet','Pets','🐾'),
@@ -207,7 +206,6 @@ def build_links():
 <p class="bio">{desc}</p>
 </header>
 <nav class="links" aria-label="Links">
-<a class="feat press" href="{LINKS_ETSY}" rel="noopener"><img src="/img/links/kettle-kibble-160.webp" alt="" width="64" height="64"><span class="t"><span class="tag">Featured shop</span><b>Dog breed sweatshirts &amp; mugs 🐶</b><small>KettleAndKibbleCo on Etsy</small></span><span class="arr" aria-hidden="true">{arrow}</span></a>
 <div class="sec"><span class="spark" aria-hidden="true">{star()}</span><h2><span class="k">Shop by category</span>Top 10 picks</h2><span class="rule" aria-hidden="true"></span></div>
 <div class="grid">
 {tiles}
@@ -241,7 +239,7 @@ def validate():
         if rel!='links.html' and re.search(r'href="(?:https://theworthguide\.com)?/links\b',h): err.append(f'{rel}: links to /links (must stay unlinked)')
         if rel=='links.html':  # standalone social page without the hub chrome: its own rules
             if h.count(LINKS_DISC)!=1: err.append(f'{rel}: disclosure count')
-            if LINKS_ETSY not in h: err.append(f'{rel}: Etsy shop link')
+            if re.search(r'etsy|kettle',h,re.I): err.append(f'{rel}: Etsy/KettleAndKibble link present')
             if '$' in re.sub(r'<style>.*?</style>','',h,flags=re.S): err.append(f'{rel}: price shown')
             continue
         if re.search(r'href="[^"]*about',h,re.I): err.append(f'{rel}: about link')
