@@ -47,7 +47,7 @@ def doc(title,desc,canon,body,css,extra=''):
 <style>{css}</style></head><body>
 {body}
 {JS}
-</body></html>
+<script src="https://theworthguide.com/visit.js" defer></script></body></html>
 '''
 def link(asin,tag): return f'https://www.amazon.com/dp/{asin}?tag={tag}'
 def badges(c,v,tag):
@@ -171,6 +171,10 @@ LINKS_DISC='As an Amazon Associate we earn from qualifying purchases.'
 # Top 10 categories that have Gift Finds Daily videos, in this order: (subdomain key, label, emoji). pet = PetWorth (pet.theworthguide.com).
 LINKS_CATS=[('kitchen','Kitchen','🍳'),('tool','Tools','🛠️'),('clean','Cleaning','🧽'),('fit','Fitness','🏋️'),('travel','Travel','✈️'),('pet','Pets','🐾'),
             ('bath','Bath','🛁'),('bag','Bags','🎒'),('yard','Yard','🌿'),('groom','Grooming','🪒'),('watch','Watches','⌚')]
+# /links extras (edit here, not in links.html). Simple brand links shown above the category grid.
+LINKS_PROMO=[('pet','Pet picks worth buying','PetWorth'),('desk','Desk picks worth buying','DeskWorth'),('kitchen','Kitchen picks worth buying','KitchenWorth')]
+# This week's featured guide tile, shown under the grid: (url, emoji, label, small text). Set to None to hide.
+LINKS_WEEKLY=('https://sleep.theworthguide.com/guides/best-earplugs-for-sleep','🎙️','Sleep earplugs',"This week's SleepWorth guide")
 def build_links():
     """/links: standalone link-in-bio page for the 'Gift Finds Daily' social account (@gift_finds_daily on Instagram/TikTok).
     Own look (coral/teal/cream, _src/links.css), NOT in the hub nav, header or footer and not linked from any site page; listed in sitemap.xml."""
@@ -182,6 +186,8 @@ def build_links():
         return (f'<a class="tile press{" wide" if w else ""}" href="{sub(k)}"><span class="ic" aria-hidden="true">{ic}</span>'
                 f'<span class="t"><b>{e(lab)}</b><small>Top 10 picks</small></span>'+(f'<span class="arr2" aria-hidden="true">{arrow}</span>' if w else '')+'</a>')
     tiles='\n'.join(tile(i,*c) for i,c in enumerate(LINKS_CATS))
+    promo=''.join(f'<a class="press" href="https://{k}.theworthguide.com"><span class="t"><b>{e(b)}</b><small>{e(sm)}</small></span></a>\n' for k,b,sm in LINKS_PROMO)
+    weekly=(f'<a class="tile press wide" href="{LINKS_WEEKLY[0]}"><span class="ic" aria-hidden="true">{LINKS_WEEKLY[1]}</span><span class="t"><b>{e(LINKS_WEEKLY[2])}</b><small>{LINKS_WEEKLY[3]}</small></span></a>\n') if LINKS_WEEKLY else ''
     title='Gift Finds Daily'; desc='Gift ideas + top picks worth buying 🎁'
     img=f'{HUB}/img/links/gift_finds_daily_pfp.png'
     return f'''<!DOCTYPE html>
@@ -206,15 +212,15 @@ def build_links():
 <p class="bio">{desc}</p>
 </header>
 <nav class="links" aria-label="Links">
-<div class="sec"><span class="spark" aria-hidden="true">{star()}</span><h2><span class="k">Shop by category</span>Top 10 picks</h2><span class="rule" aria-hidden="true"></span></div>
+{promo}<div class="sec"><span class="spark" aria-hidden="true">{star()}</span><h2><span class="k">Shop by category</span>Top 10 picks</h2><span class="rule" aria-hidden="true"></span></div>
 <div class="grid">
 {tiles}
 </div>
-<a class="all press" href="{HUB}"><span class="e" aria-hidden="true">📚</span>All guides<span aria-hidden="true">{arrow}</span></a>
+{weekly}<a class="all press" href="{HUB}"><span class="e" aria-hidden="true">📚</span>All guides<span aria-hidden="true">{arrow}</span></a>
 </nav>
 <footer class="foot"><span class="bow" aria-hidden="true">{star()}{star()}{star()}</span><p class="disc">{LINKS_DISC}</p></footer>
 </main>
-</body></html>
+<script src="https://theworthguide.com/visit.js" defer></script></body></html>
 '''
 def main():
     for c,v in CATS.items():
