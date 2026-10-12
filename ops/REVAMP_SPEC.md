@@ -9,13 +9,16 @@
 
 ## Pricing and tiers
 - No prices or price ranges anywhere (copy, JSON-LD, compare rows). Budget tiers are `$`, `$$`, `$$$`.
-- Tiers come from per-category price thresholds (internal data only). Tied prices share a tier. Cheap categories are capped at `$$`. Then a manual pass, with copy matching the tier (no "mid-range" on a `$$$`). No leftover `budget` field.
+- Tiers come from per-category price thresholds (internal data only). Tiers must be monotonic in price within a category; the validator checks tier order against an internal price reference file (e.g. `scripts/tier-prices.json`) that is never imported by `src/`, never rendered and never shipped/served. Tied prices share a tier. Cheap categories are capped at `$$`. Then a manual pass, with copy matching the tier (no "mid-range" on a `$$$`). No leftover `budget` field.
 - Button text is exactly **"Check price on Amazon"**, with an `aria-label` that includes the product name; `rel="sponsored nofollow"` and the site affiliate tag. Agents never request amazon.com.
 
 ## Picks
 - An explicit `PICKS` map per category (best/premium/value); no rank-based fallback.
 - Premium's tier is never below Best Overall's. Value is a `$` item whenever the Top 10 has one. The #1 in the Top 10 and the homepage matches Best Overall.
 - The Top 10 has exactly 10 distinct products (no near-duplicate variants).
+- **Allowed exceptions** (each must be listed explicitly in the site's validator, never a blanket pass):
+  - *Optional Premium*: a category may omit Premium when no product in its Top 10 is a genuine step up from Best Overall. The page then shows "Our two picks". Approved case: brew `cleaning-maintenance` (Puly Caff is a same-price peer of Cafiza, not a step up).
+  - *Short Top 10*: a Top 10 may run 7–9 items when no further verified listing exists, with the reason recorded next to the category in the validator's exception list. **Pending Maya's acceptance**; until accepted, fewer than 10 still fails the build.
 
 ## Structured data
 - No `Product` JSON-LD (never offers/prices/ratings). Breadcrumb/ItemList/Organization are OK.
@@ -28,7 +31,7 @@
 - Specific "who it's for" lines; picks and homepage Top 10 get individual summaries.
 
 ## Build gates (fail the build)
-- `scripts/validate-revamp.ts`: 10 Top 10 entries, picks present and obeying the picks rules, tier present, pros 2–4, cons 1–3, no `budget` field, listing-voice and seller-voice regex on summary/tagline/pros/cons/whoFor.
+- `scripts/validate-revamp.ts`: 10 Top 10 entries, picks present and obeying the picks rules, tier present, pros 2–4, cons 1–3, no `budget` field, tier order vs the internal price ref (no cheaper item in a higher tier), listing-voice and seller-voice regex on summary/tagline/pros/cons/whoFor.
 - `scripts/check-no-prices.mjs` on `src` and on the built `.next/server/app`.
 - Wired as `npm run build` = validate:revamp && check-no-prices src && next build && check-no-prices build.
 
