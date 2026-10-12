@@ -1,0 +1,763 @@
+site,path,page_type,current_state
+desk.theworthguide.com,/,category_home,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products,index_or_static,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides,index_or_static,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare,index_or_static,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare/monitor-arms,compare,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare/usb-c-docks,compare,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare/standing-mats,compare,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare/cable-management,compare,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare/desk-converters,compare,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/compare/boom-arms,compare,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/affiliate-disclosure,index_or_static,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/standing-desks,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/office-chairs,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/monitors,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/monitor-arms,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/desk-mats,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/laptop-stands,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/usb-c-docks,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/keyboards-mice,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/webcams-audio,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/standing-mats,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/cable-management,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/footrests,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/desk-power,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/desk-converters,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/boom-arms,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/desk-organizers,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/wrist-rests,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/categories/desk-lighting,subcategory,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/how-to-choose-a-standing-desk,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/ergonomic-home-office-starter-kit,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/how-to-choose-a-monitor-arm,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/best-standing-desk-mat,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/sit-stand-converter-vs-standing-desk,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/best-laptop-stand-for-desk,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/best-footrest-for-short-people,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/best-power-strip-for-standing-desk,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/best-mic-boom-arm-for-a-desk,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/guides/best-usb-c-dock-for-desk,guide,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/flexispot-pro-dual-motor,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/flexispot-e6-dual-motor-55x28,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/uplift-v3,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/branch-ergonomic-chair-pro,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sihoo-b100,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/dell-s2725qc,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/dell-s2725qs,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/keychron-k2,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-mx-master-3s,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-c920s,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/benq-screenbar,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/huanuo-dual-monitor-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-dual-monitor-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ergotron-lx-monitor-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/corsair-mm350-pro-xl,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-desk-mat-studio,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/aothia-leather-desk-pad,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/rain-design-mstand,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/twelve-south-curve-flex,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/roost-v3-laptop-stand,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/anker-7in1-usb-c-hub,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/plugable-thunderbolt-4-dock,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/caldigit-ts4,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ergodriven-topo-comfort-mat,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/gelpro-newlife-eco-pro-mat,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sky-solutions-anti-fatigue-mat,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/under-desk-metal-cable-tray,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/eveo-j-channel-cable-kit,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/d-line-half-round-cord-cover,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/huanuo-adjustable-footrest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/everlasting-comfort-foot-rest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/mind-reader-adjustable-footrest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/anker-nano-desk-clamp-power-strip,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/anker-12-outlet-usb-c-power-strip,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/belkin-12-outlet-usb-surge,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/varidesk-pro-plus-36,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/flexispot-36-desk-converter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-36-desk-converter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/elgato-wave-mic-arm-lp,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/rode-psa1-plus,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/innogear-mic-boom-cable-mgmt,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/simple-houseware-desk-file-organizer,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-mesh-desk-organizer,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/simple-houseware-drawer-organizer-6pack,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/gorilla-grip-wrist-rest-set,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/3m-gel-keyboard-wrist-rest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/fellowes-gel-mouse-wrist-rest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/hyken,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ergear-48-x-24-inch-height,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/fezibo-standing-desk-48-24-inch,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/veken-63-x28-wider-large-standing,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/huanuo-32x19-inch-small-electric-standing,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-black-60-x-24-in,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/dumos-40-inch-electric-standing-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/cubiker-standing-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/bestoffice-ergonomic-office-chair,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/marsail-ergonomic-office-chair-office-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/tralt-office-chair-ergonomic-desk-chair,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/neo-chair-office-desk-chair-high,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/elabest-x100-ergonomic-mesh-office-chair,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-classic-puresoft-pu-padded,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-office-task-chair-with,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/dell-24-monitor-se2426h-23-8,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/philips-24-inch-computer-monitor-fhd,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sceptre-new-22-inch-gaming-monitor,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sansui-34-inch-curved-gaming-monitor,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/samsung-32-odyssey,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sceptre-27-inch-prime-gaming-monitor,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sansui-27-inch-curved-160hz-gaming,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/dell-27-plus-qhd-monitor-s2725dsm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ergear-single-monitor-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/wali-adjustable-single-monitor-arm-for,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-dual-monitor-desk-mount,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/nb-smoovex-monitor-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-stand-v002f-dual-led-lcd,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-dual-monitor-stand,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-single-13-to-38-inch,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ysagi-leather-desk-protector,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/afiing-desk-pad-protector-23-6,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ysagi-non-slip-leather-desk-pad,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/homieazicozi-cork-desk-mat-dual-sided,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/cadono-leather-desk-pad-protector-non,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ysagi-double-sided-desk-pad,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ohocut-scalloped-desk-mat,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/nulaxy-ergonomic-adjustable-laptop-stand-for,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/gogoonike-adjustable-laptop-stand-for-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/loxp-adjustable-laptop-stand,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-sturdy-and-portable-ergonomic,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/lamicall-aluminum-laptop-stand-for-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/tonmom-laptop-stand-for-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ugreen-vertical-laptop-stand-holder-for,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/anker-usb-c-hub,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ugreen-usb-c-hub-5-in,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/benfei-usb-c-hub-5-in,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/anker-laptop-docking-station-dual-monitor,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/hodo-usb-c-docking-station-dual,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/hiearcool-7-in-1-usb-c,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/dell-pro-laptop-docking-station-wd25,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-wired-qwerty-keyboard,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-m185-compact-ambidextrous-2-4,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-k400-plus-wireless-touch-tv,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/tecknet-wireless-mouse,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-mx-keys-s-wireless-keyboard,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/wegear-usb-wireless-mouse-for-laptop,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sablute-wireless-mouse-for-laptop,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-mk120-full-size-wired-keyboard,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-brio-101-full-hd-1080p,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/emeet-c960-1080p-webcam-with-microphone,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-c920x-hd-pro-pc-webcam,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/acer-a610-1080p-webcam-for-pc,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-mx-brio-ultra-hd-4k,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/xweiryn-webcam-for-pc-hd-1080p,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/emeet-s600-4k-webcam-for-streaming,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-c920e-hd-1080p-mic-enabled,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/kitchenclouds-kitchen-mat-cushioned-anti-fatigue,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/comfilife-anti-fatigue-floor-mat-3,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/featol-anti-fatigue-mat-for-standing,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ophanie-kitchen-mats-for-floor-3,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/gorilla-grip-cushioned-kitchen-mats-for,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/featol-0-9-anti-fatigue-mat,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/tranquilmoments-1-extra-thick-anti-fatigue,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/delamu-cord-hider,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/alex-tech-10ft-1-2-inch,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/yesbes-cord-hider-kit-for-wall,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/alex-tech-25ft-1-4-inch,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/yecaye-tv-cord-hider,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/alex-tech-50ft-1-4-inch,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/d-line-157in-cord-cover-kit,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/casazenith-foot-rest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/casazenith-foot-rest-under-desk-at,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/blisstrends-foot-rest-under-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/comfilife-foot-rest-for-under-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/tranquilrelax-foot-rest-under-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/comfyinlove-foot-rest-for-under-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vecelo-office-foot-rest-under-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-6-outlet-surge-protector,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/surge-protector-power-strip-chcore-5ft,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/superdanny-extension-cord-flat-plug-surge,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/belkin-12-outlet-surge-protector-power,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/one-beat-surge-protector-power-strip,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/yintar-6ft-surge-protector-power-strip,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/superdanny-10ft-flat-extension-cord-with,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/versadesk-powerpro-36-inch-electric-standing,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-26-in-single-top-standing,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/techorbits-32-in-standing-desk-converter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/raathionty-height-adjustable-standing-desk-converter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vivo-32-in-standing-desk-riser,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/jylh-joyseeker-32-standing-desk-converter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/mount-it-standing-desk-converter-32,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/innogear-boom-arm-microphone-mic-stand,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/fifine-bm88-low-profile-microphone-boom,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/todi-mic-arm-for-lightweight-mics,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sunmon-quadcast-boom-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/fifine-cs1-scissor-microphone-boom-arm,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/fifine-bm66-heavy-metal-microphone-boom,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/aa-audio-accessory-mic-arm-desk,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/wali-desk-file-organizer,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/marbrasse-pen-organizer-with-2-drawer,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/marbrasse-6-tier-paper-organizer-letter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/amazon-basics-wire-mesh-pen-holder,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/leketree-desk-organizers-and-accessories,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/supeasy-5-trays-paper-organizer-letter,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sinboun-letter-tray-paper-organizer-5,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/mosiso-wrist-rest-support-for-mouse,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/sushret-cloud-wrist-rest-keyboard,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/yolanda-keyboard-wrist-rest-memory-foam,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/vaydeer-wrist-rest-for-keyboard-and,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/ktrio-keyboard-wrist-rest-mouse-pad,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/demon-chest-ergocomfort-gel-wrist-rest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/laborio-computer-keyboard-wrist-rest,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/quntis-computer-monitor-lamp,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/samphon-monitor-light-bar,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/yeelight-monitor-light-bar,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/onway-curved-monitor-light-bar-with,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/samphon-rgb-monitor-light-bar,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/catpower-portable-laptop-monitor-light-bar,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/colorpanda-16-14-monitor-light-bar,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/quntis-curved-monitor-light-bar-15,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/pzloz-led-desk-lamp-for-office,product,"revamped (reference, main 9a3ceab)"
+desk.theworthguide.com,/products/logitech-brio-100-full-hd-1080p,product,"revamped (reference, main 9a3ceab)"
+brew.theworthguide.com,/,category_home,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products,index_or_static,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides,index_or_static,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/compare,index_or_static,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/affiliate-disclosure,index_or_static,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/espresso-machines,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/grinders,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/pour-over,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/kettles-scales,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/travel-espresso,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/frothers-accessories,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/cleaning-maintenance,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/coffee-canisters,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/categories/coffee-storage,subcategory,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-bambino,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-bambino-plus,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/gaggia-classic-pro,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/delonghi-dedica,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-barista-express,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/rancilio-silvia,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/flair-classic,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/wacaco-nanopresso,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/baratza-encore-esp,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-smart-grinder-pro,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/eureka-mignon-specialita,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/fellow-ode-gen-2,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/capresso-infinity,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/chemex-classic-6-cup,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/hario-v60-02,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/subminimal-nanofoamer,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/aeropress-original,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/normcore-v4-tamper,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/milk-frothing-pitcher,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/normcore-wdt-tool,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/blind-basket-58mm,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/puly-caff-plus,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-knock-box-mini,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-barista-pro,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-barista-touch-impress,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/delonghi-la-specialista,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/gaggia-classic-evo-pro,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/baratza-sette-270wi,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/comandante-c40,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/timemore-chestnut-c3,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/hario-skerton-pro,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/fellow-stagg-xf,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/clever-dripper,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/kalita-wave-155,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/wacaco-picopresso,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/outin-nano,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/wacaco-pixapresso,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/milk-pitcher-20oz,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/bodum-barista-frother,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/puck-screen-58mm,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/tamping-mat,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/maestri-espresso-scale,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/espresso-cleaning-tablets,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/espresso-descaler,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/bottomless-portafilter-58mm,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/baratza-sette-30,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/aeropress-xl,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/hario-switch-02,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/hario-switch-02-set,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/moccamaster-kbgv-select,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/urnex-cafiza,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/bodum-bistro-frother,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/hoomil-12oz-pitcher,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/silicone-tamping-mat,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/maestri-s1-mini-scale,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/fellow-atmos,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/atmos-12,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/atmos-storage,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/bodum-34oz-pour-over-coffee-maker,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/etekcity-food-kitchen-scale,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/amazon-basics-digital-kitchen-scale-with,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/soyok-food-scale-11lb-kitchen-scale,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/ggq-food-scale-33lb-digital-kitchen,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/ultrean-food-scale,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/mik-nana-food-scale,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/escali-primo-digital-food-scale-multi,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/cosori-gooseneck-electric-kettle-with-temperature,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/wacaco-minipresso-gr,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/flair-updated-49-pro-black-all,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/staresso-plus-sp300-manual-espresso-machine,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/bincoo-manual-espresso-maker-set-hand,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/flair-2go-portable,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/zulay-kitchen-milk-frother-handheld-electric,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/adorever-milk-frothing-pitcher,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/de-longhi-ecodecalk-universal-descaler,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/breville-bec250-espresso-machine-cleaning-tablets,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/affresh-coffee-maker-cleaner,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/tillbrook-breville-espresso-machine-compatible-descaler,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/jura-64308-cleaning-tablets-for-all,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/veken-coffee-canister-with-window,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/planetary-design-airscape-stainless-steel-coffee,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/kivy-vacuum-coffee-canister,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/tourdeus-glass-coffee-bean-canister,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/coffee-gator-coffee-canister,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/yszaxnsr-15oz-coffee-canister,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/hb-design-co-airtight-coffee-canister,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/lryybti-coffee-canisters-with-window-airtight,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/simple-modern-delta-coffee-canister-airtight,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/gaiakallon-vacuum-coffee-canister,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/styled-settings-coffee-storage-container,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/voonsctm-glass-jars-with-lids,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/ohtomber-22oz-stainless-steel-airtight-coffee,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/oggi-stainless-steel-coffee-canister-62,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/comsaf-glass-coffee-canister-jar-with,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/airscape-by-planetary-design,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/products/coffee-gator-coffee-canister-2,product,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-pour-over-grinder-under-200,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/breville-bambino-vs-bambino-plus,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-espresso-machine-with-built-in-grinder,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-espresso-machines-under-400,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/breville-vs-gaggia-vs-delonghi,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-espresso-grinders,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/home-barista-setup-under-500,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-pour-over-setups-2026,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-travel-espresso-makers,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/espresso-machine-buying-guide,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-milk-frothers-latte-art,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/baratza-encore-esp-vs-fellow-opus,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-espresso-machines-under-1000,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/cleaning-maintenance-essentials,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-coffee-scales-for-espresso,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-batch-brew-and-pour-over-stations,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/espresso-cleaning-routine-that-actually-sticks,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/budget-hand-grinders-for-travel-and-filter,guide,pending wave 1 (visible $ amounts present)
+brew.theworthguide.com,/guides/best-coffee-canisters,guide,pending wave 1 (visible $ amounts present)
+pet.theworthguide.com,/,category_home,pending wave 1
+pet.theworthguide.com,/products,index_or_static,pending wave 1
+pet.theworthguide.com,/guides,index_or_static,pending wave 1
+pet.theworthguide.com,/best,index_or_static,pending wave 1
+pet.theworthguide.com,/compare,index_or_static,pending wave 1
+pet.theworthguide.com,/affiliate-disclosure,index_or_static,pending wave 1
+pet.theworthguide.com,/category/dog-beds-crates,subcategory,pending wave 1
+pet.theworthguide.com,/category/cat-trees-scratchers,subcategory,pending wave 1
+pet.theworthguide.com,/category/feeders-fountains,subcategory,pending wave 1
+pet.theworthguide.com,/category/leashes-harnesses-collars,subcategory,pending wave 1
+pet.theworthguide.com,/category/grooming,subcategory,pending wave 1
+pet.theworthguide.com,/category/toys-enrichment,subcategory,pending wave 1
+pet.theworthguide.com,/category/travel,subcategory,pending wave 1
+pet.theworthguide.com,/category/litter,subcategory,pending wave 1
+pet.theworthguide.com,/category/training-waste,subcategory,pending wave 1
+pet.theworthguide.com,/category/health-wellness,subcategory,pending wave 1
+pet.theworthguide.com,/category/aquatics-aquarium,subcategory,pending wave 1
+pet.theworthguide.com,/category/small-pets,subcategory,pending wave 1
+pet.theworthguide.com,/category/bird-supplies,subcategory,pending wave 1
+pet.theworthguide.com,/category/reptile-supplies,subcategory,pending wave 1
+pet.theworthguide.com,/category/flea-tick-prevention,subcategory,pending wave 1
+pet.theworthguide.com,/category/puppy-kitten-starter,subcategory,pending wave 1
+pet.theworthguide.com,/category/slow-feeders,subcategory,pending wave 1
+pet.theworthguide.com,/best/apartment-pets,best_list,pending wave 1
+pet.theworthguide.com,/best/senior-pets,best_list,pending wave 1
+pet.theworthguide.com,/best/pullers-and-walkers,best_list,pending wave 1
+pet.theworthguide.com,/best/budget-starter-kit,best_list,pending wave 1
+pet.theworthguide.com,/compare/dog-beds,compare,pending wave 1
+pet.theworthguide.com,/compare/harnesses,compare,pending wave 1
+pet.theworthguide.com,/compare/cat-fountains,compare,pending wave 1
+pet.theworthguide.com,/compare/carriers,compare,pending wave 1
+pet.theworthguide.com,/products/furhaven-orthopedic-dog-bed,product,pending wave 1
+pet.theworthguide.com,/products/bedsure-orthopedic-dog-bed,product,pending wave 1
+pet.theworthguide.com,/products/feandrea-cat-tree,product,pending wave 1
+pet.theworthguide.com,/products/amazon-basics-cat-scratching-post,product,pending wave 1
+pet.theworthguide.com,/products/petsafe-drinkwell-platinum,product,pending wave 1
+pet.theworthguide.com,/products/petlibro-automatic-feeder,product,pending wave 1
+pet.theworthguide.com,/products/rabbitgoo-no-pull-harness,product,pending wave 1
+pet.theworthguide.com,/products/ruffwear-front-range-harness,product,pending wave 1
+pet.theworthguide.com,/products/blue-9-balance-harness,product,pending wave 1
+pet.theworthguide.com,/products/furminator-deshedding-tool,product,pending wave 1
+pet.theworthguide.com,/products/hertzko-slicker-brush,product,pending wave 1
+pet.theworthguide.com,/products/kong-classic,product,pending wave 1
+pet.theworthguide.com,/products/outward-hound-puzzle,product,pending wave 1
+pet.theworthguide.com,/products/chuckit-ultra-ball,product,pending wave 1
+pet.theworthguide.com,/products/sherpa-original-deluxe-carrier,product,pending wave 1
+pet.theworthguide.com,/products/sleepypod-mobile-pet-bed,product,pending wave 1
+pet.theworthguide.com,/products/modkat-litter-box,product,pending wave 1
+pet.theworthguide.com,/products/fresh-step-clumping-litter,product,pending wave 1
+pet.theworthguide.com,/products/petsafe-scoopfree-litter-box,product,pending wave 1
+pet.theworthguide.com,/products/thundershirt-anxiety-vest,product,pending wave 1
+pet.theworthguide.com,/products/greenies-dental-treats,product,pending wave 1
+pet.theworthguide.com,/products/zesty-paws-calming-bites,product,pending wave 1
+pet.theworthguide.com,/products/kong-extreme,product,pending wave 1
+pet.theworthguide.com,/products/west-paw-qwizl,product,pending wave 1
+pet.theworthguide.com,/products/chuckit-sport-launcher,product,pending wave 1
+pet.theworthguide.com,/products/nina-ottosson-dog-tornado,product,pending wave 1
+pet.theworthguide.com,/products/ruffwear-flat-out-leash,product,pending wave 1
+pet.theworthguide.com,/products/kurgo-wander-bench-cover,product,pending wave 1
+pet.theworthguide.com,/products/furminator-cat-deshedding,product,pending wave 1
+pet.theworthguide.com,/products/safari-nail-trimmer,product,pending wave 1
+pet.theworthguide.com,/products/neater-feeder-deluxe,product,pending wave 1
+pet.theworthguide.com,/products/petsafe-scoopfree-tray-refills,product,pending wave 1
+pet.theworthguide.com,/products/frisco-double-diner,product,pending wave 1
+pet.theworthguide.com,/products/petsafe-easy-walk-harness,product,pending wave 1
+pet.theworthguide.com,/products/kong-puppy,product,pending wave 1
+pet.theworthguide.com,/products/aqueon-20-gallon-led-starter-kit,product,pending wave 1
+pet.theworthguide.com,/products/fluval-c3-power-filter,product,pending wave 1
+pet.theworthguide.com,/products/api-freshwater-master-test-kit,product,pending wave 1
+pet.theworthguide.com,/products/aqueon-pro-heater-50w,product,pending wave 1
+pet.theworthguide.com,/products/aqueon-quietflow-cartridges-medium,product,pending wave 1
+pet.theworthguide.com,/products/oxbow-western-timothy-hay,product,pending wave 1
+pet.theworthguide.com,/products/oxbow-essentials-guinea-pig-food,product,pending wave 1
+pet.theworthguide.com,/products/prevue-parakeet-starter-cage,product,pending wave 1
+pet.theworthguide.com,/products/super-bird-star-gazer-toy,product,pending wave 1
+pet.theworthguide.com,/products/zoo-med-reptisun-5-uvb-24,product,pending wave 1
+pet.theworthguide.com,/products/zoo-med-repti-basking-spot-100w,product,pending wave 1
+pet.theworthguide.com,/products/coconut-reptile-hide,product,pending wave 1
+pet.theworthguide.com,/products/seresto-large-dog-collar,product,pending wave 1
+pet.theworthguide.com,/products/tick-key-remover,product,pending wave 1
+pet.theworthguide.com,/products/seresto-cat-collar,product,pending wave 1
+pet.theworthguide.com,/products/midwest-puppy-starter-kit-medium,product,pending wave 1
+pet.theworthguide.com,/products/amazon-basics-puppy-training-pads,product,pending wave 1
+pet.theworthguide.com,/products/nylabone-puppy-teething-chew,product,pending wave 1
+pet.theworthguide.com,/products/purina-kitten-chow,product,pending wave 1
+pet.theworthguide.com,/products/gotags-slide-on-id-tag,product,pending wave 1
+pet.theworthguide.com,/products/petfusion-ultimate-cat-scratcher,product,pending wave 1
+pet.theworthguide.com,/products/millers-forge-nail-clippers,product,pending wave 1
+pet.theworthguide.com,/products/petmate-kennel-cab-carrier,product,pending wave 1
+pet.theworthguide.com,/products/petsafe-busy-buddy-tug-a-jug,product,pending wave 1
+pet.theworthguide.com,/products/kong-wobbler,product,pending wave 1
+pet.theworthguide.com,/products/smartcat-ultimate-scratching-post,product,pending wave 1
+pet.theworthguide.com,/products/scratch-lounge-original-xl,product,pending wave 1
+pet.theworthguide.com,/products/kitty-city-xl-scratch-pads,product,pending wave 1
+pet.theworthguide.com,/products/outward-hound-slow-feeder,product,pending wave 1
+pet.theworthguide.com,/products/eheyciga-orthopedic-extra-large-dog-bed,product,pending wave 1
+pet.theworthguide.com,/products/ksiia-washable-dog-bed-medium-size,product,pending wave 1
+pet.theworthguide.com,/products/bedsure-calming-dog-bed-medium-size,product,pending wave 1
+pet.theworthguide.com,/products/invenho-small-dog-bed-for-small,product,pending wave 1
+pet.theworthguide.com,/products/bfpethome-orthopedic-washable-large-dog-bed,product,pending wave 1
+pet.theworthguide.com,/products/spotted-play-orthopedic-dog-bed-with,product,pending wave 1
+pet.theworthguide.com,/products/bedsure-supportmax-extra-thick-orthopedic-xl,product,pending wave 1
+pet.theworthguide.com,/products/jollyvogue-small-dog-bed,product,pending wave 1
+pet.theworthguide.com,/products/fdw-54-cat-tree-tower-dark,product,pending wave 1
+pet.theworthguide.com,/products/yunique-cat-tree-with-cat-condo,product,pending wave 1
+pet.theworthguide.com,/products/peekab-32-tall-cat-scratching-post,product,pending wave 1
+pet.theworthguide.com,/products/heybly-cat-tree-with-toy,product,pending wave 1
+pet.theworthguide.com,/products/veken-innovation-award-winner-stainless-steel,product,pending wave 1
+pet.theworthguide.com,/products/veken-innovation-award-winner-95oz-2,product,pending wave 1
+pet.theworthguide.com,/products/oneisall-7l-230oz-dog-water-fountain,product,pending wave 1
+pet.theworthguide.com,/products/neareal-cat-water-fountain-stainless-steel,product,pending wave 1
+pet.theworthguide.com,/products/grookpet-dog-water-fountain-for-large,product,pending wave 1
+pet.theworthguide.com,/products/sharlovy-no-spill-dog-water-fountain,product,pending wave 1
+pet.theworthguide.com,/products/taglory-rope-dog-leash-for-medium,product,pending wave 1
+pet.theworthguide.com,/products/joytale-reflective-dog-leash-for-medium,product,pending wave 1
+pet.theworthguide.com,/products/fida-heavy-duty-dog-leash-for,product,pending wave 1
+pet.theworthguide.com,/products/2-hounds-design-freedom-no-pull,product,pending wave 1
+pet.theworthguide.com,/products/best-pet-supplies-voyager-nylon-dog,product,pending wave 1
+pet.theworthguide.com,/products/aumuca-cat-brush-for-shedding,product,pending wave 1
+pet.theworthguide.com,/products/swihauk-self-cleaning-slicker-brush-skin,product,pending wave 1
+pet.theworthguide.com,/products/dipoo-self-cleaning-shedding-brush-skin,product,pending wave 1
+pet.theworthguide.com,/products/cooncicy-deshedding-brush-for-cat-small,product,pending wave 1
+pet.theworthguide.com,/products/yiefur-cat-brush-for-shedding,product,pending wave 1
+pet.theworthguide.com,/products/benebone-wishbone-dog-chew-toy-for,product,pending wave 1
+pet.theworthguide.com,/products/lehni-soft-sided-cat-dog-pet,product,pending wave 1
+pet.theworthguide.com,/products/urpower-dog-car-seat-cover-for,product,pending wave 1
+pet.theworthguide.com,/products/vceoa-17-5-x11-x11-pet,product,pending wave 1
+pet.theworthguide.com,/products/victoper-dog-car-seat-cover,product,pending wave 1
+pet.theworthguide.com,/products/henkelion-cat-carriers-dog-carrier-pet,product,pending wave 1
+pet.theworthguide.com,/products/morpilot-cat-carrier-soft-for-large,product,pending wave 1
+pet.theworthguide.com,/products/dr-elsey-s-ultra-unscented-clumping,product,pending wave 1
+pet.theworthguide.com,/products/kiseng-stainless-steel-cat-litter-box,product,pending wave 1
+pet.theworthguide.com,/products/arm-hammer-slide-platinum-easy-clean,product,pending wave 1
+pet.theworthguide.com,/products/petmate-basic-open-plastic-cat-litter,product,pending wave 1
+pet.theworthguide.com,/products/onebug-high-sided-stainless-steel-xl,product,pending wave 1
+pet.theworthguide.com,/products/cat-s-pride-antibacterial-litter,product,pending wave 1
+pet.theworthguide.com,/products/amazon-basics-leak-proof-dog-and,product,pending wave 1
+pet.theworthguide.com,/products/amazon-basics-x-large-heavy-duty,product,pending wave 1
+pet.theworthguide.com,/products/powools-puppy-pads-for-dogs,product,pending wave 1
+pet.theworthguide.com,/products/glad-for-pets-activated-carbon-disposable,product,pending wave 1
+pet.theworthguide.com,/products/cocoyo-best-value-22-x22-dog,product,pending wave 1
+pet.theworthguide.com,/products/powools-puppy-pads-for-dogs-2,product,pending wave 1
+pet.theworthguide.com,/products/cocoyo-training-pads,product,pending wave 1
+pet.theworthguide.com,/products/honey-care-all-absorb,product,pending wave 1
+pet.theworthguide.com,/products/dogcator-dog-pee-pads-extra-large,product,pending wave 1
+pet.theworthguide.com,/products/purina-pro-plan-veterinary-supplements-calming,product,pending wave 1
+pet.theworthguide.com,/products/jasper-dog-toothbrush,product,pending wave 1
+pet.theworthguide.com,/products/woof-pupsicle-refill-pops-for-calming,product,pending wave 1
+pet.theworthguide.com,/products/pets-pupps-pet-toothbrush-for-dogs,product,pending wave 1
+pet.theworthguide.com,/products/zesty-paws-calming-chews-for-dogs,product,pending wave 1
+pet.theworthguide.com,/products/juwantu-dog-toothbrush-set-of-8,product,pending wave 1
+pet.theworthguide.com,/products/therapetmd-60-day-dog-calming-diffuser,product,pending wave 1
+pet.theworthguide.com,/products/tetra-whisper-bio-bag-large-filter,product,pending wave 1
+pet.theworthguide.com,/products/seachem-prime-500-ml-17-fl,product,pending wave 1
+pet.theworthguide.com,/products/aqueon-aquarium-fish-tank-replacement-filter,product,pending wave 1
+pet.theworthguide.com,/products/tetramin-tropical-flakes-fish-food,product,pending wave 1
+pet.theworthguide.com,/products/tetra-goldfish-flakes-fish-food,product,pending wave 1
+pet.theworthguide.com,/products/oxbow-essentials-adult-rabbit-food,product,pending wave 1
+pet.theworthguide.com,/products/snaat-20-planes-guinea-pig-cages,product,pending wave 1
+pet.theworthguide.com,/products/mcage-deluxe-double-unit-two-full,product,pending wave 1
+pet.theworthguide.com,/products/kaytee-timothy-hay,product,pending wave 1
+pet.theworthguide.com,/products/vevor-metal-small-animal-cage-34,product,pending wave 1
+pet.theworthguide.com,/products/critter-nation-by-midwest-double-unit,product,pending wave 1
+pet.theworthguide.com,/products/kaytee-fiesta-rabbit-food,product,pending wave 1
+pet.theworthguide.com,/products/hotamo-wooden-hamster-cage-with-acrylic,product,pending wave 1
+pet.theworthguide.com,/products/viscoo-upgraded-encrypted-metal-46-inch,product,pending wave 1
+pet.theworthguide.com,/products/lovyococo-bird-shredding-foraging-toys-parakeet,product,pending wave 1
+pet.theworthguide.com,/products/a-e-cage-company-vitapol-smakers,product,pending wave 1
+pet.theworthguide.com,/products/yixund-bird-toys-parrot-toys-for,product,pending wave 1
+pet.theworthguide.com,/products/prevue-pet-parakeet-manor-bird-cage,product,pending wave 1
+pet.theworthguide.com,/products/kyouki-bird-toys-parrot-toys-natural,product,pending wave 1
+pet.theworthguide.com,/products/vevor-30-inch-flight-bird-cage,product,pending wave 1
+pet.theworthguide.com,/products/lovyococo-bird-toys-conure-toys-bird,product,pending wave 1
+pet.theworthguide.com,/products/fluker-s-incandescent-basking-spotlight-bulbs,product,pending wave 1
+pet.theworthguide.com,/products/fluker-s-buffet-blend-aquatic-formula,product,pending wave 1
+pet.theworthguide.com,/products/fluker-s-repta-clamp-lamp,product,pending wave 1
+pet.theworthguide.com,/products/tetra-reptomin-floating-food-sticks-for,product,pending wave 1
+pet.theworthguide.com,/products/reptiking-reptile-heat-bulb-lamp,product,pending wave 1
+pet.theworthguide.com,/products/fluker-s-freeze-dried-river-shrimp,product,pending wave 1
+pet.theworthguide.com,/products/reptiking-reptile-light-fixture,product,pending wave 1
+pet.theworthguide.com,/products/seresto-small-dog-vet-recommended-flea,product,pending wave 1
+pet.theworthguide.com,/products/hartz-ultraguard-flea-tick-collar-for,product,pending wave 1
+pet.theworthguide.com,/products/arncre-flea-and-tick-collar-for,product,pending wave 1
+pet.theworthguide.com,/products/hartz-ultraguard-pro-reflective-flea-tick,product,pending wave 1
+pet.theworthguide.com,/products/petarmor-extend-large-dog-flea-and,product,pending wave 1
+pet.theworthguide.com,/products/vicsom-flea-collar-for-cats,product,pending wave 1
+pet.theworthguide.com,/products/wondercide-dog-collar,product,pending wave 1
+pet.theworthguide.com,/products/wowflash-50-count-30-x-36,product,pending wave 1
+pet.theworthguide.com,/products/kong-puppy-natural-rubber-teething-chew,product,pending wave 1
+pet.theworthguide.com,/products/nylabone-new-puppy-starter-kit,product,pending wave 1
+pet.theworthguide.com,/products/cocoyo-best-value-training-pads-30,product,pending wave 1
+pet.theworthguide.com,/products/nylabone-puppy-chew-teething-ring-bone,product,pending wave 1
+pet.theworthguide.com,/products/mateeylife-2-pack-slow-feeder-dog,product,pending wave 1
+pet.theworthguide.com,/products/lukito-lick-mat-for-dogs-cats,product,pending wave 1
+pet.theworthguide.com,/products/woof-walkabout-dog-puzzle-slow-feeder,product,pending wave 1
+pet.theworthguide.com,/products/le-tauci-ceramic-slow-feeder-dog,product,pending wave 1
+pet.theworthguide.com,/products/yipetor-dog-lick-bowl,product,pending wave 1
+pet.theworthguide.com,/products/feedoo-slow-feeder-dog-bowl-2cups,product,pending wave 1
+pet.theworthguide.com,/products/boyoyo-interactive-dog-toys,product,pending wave 1
+pet.theworthguide.com,/products/keegud-slow-feeder-dog-bowls-insert,product,pending wave 1
+pet.theworthguide.com,/products/kilin-slow-feeder-dog-licking-bowl,product,pending wave 1
+pet.theworthguide.com,/guides/dog-beds-crate-vs-orthopedic,guide,pending wave 1
+pet.theworthguide.com,/guides/cat-fountain-vs-bowl,guide,pending wave 1
+pet.theworthguide.com,/guides/harness-vs-collar-for-pullers,guide,pending wave 1
+pet.theworthguide.com,/guides/kong-classic-vs-extreme,guide,pending wave 1
+pet.theworthguide.com,/guides/best-dog-puzzle-toys-for-boredom,guide,pending wave 1
+pet.theworthguide.com,/guides/best-cat-scratcher-for-indoor-cats,guide,pending wave 1
+pet.theworthguide.com,/guides/best-slow-feeder-dog-bowls,guide,pending wave 1
+sleep.theworthguide.com,/,category_home,pending wave 1
+sleep.theworthguide.com,/products,index_or_static,pending wave 1
+sleep.theworthguide.com,/guides,index_or_static,pending wave 1
+sleep.theworthguide.com,/best,index_or_static,pending wave 1
+sleep.theworthguide.com,/compare,index_or_static,pending wave 1
+sleep.theworthguide.com,/affiliate-disclosure,index_or_static,pending wave 1
+sleep.theworthguide.com,/category/pillows,subcategory,pending wave 1
+sleep.theworthguide.com,/category/mattress-toppers,subcategory,pending wave 1
+sleep.theworthguide.com,/category/sheets-bedding,subcategory,pending wave 1
+sleep.theworthguide.com,/category/mattress-protectors,subcategory,pending wave 1
+sleep.theworthguide.com,/category/weighted-blankets,subcategory,pending wave 1
+sleep.theworthguide.com,/category/cooling-bedding,subcategory,pending wave 1
+sleep.theworthguide.com,/category/blackout-curtains-masks,subcategory,pending wave 1
+sleep.theworthguide.com,/category/white-noise-sound-machines,subcategory,pending wave 1
+sleep.theworthguide.com,/category/bedtime-lighting,subcategory,pending wave 1
+sleep.theworthguide.com,/category/sleep-air-humidity,subcategory,pending wave 1
+sleep.theworthguide.com,/category/sleep-masks,subcategory,pending wave 1
+sleep.theworthguide.com,/category/earplugs,subcategory,pending wave 1
+sleep.theworthguide.com,/best/side-sleepers,best_list,pending wave 1
+sleep.theworthguide.com,/best/hot-sleepers,best_list,pending wave 1
+sleep.theworthguide.com,/best/apartment-blackout,best_list,pending wave 1
+sleep.theworthguide.com,/best/budget-starter-kit,best_list,pending wave 1
+sleep.theworthguide.com,/compare/pillows,compare,pending wave 1
+sleep.theworthguide.com,/compare/sound-machines,compare,pending wave 1
+sleep.theworthguide.com,/compare/toppers,compare,pending wave 1
+sleep.theworthguide.com,/compare/darkness,compare,pending wave 1
+sleep.theworthguide.com,/products/coop-original-adjustable-pillow,product,pending wave 1
+sleep.theworthguide.com,/products/coop-eden-pillow,product,pending wave 1
+sleep.theworthguide.com,/products/coop-eden-cool-plus,product,pending wave 1
+sleep.theworthguide.com,/products/beckham-hotel-collection-pillows,product,pending wave 1
+sleep.theworthguide.com,/products/purple-harmony-pillow,product,pending wave 1
+sleep.theworthguide.com,/products/tempur-pedic-tempur-cloud-pillow,product,pending wave 1
+sleep.theworthguide.com,/products/eli-elm-contoured-pillow,product,pending wave 1
+sleep.theworthguide.com,/products/linenspa-2-inch-gel-memory-foam-topper,product,pending wave 1
+sleep.theworthguide.com,/products/linenspa-3-inch-gel-memory-foam-topper,product,pending wave 1
+sleep.theworthguide.com,/products/tempur-adapt-cooling-topper,product,pending wave 1
+sleep.theworthguide.com,/products/latex-mattress-topper-2-inch,product,pending wave 1
+sleep.theworthguide.com,/products/amazon-basics-microfiber-sheet-set,product,pending wave 1
+sleep.theworthguide.com,/products/shilucheng-cotton-sheet-set,product,pending wave 1
+sleep.theworthguide.com,/products/beckham-hotel-collection-sheets,product,pending wave 1
+sleep.theworthguide.com,/products/down-alternative-comforter,product,pending wave 1
+sleep.theworthguide.com,/products/percale-cotton-sheet-set,product,pending wave 1
+sleep.theworthguide.com,/products/saferest-mattress-protector,product,pending wave 1
+sleep.theworthguide.com,/products/utopia-bamboo-mattress-protector,product,pending wave 1
+sleep.theworthguide.com,/products/zippered-mattress-encasement,product,pending wave 1
+sleep.theworthguide.com,/products/pillow-protector-pair,product,pending wave 1
+sleep.theworthguide.com,/products/gravity-weighted-blanket-15lb,product,pending wave 1
+sleep.theworthguide.com,/products/ynm-weighted-blanket-15lb,product,pending wave 1
+sleep.theworthguide.com,/products/cooling-weighted-blanket,product,pending wave 1
+sleep.theworthguide.com,/products/weighted-blanket-20lb,product,pending wave 1
+sleep.theworthguide.com,/products/cooling-bamboo-sheet-set,product,pending wave 1
+sleep.theworthguide.com,/products/eucalyptus-lyocell-sheets,product,pending wave 1
+sleep.theworthguide.com,/products/cooling-mattress-pad,product,pending wave 1
+sleep.theworthguide.com,/products/cooling-comforter-insert,product,pending wave 1
+sleep.theworthguide.com,/products/nicetown-blackout-curtains,product,pending wave 1
+sleep.theworthguide.com,/products/manta-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/alaska-bear-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/mzoo-contoured-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/blackout-curtain-liner,product,pending wave 1
+sleep.theworthguide.com,/products/yogasleep-dohm-classic,product,pending wave 1
+sleep.theworthguide.com,/products/lectrofan-classic,product,pending wave 1
+sleep.theworthguide.com,/products/hatch-restore-3,product,pending wave 1
+sleep.theworthguide.com,/products/soundcore-sleep-a20,product,pending wave 1
+sleep.theworthguide.com,/products/philips-smartsleep-hf3520,product,pending wave 1
+sleep.theworthguide.com,/products/hatch-restore-lighting,product,pending wave 1
+sleep.theworthguide.com,/products/dimmable-bedside-lamp,product,pending wave 1
+sleep.theworthguide.com,/products/red-night-light-sleep,product,pending wave 1
+sleep.theworthguide.com,/products/levoit-lv600s-humidifier,product,pending wave 1
+sleep.theworthguide.com,/products/honeywell-hul570w-humidifier,product,pending wave 1
+sleep.theworthguide.com,/products/bedroom-air-purifier-quiet,product,pending wave 1
+sleep.theworthguide.com,/products/loop-quiet-earplugs,product,pending wave 1
+sleep.theworthguide.com,/products/loop-quiet,product,pending wave 1
+sleep.theworthguide.com,/products/macks,product,pending wave 1
+sleep.theworthguide.com,/products/loop-mask,product,pending wave 1
+sleep.theworthguide.com,/products/utopia-bedding-gusset-bed-pillow,product,pending wave 1
+sleep.theworthguide.com,/products/jollyvogue-pillows-queen-size-set-of,product,pending wave 1
+sleep.theworthguide.com,/products/sasttie-firm-pillows-queen-size-set,product,pending wave 1
+sleep.theworthguide.com,/products/bedlore-queen-mattress-topper,product,pending wave 1
+sleep.theworthguide.com,/products/niagara-sleep-solution-100-cotton-top,product,pending wave 1
+sleep.theworthguide.com,/products/mlily-ego-3-inch-queen-mattress,product,pending wave 1
+sleep.theworthguide.com,/products/olixis-2-inch-twin-cooling-gel,product,pending wave 1
+sleep.theworthguide.com,/products/sinweek-2-inch-gel-memory-foam,product,pending wave 1
+sleep.theworthguide.com,/products/whatsbedding-4-inch-memory-foam-mattress,product,pending wave 1
+sleep.theworthguide.com,/products/cgk-unlimited-queen-size-4-piece,product,pending wave 1
+sleep.theworthguide.com,/products/amazon-basics-lightweight-super-soft-breathable,product,pending wave 1
+sleep.theworthguide.com,/products/utopia-bedding-queen-sheets-set,product,pending wave 1
+sleep.theworthguide.com,/products/mellanni-iconic-4-piece-bed-sheet,product,pending wave 1
+sleep.theworthguide.com,/products/lane-linen-queen-sheets-100-organic,product,pending wave 1
+sleep.theworthguide.com,/products/bedlore-waterproof-mattress-protector,product,pending wave 1
+sleep.theworthguide.com,/products/utopia-bedding-waterproof-twin-size-mattress,product,pending wave 1
+sleep.theworthguide.com,/products/plushdeluxe-bamboo-waterproof-mattress-protector,product,pending wave 1
+sleep.theworthguide.com,/products/springspirit-queen-size-mattress-protector-waterproof,product,pending wave 1
+sleep.theworthguide.com,/products/bedlore-waterproof-king-size-mattress-protector,product,pending wave 1
+sleep.theworthguide.com,/products/amazon-basics-waterproof-mattress-protector,product,pending wave 1
+sleep.theworthguide.com,/products/yescool-weighted-blanket-for-adults-20lbs,product,pending wave 1
+sleep.theworthguide.com,/products/l-agraty-weighted-blanket-for-adults,product,pending wave 1
+sleep.theworthguide.com,/products/mr-sandman-cooling-weighted-blanket-for,product,pending wave 1
+sleep.theworthguide.com,/products/topcee-weighted-blanket,product,pending wave 1
+sleep.theworthguide.com,/products/wemore-weighted-blanket-for-adult-15lbs,product,pending wave 1
+sleep.theworthguide.com,/products/an-cooling-weighted-blanket-for-adults,product,pending wave 1
+sleep.theworthguide.com,/products/downcool-comforters-queen-size,product,pending wave 1
+sleep.theworthguide.com,/products/hyleory-queen-comforter,product,pending wave 1
+sleep.theworthguide.com,/products/pure-bamboo-king-sheets,product,pending wave 1
+sleep.theworthguide.com,/products/bedsure-queen-sheet-set-4-pieces,product,pending wave 1
+sleep.theworthguide.com,/products/cohome-all-season-queen-size-cooling,product,pending wave 1
+sleep.theworthguide.com,/products/comfort-spaces-100-cotton-percale-sheets,product,pending wave 1
+sleep.theworthguide.com,/products/100-blackout-shield-linen-total-blackout,product,pending wave 1
+sleep.theworthguide.com,/products/myhalos-sleep-mask-for-men-and,product,pending wave 1
+sleep.theworthguide.com,/products/chrisdowa-blackout-curtains-for-bedroom-and,product,pending wave 1
+sleep.theworthguide.com,/products/miulee-100-blackout-linen-curtains-for,product,pending wave 1
+sleep.theworthguide.com,/products/miulee-blackout-curtains-for-bedroom-2,product,pending wave 1
+sleep.theworthguide.com,/products/magicteam-sound-white-noise-machine-with,product,pending wave 1
+sleep.theworthguide.com,/products/brownnoise-brown-noise-sound-machine-with,product,pending wave 1
+sleep.theworthguide.com,/products/dreamegg-portable-noise-machine-for-baby,product,pending wave 1
+sleep.theworthguide.com,/products/momcozy-smart-baby-sound-machine-with,product,pending wave 1
+sleep.theworthguide.com,/products/babelio-pocket-mini-portable-white-noise,product,pending wave 1
+sleep.theworthguide.com,/products/homedics-soundsleep-white-noise-sound-machine,product,pending wave 1
+sleep.theworthguide.com,/products/odokee-sunrise-alarm-clock-white-noise,product,pending wave 1
+sleep.theworthguide.com,/products/peakeep-night-light-digital-alarm-clock,product,pending wave 1
+sleep.theworthguide.com,/products/jall-full-screen-wake-up-light,product,pending wave 1
+sleep.theworthguide.com,/products/wkzay-sunrise-alarm-clock-with-sound,product,pending wave 1
+sleep.theworthguide.com,/products/reacher-wood-grain-sunrise-alarm-clock,product,pending wave 1
+sleep.theworthguide.com,/products/vicsoon-sunrise-alarm-clock-with-wake,product,pending wave 1
+sleep.theworthguide.com,/products/levoit-top-fill-humidifiers-for-bedroom,product,pending wave 1
+sleep.theworthguide.com,/products/dreo-3l-humidifiers-for-bedroom,product,pending wave 1
+sleep.theworthguide.com,/products/coway-air-purifier-for-home-up,product,pending wave 1
+sleep.theworthguide.com,/products/frida-3-in-1-cool-mist,product,pending wave 1
+sleep.theworthguide.com,/products/voopnu-air-purifiers-for-home,product,pending wave 1
+sleep.theworthguide.com,/products/dreo-4l-humidifiers-for-bedroom,product,pending wave 1
+sleep.theworthguide.com,/products/winix-5510-air-purifier-new-generation,product,pending wave 1
+sleep.theworthguide.com,/products/mzoo-luxury-sleep-mask-for-women,product,pending wave 1
+sleep.theworthguide.com,/products/nodpod-patented-gentle-pressure-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/fygrip-3d-eye-mask-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/litbear-sleep-mask-for-side-sleeper,product,pending wave 1
+sleep.theworthguide.com,/products/beevines-100-mulberry-silk-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/vynix-sleep-mask-for-men-women,product,pending wave 1
+sleep.theworthguide.com,/products/lky-digital-sleep-mask-for-side,product,pending wave 1
+sleep.theworthguide.com,/products/moeaseii-sleep-mask-total-blackout-3d,product,pending wave 1
+sleep.theworthguide.com,/products/facemoon-3d-blackout-weighted-sleep-mask,product,pending wave 1
+sleep.theworthguide.com,/products/flents-protechs-quiet-time-foam-ear,product,pending wave 1
+sleep.theworthguide.com,/products/loop-switch-2-adjustable-ear-plugs,product,pending wave 1
+sleep.theworthguide.com,/products/mack-s-pillow-soft-silicone-earplugs,product,pending wave 1
+sleep.theworthguide.com,/products/lysian-soft-foam-ear-plugs-for,product,pending wave 1
+sleep.theworthguide.com,/products/peace-quiet-pq-wax-ear-plugs,product,pending wave 1
+sleep.theworthguide.com,/products/loop-engage-2-ear-plugs,product,pending wave 1
+sleep.theworthguide.com,/products/justrvn-ear-plugs-for-sleeping,product,pending wave 1
+sleep.theworthguide.com,/products/clxynd-ear-plugs-for-sleeping-noise,product,pending wave 1
+sleep.theworthguide.com,/guides/dohm-vs-lectrofan,guide,pending wave 1
+sleep.theworthguide.com,/guides/best-sleep-mask-for-side-sleepers,guide,pending wave 1
+sleep.theworthguide.com,/guides/bamboo-vs-eucalyptus-sheets,guide,pending wave 1
+sleep.theworthguide.com,/guides/best-earplugs-for-sleep,guide,pending wave 1
+sleep.theworthguide.com,/guides/how-to-choose-a-pillow,guide,pending wave 1
+sleep.theworthguide.com,/guides/mattress-topper-vs-new-mattress,guide,pending wave 1
+sleep.theworthguide.com,/guides/build-a-better-sleep-environment,guide,pending wave 1
+sleep.theworthguide.com,/guides/weighted-blankets-and-cooling-sheets,guide,pending wave 1
+car.theworthguide.com,/,category_home,pending wave 2
+car.theworthguide.com,/products,index_or_static,pending wave 2
+car.theworthguide.com,/compare,index_or_static,pending wave 2
+car.theworthguide.com,/categories/dash-cams,subcategory,pending wave 2
+car.theworthguide.com,/categories/roadside,subcategory,pending wave 2
+car.theworthguide.com,/categories/cabin,subcategory,pending wave 2
+car.theworthguide.com,/categories/diagnostics,subcategory,pending wave 2
+car.theworthguide.com,/categories/cleaning,subcategory,pending wave 2
+car.theworthguide.com,/categories/safety,subcategory,pending wave 2
+car.theworthguide.com,/compare/noco-vs-gooloo,compare,pending wave 2
+car.theworthguide.com,/guides,index_or_static,pending wave 2
+car.theworthguide.com,/guides/best-jump-starters,guide,pending wave 2
+car.theworthguide.com,/guides/best-dash-cams,guide,pending wave 2
+car.theworthguide.com,/guides/best-obd2-scanners,guide,pending wave 2
+tech.theworthguide.com,/,category_home,pending wave 2
+tech.theworthguide.com,/products,index_or_static,pending wave 2
+tech.theworthguide.com,/compare,index_or_static,pending wave 2
+tech.theworthguide.com,/amazon-devices,index_or_static,pending wave 2
+tech.theworthguide.com,/categories/headphones,subcategory,pending wave 2
+tech.theworthguide.com,/categories/speakers,subcategory,pending wave 2
+tech.theworthguide.com,/categories/power,subcategory,pending wave 2
+tech.theworthguide.com,/categories/storage,subcategory,pending wave 2
+tech.theworthguide.com,/categories/input,subcategory,pending wave 2
+tech.theworthguide.com,/categories/webcams,subcategory,pending wave 2
+tech.theworthguide.com,/categories/monitors,subcategory,pending wave 2
+tech.theworthguide.com,/categories/amazon-devices,subcategory,pending wave 2
+tech.theworthguide.com,/compare/airpods-vs-xm5,compare,pending wave 2
+tech.theworthguide.com,/compare/xm5-vs-q30,compare,pending wave 2
+tech.theworthguide.com,/compare/xm5-vs-xm4,compare,pending wave 2
+tech.theworthguide.com,/compare/dot-vs-max,compare,pending wave 2
+tech.theworthguide.com,/compare/t7-vs-extreme,compare,pending wave 2
+tech.theworthguide.com,/compare/c920-vs-brio,compare,pending wave 2
+tech.theworthguide.com,/guides,index_or_static,pending wave 2
+tech.theworthguide.com,/guides/best-noise-cancelling-headphones,guide,pending wave 2
+tech.theworthguide.com,/guides/best-portable-chargers,guide,pending wave 2
+tech.theworthguide.com,/guides/best-webcams-for-work,guide,pending wave 2
+bag.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+bath.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+clean.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+fit.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+groom.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+kitchen.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+tool.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+travel.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+watch.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+yard.theworthguide.com,/,category_home,pending wave 3 (static hub c/ page)
+theworthguide.com,/,hub,out of scope (hub; links only)
+theworthguide.com,/guides,hub,out of scope (hub; links only)
+theworthguide.com,/value,hub,out of scope (hub; links only)
+theworthguide.com,/categories,hub,out of scope (hub; links only)
+theworthguide.com,/links,hub,out of scope (hub; links only)
