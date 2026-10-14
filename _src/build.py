@@ -96,7 +96,7 @@ def cat_card(s,line,cta):
 def build_index():
     cards=''.join(cat_card(s,s[4],'View guide') for s in SITES)
     m=f'''<section class="hero">{NOTE}<div><p class="kicker">The Worth Guide</p><h1>Buy it once.<br><em>Skip the rest.</em></h1><p class="sub">In every top 10: our pick, the value pick, and the one people already buy most.</p>
-<p class="ctas"><a class="btn" href="/categories">Browse categories</a><a class="btn ghost" href="/value">See value picks</a></p></div>{mosaic(["kitchen","desk","brew"])}</section>
+<p class="ctas"><a class="btn" href="/categories">Browse categories</a><a class="btn ghost" href="/value">See value picks</a><a class="btn ghost" href="/{GIFT_SLUG}">Budget-friendly gifts</a></p></div>{mosaic(["kitchen","desk","brew"])}</section>
 <section class="band quote"><p>“We test. We compare. We tell you what’s actually worth it.”</p><p class="kicker">— Editorial values, real value.</p></section>
 <section class="sec"><div class="sec-h"><div><h2>Browse guides by category</h2><p>{len(SITES)} guides, each with its own Top 10.</p></div><a class="more" href="/categories">All categories →</a></div><div class="grid">{cards}</div></section>'''
     return hub('','The Worth Guide','The Worth Guide. Buy it once. Skip the rest. In every top 10: our pick, the value pick, and the one people already buy most.',m,'<meta name="p:domain_verify" content="c5f8d97e196c5b58af1a1045b7d87bb3"/>\n')
@@ -112,9 +112,10 @@ def build_guides():
         a1,n1,a2,n2,txt,_=v['vs']
         vs.append(f'<a class="card vsc" href="{sub(c)}#vs"><div class="ph duo">{chip(S[c])}<img src="{e(VER[a1]["img"])}" alt="{e(n1)}" loading="lazy"><img src="{e(VER[a2]["img"])}" alt="{e(n2)}" loading="lazy"></div><div class="bd"><h3>{e(n1)} vs {e(n2)}</h3><p>{e(txt.split(". ")[0].rstrip("."))}.</p><span class="cta">Read the Vs review →</span></div></a>')
     m=f'''<section class="hero">{NOTE}<div><p class="kicker">Guides</p><h1>Guides that end in<br><em>one good choice.</em></h1><p class="sub">Every guide keeps a Top 10 in a category people already buy: our pick, the value pick, and the one people already buy most.</p><ul class="stats"><li>{len(SITES)} guides</li><li>{len(CATS)} head-to-head Vs reviews</li></ul></div>{mosaic(["desk","sleep","travel"])}</section>
+<section class="sec"><div class="sec-h"><div><h2>Holiday gift guides</h2><p>Gift picks drawn from the Top 10 lists.</p></div></div><ul class="gift-links"><li><a href="/{GIFT_SLUG}">Budget-friendly gifts →</a></li>{"".join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)}</ul></section>
 <section class="sec"><div class="sec-h"><div><h2>Category guides</h2><p>Start with the room or the job. Each guide opens on its own Top 10.</p></div></div><div class="grid guide-grid">{g}</div></section>
 <section class="sec"><div class="sec-h"><div><h2>Head-to-head</h2><p>When it comes down to two, the Vs review says which one to buy and why.</p></div></div><div class="grid one-m">{"".join(vs)}</div></section>'''
-    return hub('guides','Guides — The Worth Guide','All Worth Guide buying guides and head-to-head Vs reviews, from desk gear to watches.',m)
+    return hub('guides','Guides — The Worth Guide','All Worth Guide buying guides and head-to-head Vs reviews, from desk gear to watches.',m,css='.gift-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}')
 def pcard(a,name,lab,line,frm,cls):
     return f'<article class="card pcard"><div class="ph"><span class="badge {cls}">{lab}</span><img src="{e(VER[a]["img"])}" alt="{e(name)}" loading="lazy"></div><div class="bd"><p class="from">{frm}</p><h3>{e(name)}</h3><p>{e(line)}</p><a class="btn" href="{link(a,HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></article>'
 def build_value():
@@ -135,6 +136,38 @@ def build_value():
 {"".join(bands)}
 <section class="sec more-sec"><div class="sec-h"><div><h2>More value picks</h2><p>In every top 10 the middle label is the value pick: the cheaper one that still does the job. It is not the cheapest item in the category. It is the one we would buy if the top pick costs more than the job is worth.</p></div></div><div class="grid">{"".join(more)}</div></section>'''
     return hub('value','Value Picks — The Worth Guide','Premium Pick, Bang for the Buck and Value Pick from each Worth Guide Top 10, plus the value pick from every other list.',m)
+# Budget-friendly gift guide: budget-tier (lowest of three tiers) picks drawn from the DeskWorth, BrewWorth and PetWorth Top 10 data (already verified there). No prices.
+GIFT_SLUG='gifts-budget-friendly'
+GIFTS=[  # (site key, product slug, asin, name, hedged line, who it suits)
+ ('desk','nulaxy-ergonomic-adjustable-laptop-stand-for','B077B9W343','Nulaxy Adjustable Laptop Stand','Raises a 10 to 16 inch laptop toward eye level. It works best with a separate keyboard and mouse.','Students and hybrid workers'),
+ ('desk','samphon-monitor-light-bar','B0GSPZ797T','SAMPHON Monitor Light Bar','A monitor-top light bar with three color temperatures. Its Amazon rating trailed most desk-lighting picks when checked, so it is a budget option rather than a premium one.','Anyone who works into the evening'),
+ ('desk','ktrio-keyboard-wrist-rest-mouse-pad','B0872TX516','KTRIO Keyboard and Mouse Wrist Rest Set','A matched keyboard rest and mouse pad that may make long typing sessions more comfortable.','Desk workers and gamers'),
+ ('desk','anker-7in1-usb-c-hub','B0DXJQT19B','Anker USB-C Hub 7-in-1','Adds HDMI, USB and SD card ports to a laptop. Check that the recipient\'s laptop has a USB-C port first.','Laptop users short on ports'),
+ ('brew','hario-v60-02','B000P4D5HG','Hario V60 Ceramic Dripper 02','A classic pour-over dripper with a large recipe community. It tends to work best with a kettle and a scale.','Curious coffee beginners'),
+ ('brew','wacaco-nanopresso','B07CQD6K8W','Wacaco Nanopresso','A hand-pumped portable espresso maker that needs no batteries. Pumping takes some effort.','Travelers and campers'),
+ ('brew','etekcity-food-kitchen-scale','B0113UZJE2','Etekcity Food Kitchen Scale','Weighs in 1 g steps with a tare button. Generally fine for pour-over and baking, coarse for espresso.','Pour-over brewers and bakers'),
+ ('pet','chuckit-ultra-ball','B000F4AVPA','Chuckit! Ultra Ball','A bouncy rubber fetch ball that fits Chuckit launchers. Size up and check it often, since a shredded ball may be a choking risk.','Dogs that love fetch'),
+ ('pet','joytale-reflective-dog-leash-for-medium','B08574XLL8','Joytale Reflective Dog Leash','A 6 ft leash with reflective stitching and a padded handle, which may help on dark winter walks.','Owners of medium and large dogs'),
+ ('pet','kitty-city-xl-scratch-pads','B01MZG54L6','Kitty City XL Cardboard Scratch Pads (3-Pack)','Three double-sided cardboard scratch pads to spread around the house. Cardboard wears out, so these are a consumable.','Cat owners'),
+]
+GIFT_GUIDES=[('desk','gifts-for-desk-workers','Gifts for desk workers'),('brew','gifts-for-coffee-lovers','Gifts for coffee lovers'),('pet','gifts-for-dog-owners','Gifts for dog owners')]
+GIFT_CSS='.gift-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0 0}.btn.amz{background:#9a3f12;font-weight:700;padding:13px 22px;font-size:1rem}.btn.amz:hover{background:#7c320e}.gift-links{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}.pcard .suits{font-size:.85rem;color:var(--muted);margin:6px 0 10px}.pcard .more{font-size:.85rem;margin:8px 0 0}.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,253,249,.96);border-top:2px solid rgba(154,63,18,.3);box-shadow:0 -4px 16px rgba(0,0,0,.08);padding:10px 0}.sticky-cta .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between}.sticky-cta p{margin:0;font-weight:600;font-size:.92rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sticky-cta{padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));transition:transform .2s}.sticky-cta.off{transform:translateY(110%);pointer-events:none;visibility:hidden}body.has-sticky{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}'
+SITE_NAMES={'desk':'DeskWorth','brew':'BrewWorth','pet':'PetWorth'}
+def build_gifts():
+    def card(k,slug,a,name,line,suits):
+        img=f'{sub(k)}products/{a}.jpg'
+        return (f'<article class="card pcard"><div class="ph"><span class="badge b-value">Budget-friendly</span><img src="{e(img)}" alt="{e(name)}" loading="lazy"></div>'
+                f'<div class="bd"><p class="from">{SITE_NAMES[k]}</p><h3>{e(name)}</h3><p>{e(line)}</p><p class="suits">Suits: {e(suits)}</p>'
+                f'<a class="btn amz" href="{link(a,HUB_TAG)}" {AMZ}>Check price on Amazon</a><p class="more"><a href="{sub(k)}products/{slug}">Full {SITE_NAMES[k]} review →</a></p></div></article>')
+    cards=''.join(card(*g) for g in GIFTS)
+    top=GIFTS[0]
+    gl=''.join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)
+    m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Holiday gift guide</p><h1>Budget-friendly gifts<br><em>people tend to use.</em></h1><p class="sub">Ten picks from the budget tier of the DeskWorth, BrewWorth and PetWorth Top 10 lists. Prices change often around the holidays, so check the current price on Amazon.</p>
+<div class="gift-top"><a class="btn amz" href="{link(top[2],HUB_TAG)}" {AMZ}>Check price on Amazon: {e(top[3])}</a><a class="btn ghost" href="#gifts">See all ten</a></div></div></section>
+<section class="sec" id="gifts"><div class="sec-h"><div><h2>Budget-friendly picks</h2><p>Each one sits in the lowest of the three budget tiers in its Top 10. Check sizes and compatibility on the listing before buying.</p></div></div><div class="grid">{cards}</div></section>
+<section class="sec"><div class="sec-h"><div><h2>More gift guides</h2><p>Picks across every budget tier, with pros and cons.</p></div></div><ul class="gift-links">{gl}</ul></section>
+<div class="sticky-cta off" data-sticky-cta><div class="wrap"><p>Top budget-friendly pick: {e(top[3])}</p><a class="btn amz" href="{link(top[2],HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></div><script>(function(){{var b=document.querySelector('[data-sticky-cta]');if(!b)return;var t=document.querySelector('.gift-top'),f=document.querySelector('footer');document.body.classList.add('has-sticky');function u(){{var past=!t||t.getBoundingClientRect().bottom<0,foot=f&&f.getBoundingClientRect().top<window.innerHeight;b.classList.toggle('off',!past||!!foot)}}u();addEventListener('scroll',u,{{passive:true}});addEventListener('resize',u)}})();</script>'''
+    return hub(GIFT_SLUG,'Budget-Friendly Gifts (2026 Holiday Guide) — The Worth Guide','Budget-friendly holiday gift ideas for desk workers, coffee lovers and pet owners, drawn from the budget tier of each Worth Guide Top 10.',m,css=GIFT_CSS)
 PRIVACY_UPDATED='October 4, 2026'
 def build_privacy():
     fam=', '.join(f'{s[1]}Worth ({s[0]}.theworthguide.com)' for s in SITES)
@@ -228,7 +261,7 @@ def main():
         open(os.path.join(d,'index.html'),'w').write(page(c,v))
         open(os.path.join(d,'sitemap.xml'),'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://{c}.theworthguide.com/</loc><lastmod>{LASTMOD}</lastmod></url>\n</urlset>\n')
         open(os.path.join(d,'robots.txt'),'w').write(f'User-agent: *\nAllow: /\n\nSitemap: https://{c}.theworthguide.com/sitemap.xml\n')
-    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy),('links.html',build_links)):
+    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy),('links.html',build_links),(GIFT_SLUG+'.html',build_gifts)):
         open(os.path.join(ROOT,f),'w').write(fn())
     validate()
 def validate():
@@ -265,6 +298,9 @@ def validate():
             if not os.path.exists(os.path.join(ROOT,'c',c,x)): err.append(f'missing c/{c}/{x}')
     json.load(open(os.path.join(ROOT,'vercel.json')))
     if '<loc>https://theworthguide.com/links</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: /links missing')
+    if f'<loc>https://theworthguide.com/{GIFT_SLUG}</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: gift guide missing')
+    gh=open(os.path.join(ROOT,GIFT_SLUG+'.html')).read()
+    if re.search(r"you'll love|effortlessly|guaranteed|must-have|under \\d",gh,re.I): err.append('gift guide: seller voice / price phrasing')
     if err: print('\n'.join(err)); sys.exit(1)
     print('build ok:',len(CATS),'category pages, 10 picks each;',sum(1 for c in CATS if BADGES.get(c,{}).get('picks')),'with 3 badge picks')
 if __name__=='__main__': main()
