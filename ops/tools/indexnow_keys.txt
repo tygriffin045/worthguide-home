@@ -2,3 +2,6 @@ deskworth 66c12d25a8cb1b9e42b8729511aea631
 petworth 80b86045a7bd6029c8315411a1e591d9
 brewworth 22e31f0a9521da6fde1770cefdaca2ff
 worthguide-home 1242fc21c028468bc5e4e7c4ce67577b
+sleepworth 37901f75113f8df9192f4b1d4c8bbc97
+techworth 2d6ffc41754283fa774f790f38e18e7c
+carworth b0be4a5bb58605eff4013659f6e5b774
