@@ -6,3 +6,9 @@ Durable copies are in the hub repo under `ops/` (excluded from deploy via .verce
 - `../deskworth-verify/preview_check.py BASE_URL`: checks desk sitemap paths on a preview/prod base for 200 (no redirect), 0 visible dollar amounts, and canonical = https://desk.theworthguide.com/<path>.
 - `crawl_output.txt`: latest crawl output.
 - The other files here are older one-off product-selection scripts and data.
+
+## Sales/gifts tools (added 2026-10-13)
+- `check_site.py MODE BASE` — any subsite: every sitemap URL returns 200, canonical == sitemap URL, 0 dollar amounts, exactly one "we have not tested them hands-on" disclosure. MODE=`http` for production, `vcurl` for an SSO-protected preview (needs env `CWD=/workspace/top10/<x>worth`, the linked project dir). Example: `python3 check_site.py http https://pet.theworthguide.com`. Known benign flag: pet `/affiliate-disclosure` (uses Associate wording, not the hands-on line).
+- `bar390.py URL [anchor-id]` — Playwright check of the sticky Amazon bar at 390px and 1366px: on load, past the anchor (e.g. `quick-picks`), and at the footer. Hidden must show `visiblePx: 0`. Setup (no signup): `python3 -m venv /workspace/.pwvenv && /workspace/.pwvenv/bin/pip install playwright && /workspace/.pwvenv/bin/python -m playwright install --with-deps chromium`.
+- `indexnow_keys.txt` — public IndexNow keys (`<project> <key>`); each key is served at `https://<host>/<key>.txt`. Submit: POST JSON `{host,key,keyLocation,urlList}` to `https://api.indexnow.org/indexnow` (and/or `https://www.bing.com/indexnow`). The first submit after a new key can return 403 SiteVerificationNotCompleted; retry after a few minutes. Google's and Bing's sitemap ping endpoints are dead (404/410).
+- No bypass tokens are stored here; never commit them.
