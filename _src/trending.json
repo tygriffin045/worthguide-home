@@ -1,0 +1,6 @@
+{
+ "_how_to_add": "Append one object per gift, in the order the Gift Finds Daily videos are posted (oldest first; #1 stays first). Fields: asin (Amazon ASIN, link gets tag theworthguide20-20 automatically), name, icon (one emoji for the placeholder card; no Amazon images), line (short, hedged, factual: no prices, no specs the listing or brand does not state), posted (YYYY-MM-DD video date). Then run python3 _src/build.py.",
+ "gifts": [
+  {"asin": "B085DTZQNZ", "name": "Owala FreeSip Insulated Stainless Steel Water Bottle, 24 oz", "icon": "💧", "line": "Sip through the built-in straw or tilt it back to drink from the spout. The push-button lid locks shut, and Owala says it keeps drinks cold for up to 24 hours. Some colors sell out, so check what the listing has before you order.", "posted": "2026-10-18"}
+ ]
+}

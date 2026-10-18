@@ -78,3 +78,4 @@ a:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
 .disc{margin:0;font-size:.74rem;line-height:1.5;color:var(--muted)}
 @media (max-width:350px){.grid{gap:10px}.tile{padding:9px;gap:8px}.tile .ic{width:38px;height:38px;font-size:20px}h1{font-size:1.9rem}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.all.top{margin:0 0 14px}

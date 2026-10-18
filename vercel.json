@@ -359,7 +359,7 @@
    }
   },
   {
-   "src": "^/(guides|value|categories|privacy|links|gifts-budget-friendly)\\.html$",
+   "src": "^/(guides|value|categories|privacy|links|gifts-budget-friendly|trending-gifts)\\.html$",
    "status": 308,
    "headers": {
     "Location": "/$1"
@@ -369,7 +369,7 @@
    "handle": "filesystem"
   },
   {
-   "src": "^/(guides|value|categories|privacy|links|gifts-budget-friendly)/?$",
+   "src": "^/(guides|value|categories|privacy|links|gifts-budget-friendly|trending-gifts)/?$",
    "dest": "/$1.html"
   }
  ]

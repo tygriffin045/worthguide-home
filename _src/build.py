@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the hub pages (index, guides, value, categories, privacy [unlinked, noindex], links [Gift Finds Daily link-in-bio, standalone, unlinked]) and category pages for <cat>.theworthguide.com from one brand template (site.css; see BRAND.md), then validate. Run: python3 _src/build.py"""
+"""Generate the hub pages (index, guides, value, categories, privacy [unlinked, noindex], links [Gift Finds Daily link-in-bio, standalone, unlinked], trending-gifts [from _src/trending.json]) and category pages for <cat>.theworthguide.com from one brand template (site.css; see BRAND.md), then validate. Run: python3 _src/build.py"""
 import json,os,re,sys,html
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,os.path.join(ROOT,'_src'))
@@ -168,6 +168,24 @@ def build_gifts():
 <section class="sec"><div class="sec-h"><div><h2>More gift guides</h2><p>Picks across every budget tier, with pros and cons.</p></div></div><ul class="gift-links">{gl}</ul></section>
 <div class="sticky-cta off" data-sticky-cta><div class="wrap"><p><b class="sc-l">Best budget gift</b> {e(top[3])}</p><a class="btn amz" href="{link(top[2],HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></div><script>(function(){{var b=document.querySelector('[data-sticky-cta]');if(!b)return;var t=document.querySelector('.gift-top');function pad(){{document.body.style.paddingBottom='calc('+b.offsetHeight+'px + env(safe-area-inset-bottom, 0px))'}}pad();addEventListener('resize',pad);function u(){{var f=document.querySelector('footer.ftr')||[].slice.call(document.querySelectorAll('footer')).pop(),past=!t||t.getBoundingClientRect().bottom<0,foot=f&&f.getBoundingClientRect().top<window.innerHeight;b.classList.toggle('off',!past||!!foot)}}u();addEventListener('scroll',u,{{passive:true}});addEventListener('resize',u)}})();</script>'''
     return hub(GIFT_SLUG,'Budget-Friendly Gifts (2026 Holiday Guide) — The Worth Guide','Budget-friendly holiday gift ideas for desk workers, coffee lovers and pet owners, drawn from the budget tier of each Worth Guide Top 10.',m,css=GIFT_CSS)
+# Trending gifts (/trending-gifts): every gift from the Gift Finds Daily videos, in the order the videos are posted. Data: _src/trending.json (append there). No prices, no Amazon images (placeholder cards until PA-API).
+TREND_SLUG='trending-gifts'
+TREND=json.load(open(os.path.join(ROOT,'_src/trending.json')))['gifts']
+TREND_CSS='.trend .pcard .ph{display:grid;place-items:center;align-content:center;gap:10px;background:linear-gradient(160deg,#fbf7f0,#efe9df);padding:22px;text-align:center}.trend .pcard .ph .ico{font-size:3.4rem;line-height:1}.trend .pcard .ph .pn{font:600 .95rem/1.35 var(--sans);color:var(--ink2);max-width:22ch}.trend .pcard .ph .badge{position:absolute;top:12px;left:12px}.trend .pcard .seen{font-size:.85rem;color:var(--muted);margin:6px 0 10px;flex:none}.seen-note{border-left:3px solid var(--gold-deep);padding:4px 0 4px 14px;margin:18px 0 0;color:var(--ink2)}.btn.amz{background:#9a3f12;font-weight:700;padding:13px 22px;font-size:1rem}.btn.amz:hover{background:#7c320e}'
+def build_trending():
+    import datetime
+    fmt=lambda d:datetime.date.fromisoformat(d).strftime('%b %-d, %Y')
+    def card(i,g):
+        return (f'<article class="card pcard"><div class="ph"><span class="badge b-value">#{i}</span><span class="ico" aria-hidden="true">{g["icon"]}</span><span class="pn">{e(g["name"])}</span></div>'
+                f'<div class="bd"><p class="from">Gift #{i}</p><h3>{e(g["name"])}</h3><p>{e(g["line"])}</p><p class="seen">Seen in our video posted {fmt(g["posted"])}</p>'
+                f'<a class="btn amz" href="{link(g["asin"],HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></article>')
+    cards=''.join(card(i,g) for i,g in enumerate(TREND,1))
+    n=len(TREND)
+    m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Trending gifts</p><h1>Gifts from our videos,<br><em>all in one place.</em></h1><p class="sub">Every gift from the Gift Finds Daily videos, listed in the order we posted them. New finds are added as the videos go up. Prices change often around the holidays, so check the current price on Amazon.</p>
+<p class="seen-note"><b>Seen in our videos.</b> These are the products featured in our short gift videos. We picked them from public listings and brand pages and have not tested them hands-on, so check sizes, colors and details on the listing before buying.</p></div></section>
+<section class="sec trend" id="gifts"><div class="sec-h"><div><h2>The list so far</h2><p>{n} gift{"s" if n!=1 else ""}, newest at the bottom.</p></div></div><div class="grid">{cards}</div></section>
+<section class="sec"><div class="sec-h"><div><h2>More gift guides</h2><p>Picks across every budget tier, with pros and cons.</p></div></div><ul class="gift-links"><li><a href="/{GIFT_SLUG}">Budget-friendly gifts →</a></li>{"".join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)}</ul></section>'''
+    return hub(TREND_SLUG,'Trending Gifts From Our Videos — The Worth Guide','Every gift featured in the Gift Finds Daily videos, in the order they were posted, with a link to check the current price on Amazon.',m,css=TREND_CSS+'.gift-links{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}')
 PRIVACY_UPDATED='October 4, 2026'
 def build_privacy():
     fam=', '.join(f'{s[1]}Worth ({s[0]}.theworthguide.com)' for s in SITES)
@@ -245,6 +263,7 @@ def build_links():
 <p class="bio">{desc}</p>
 </header>
 <nav class="links" aria-label="Links">
+<a class="all press top" href="/{TREND_SLUG}"><span class="e" aria-hidden="true">🎁</span>Trending Gifts<span aria-hidden="true">{arrow}</span></a>
 {promo}<div class="sec"><span class="spark" aria-hidden="true">{star()}</span><h2><span class="k">Shop by category</span>Top 10 picks</h2><span class="rule" aria-hidden="true"></span></div>
 <div class="grid">
 {tiles}
@@ -261,7 +280,7 @@ def main():
         open(os.path.join(d,'index.html'),'w').write(page(c,v))
         open(os.path.join(d,'sitemap.xml'),'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://{c}.theworthguide.com/</loc><lastmod>{LASTMOD}</lastmod></url>\n</urlset>\n')
         open(os.path.join(d,'robots.txt'),'w').write(f'User-agent: *\nAllow: /\n\nSitemap: https://{c}.theworthguide.com/sitemap.xml\n')
-    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy),('links.html',build_links),(GIFT_SLUG+'.html',build_gifts)):
+    for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy),('links.html',build_links),(GIFT_SLUG+'.html',build_gifts),(TREND_SLUG+'.html',build_trending)):
         open(os.path.join(ROOT,f),'w').write(fn())
     validate()
 def validate():
@@ -299,6 +318,15 @@ def validate():
     json.load(open(os.path.join(ROOT,'vercel.json')))
     if '<loc>https://theworthguide.com/links</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: /links missing')
     if f'<loc>https://theworthguide.com/{GIFT_SLUG}</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: gift guide missing')
+    if f'<loc>https://theworthguide.com/{TREND_SLUG}</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: trending gifts missing')
+    th=open(os.path.join(ROOT,TREND_SLUG+'.html')).read()
+    ta=re.findall(r'<a [^>]*href="https://www\.amazon\.com/[^"]*"[^>]*>',th)
+    if len(ta)!=len(TREND) or any(f'?tag={HUB_TAG}"' not in a or 'rel="nofollow sponsored noopener"' not in a or 'target="_blank"' not in a for a in ta): err.append('trending: amazon link tag/rel/target')
+    if th.count('>Check price on Amazon<')!=len(TREND): err.append('trending: button count')
+    if len({g['asin'] for g in TREND})!=len(TREND): err.append('trending: duplicate ASIN')
+    if re.search(r'etsy|kettle',th,re.I): err.append('trending: Etsy/KettleAndKibble link present')
+    lh=open(os.path.join(ROOT,'links.html')).read()
+    if not re.search(r'<nav class="links"[^>]*>\s*<a [^>]*href="/'+TREND_SLUG+'"',lh): err.append('links.html: trending gifts is not the top button')
     gh=open(os.path.join(ROOT,GIFT_SLUG+'.html')).read()
     if re.search(r"you'll love|effortlessly|guaranteed|must-have|under \\d",gh,re.I): err.append('gift guide: seller voice / price phrasing')
     if err: print('\n'.join(err)); sys.exit(1)
