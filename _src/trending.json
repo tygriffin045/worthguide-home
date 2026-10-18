@@ -1,6 +1,54 @@
 {
  "_how_to_add": "Append one object per gift, in the order the Gift Finds Daily videos are posted (oldest first; #1 stays first). Fields: asin (Amazon ASIN, link gets tag theworthguide20-20 automatically), name, icon (one emoji for the placeholder card; no Amazon images), line (short, hedged, factual: no prices, no specs the listing or brand does not state), posted (YYYY-MM-DD video date). Then run python3 _src/build.py.",
  "gifts": [
-  {"asin": "B085DTZQNZ", "name": "Owala FreeSip Insulated Stainless Steel Water Bottle, 24 oz", "icon": "💧", "line": "Sip through the built-in straw or tilt it back to drink from the spout. The push-button lid locks shut, and Owala says it keeps drinks cold for up to 24 hours. Some colors sell out, so check what the listing has before you order.", "posted": "2026-10-18"}
+  {
+   "asin": "B085DTZQNZ",
+   "name": "Owala FreeSip Insulated Stainless Steel Water Bottle, 24 oz",
+   "icon": "💧",
+   "line": "Sip through the built-in straw or tilt it back to drink from the spout. The push-button lid locks shut, and Owala says it keeps drinks cold for up to 24 hours. Some colors sell out, so check what the listing has before you order.",
+   "posted": "2026-10-18"
+  },
+  {
+   "asin": "B07XXPHQZK",
+   "name": "LANEIGE Lip Sleeping Mask (Berry, 0.7 oz)",
+   "icon": "💋",
+   "line": "A leave-on overnight lip mask with shea butter, murumuru seed butter and vitamin C. Apply before bed and wipe off any excess in the morning.",
+   "posted": "2026-10-18"
+  },
+  {
+   "asin": "B0BRMYHMS5",
+   "name": "medicube Collagen Night Wrapping Mask (2.53 fl oz)",
+   "icon": "✨",
+   "line": "An overnight peel-off face mask with collagen extract and ceramide NP: apply it as the last step at night and peel it off in one piece in the morning.",
+   "posted": "2026-10-18"
+  },
+  {
+   "asin": "B0BZR9XSSF",
+   "name": "Bedsure Heated Blanket Electric Throw, 50\" x 60\"",
+   "icon": "🧣",
+   "line": "A flannel and sherpa heated throw with 6 heat levels, 6 timer settings, a preheat mode and an 8-hour auto shut-off. The listing says it's machine washable.",
+   "posted": "2026-10-18"
+  },
+  {
+   "asin": "B0G3ZGTMJ3",
+   "name": "Squishmallows Original KPop Demon Hunters 12\" Derpy Plush (official Jazwares)",
+   "icon": "🐯",
+   "line": "The official 12-inch Squishmallow of Derpy the tiger from KPop Demon Hunters, licensed by Netflix.",
+   "posted": "2026-10-18"
+  },
+  {
+   "asin": "B0GHCNDJKM",
+   "name": "Peekimo Interactive Pet and Wearable Charm (Spin Master)",
+   "icon": "🔮",
+   "line": "A tiny interactive pet that peeks out of its pod and reacts to touch and voice (100+ reactions). It can be worn on the included lanyard or clipped to a bag. Ages 5+.",
+   "posted": "2026-10-18"
+  },
+  {
+   "asin": "B0GKBJSPBS",
+   "name": "CATAN On The Road Card Game",
+   "icon": "🎲",
+   "line": "The CATAN build-and-trade game as a portable card game: 3–4 players, about 15 minutes, ages 10+.",
+   "posted": "2026-10-18"
+  }
  ]
 }
