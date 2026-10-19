@@ -112,10 +112,10 @@ def build_guides():
         a1,n1,a2,n2,txt,_=v['vs']
         vs.append(f'<a class="card vsc" href="{sub(c)}#vs"><div class="ph duo">{chip(S[c])}<img src="{e(VER[a1]["img"])}" alt="{e(n1)}" loading="lazy"><img src="{e(VER[a2]["img"])}" alt="{e(n2)}" loading="lazy"></div><div class="bd"><h3>{e(n1)} vs {e(n2)}</h3><p>{e(txt.split(". ")[0].rstrip("."))}.</p><span class="cta">Read the Vs review →</span></div></a>')
     m=f'''<section class="hero">{NOTE}<div><p class="kicker">Guides</p><h1>Guides that end in<br><em>one good choice.</em></h1><p class="sub">Every guide keeps a Top 10 in a category people already buy: our pick, the value pick, and the one people already buy most.</p><ul class="stats"><li>{len(SITES)} guides</li><li>{len(CATS)} head-to-head Vs reviews</li></ul></div>{mosaic(["desk","sleep","travel"])}</section>
-<section class="sec"><div class="sec-h"><div><h2>Holiday gift guides</h2><p>Gift picks drawn from the Top 10 lists.</p></div></div><ul class="gift-links"><li><a href="/{GIFT_SLUG}">Budget-friendly gifts →</a></li>{"".join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)}</ul></section>
+<section class="sec"><div class="sec-h"><div><h2>Holiday gift guides</h2><p>Gift picks drawn from the Top 10 lists.</p></div></div><ul class="gift-links"><li><a href="/{GIFT_SLUG}">Budget-friendly gifts →</a></li>{"".join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)}</ul>{planner("A")}</section>
 <section class="sec"><div class="sec-h"><div><h2>Category guides</h2><p>Start with the room or the job. Each guide opens on its own Top 10.</p></div></div><div class="grid guide-grid">{g}</div></section>
 <section class="sec"><div class="sec-h"><div><h2>Head-to-head</h2><p>When it comes down to two, the Vs review says which one to buy and why.</p></div></div><div class="grid one-m">{"".join(vs)}</div></section>'''
-    return hub('guides','Guides — The Worth Guide','All Worth Guide buying guides and head-to-head Vs reviews, from desk gear to watches.',m,css='.gift-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}')
+    return hub('guides','Guides — The Worth Guide','All Worth Guide buying guides and head-to-head Vs reviews, from desk gear to watches.',m,css='.gift-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}'+PLANNER_CSS)
 def pcard(a,name,lab,line,frm,cls):
     return f'<article class="card pcard"><div class="ph"><span class="badge {cls}">{lab}</span><img src="{e(VER[a]["img"])}" alt="{e(name)}" loading="lazy"></div><div class="bd"><p class="from">{frm}</p><h3>{e(name)}</h3><p>{e(line)}</p><a class="btn" href="{link(a,HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></article>'
 def build_value():
@@ -136,6 +136,18 @@ def build_value():
 {"".join(bands)}
 <section class="sec more-sec"><div class="sec-h"><div><h2>More value picks</h2><p>In every top 10 the middle label is the value pick: the cheaper one that still does the job. It is not the cheapest item in the category. It is the one we would buy if the top pick costs more than the job is worth.</p></div></div><div class="grid">{"".join(more)}</div></section>'''
     return hub('value','Value Picks — The Worth Guide','Premium Pick, Bang for the Buck and Value Pick from each Worth Guide Top 10, plus the value pick from every other list.',m)
+# Promo block for our own product (Holiday Gift Planner & Gift Tracker, Payhip). General planner only, no prices, no dog edition, no KettleAndKibbleCo.
+# URL not live yet: swap every '#gift-planner-url-pending' (marked <!-- GIFT_PLANNER_URL -->) for the Payhip URL.
+GIFT_PLANNER_URL='#gift-planner-url-pending'
+PLANNER_CSS='.planner{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center;background:linear-gradient(160deg,#fbf7f0,#efe9df);border:1px solid rgba(154,63,18,.18);border-radius:16px;padding:20px;margin:28px 0}.planner img{width:160px;height:160px;border-radius:10px;object-fit:cover}.planner h2{margin:2px 0 6px;font-size:1.25rem}.planner p{margin:0 0 10px;color:var(--ink2)}.planner .pdisc{font-size:.8rem;color:var(--muted);font-style:italic;margin:10px 0 0}@media(max-width:560px){.planner{grid-template-columns:1fr}.planner img{width:120px;height:120px}}'
+PLANNER={
+ 'A':('gift-planner_1-cover_1200x1200.png','Keep your list organized.','Shopping for a lot of people this year? Our printable <i>Holiday Gift Planner &amp; Gift Tracker</i> keeps budgets, gift ideas, orders, and thank-you notes in one place.','Get the planner','The Worth Guide sells this planner as our own product.'),
+ 'B':('gift-planner_2-pages_1200x1200.png','Set a budget before the sales start.','The <i>Holiday Gift Planner &amp; Gift Tracker</i> has budget pages and a purchase tracker so you can see what you&#39;ve spent at a glance. Fill it in on screen or print it at home.','See what&#39;s inside','This is our own product. We may earn money if you buy it.'),
+}
+def planner(k):
+    img,h,t,cta,d=PLANNER[k]
+    return (f'<aside class="planner" aria-label="Our own product: Holiday Gift Planner"><img src="/img/gift-planner/{img}" alt="Holiday Gift Planner &amp; Gift Tracker printable pages" loading="lazy" width="160" height="160">'
+            f'<div><p class="kicker">From The Worth Guide</p><h2>{h}</h2><p>{t}</p><!-- GIFT_PLANNER_URL --><a class="btn" href="{GIFT_PLANNER_URL}">{cta} →</a><p class="pdisc">Disclosure: {d}</p></div></aside>')
 # Budget-friendly gift guide: budget-tier (lowest of three tiers) picks drawn from the DeskWorth, BrewWorth and PetWorth Top 10 data (already verified there). No prices.
 GIFT_SLUG='gifts-budget-friendly'
 GIFTS=[  # (site key, product slug, asin, name, hedged line, who it suits)
@@ -164,10 +176,10 @@ def build_gifts():
     gl=''.join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)
     m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Holiday gift guide</p><h1>Budget-friendly gifts<br><em>people tend to use.</em></h1><p class="sub">Ten picks from the budget tier of the DeskWorth, BrewWorth and PetWorth Top 10 lists. Prices change often around the holidays, so check the current price on Amazon.</p>
 <div class="gift-top"><a class="btn amz" href="{link(top[2],HUB_TAG)}" {AMZ}>Check price on Amazon: {e(top[3])}</a><a class="btn ghost" href="#gifts">See all ten</a></div></div></section>
-<section class="sec" id="gifts"><div class="sec-h"><div><h2>Budget-friendly picks</h2><p>Each one sits in the lowest of the three budget tiers in its Top 10. Check sizes and compatibility on the listing before buying.</p></div></div><div class="grid">{cards}</div></section>
+<section class="sec" id="gifts"><div class="sec-h"><div><h2>Budget-friendly picks</h2><p>Each one sits in the lowest of the three budget tiers in its Top 10. Check sizes and compatibility on the listing before buying.</p></div></div><div class="grid">{cards}</div>{planner("B")}</section>
 <section class="sec"><div class="sec-h"><div><h2>More gift guides</h2><p>Picks across every budget tier, with pros and cons.</p></div></div><ul class="gift-links">{gl}</ul></section>
 <div class="sticky-cta off" data-sticky-cta><div class="wrap"><p><b class="sc-l">Best budget gift</b> {e(top[3])}</p><a class="btn amz" href="{link(top[2],HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></div><script>(function(){{var b=document.querySelector('[data-sticky-cta]');if(!b)return;var t=document.querySelector('.gift-top');function pad(){{document.body.style.paddingBottom='calc('+b.offsetHeight+'px + env(safe-area-inset-bottom, 0px))'}}pad();addEventListener('resize',pad);function u(){{var f=document.querySelector('footer.ftr')||[].slice.call(document.querySelectorAll('footer')).pop(),past=!t||t.getBoundingClientRect().bottom<0,foot=f&&f.getBoundingClientRect().top<window.innerHeight;b.classList.toggle('off',!past||!!foot)}}u();addEventListener('scroll',u,{{passive:true}});addEventListener('resize',u)}})();</script>'''
-    return hub(GIFT_SLUG,'Budget-Friendly Gifts (2026 Holiday Guide) — The Worth Guide','Budget-friendly holiday gift ideas for desk workers, coffee lovers and pet owners, drawn from the budget tier of each Worth Guide Top 10.',m,css=GIFT_CSS)
+    return hub(GIFT_SLUG,'Budget-Friendly Gifts (2026 Holiday Guide) — The Worth Guide','Budget-friendly holiday gift ideas for desk workers, coffee lovers and pet owners, drawn from the budget tier of each Worth Guide Top 10.',m,css=GIFT_CSS+PLANNER_CSS)
 # Trending gifts (/trending-gifts): every gift from the Gift Finds Daily videos, in the order the videos are posted. Data: _src/trending.json (append there). No prices, no Amazon images (placeholder cards until PA-API).
 TREND_SLUG='trending-gifts'
 TREND=json.load(open(os.path.join(ROOT,'_src/trending.json')))['gifts']
@@ -183,9 +195,9 @@ def build_trending():
     n=len(TREND)
     m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Trending gifts</p><h1>Gifts from our videos,<br><em>all in one place.</em></h1><p class="sub">Every gift from the Gift Finds Daily videos, listed in the order we posted them. New finds are added as the videos go up. Prices change often around the holidays, so check the current price on Amazon.</p>
 <p class="seen-note"><b>Seen in our videos.</b> These are the products featured in our short gift videos. We picked them from public listings and brand pages and have not tested them hands-on, so check sizes, colors and details on the listing before buying.</p></div></section>
-<section class="sec trend" id="gifts"><div class="sec-h"><div><h2>The list so far</h2><p>{n} gift{"s" if n!=1 else ""}, newest at the bottom.</p></div></div><div class="grid">{cards}</div></section>
+<section class="sec trend" id="gifts"><div class="sec-h"><div><h2>The list so far</h2><p>{n} gift{"s" if n!=1 else ""}, newest at the bottom.</p></div></div><div class="grid">{cards}</div>{planner("A")}</section>
 <section class="sec"><div class="sec-h"><div><h2>More gift guides</h2><p>Picks across every budget tier, with pros and cons.</p></div></div><ul class="gift-links"><li><a href="/{GIFT_SLUG}">Budget-friendly gifts →</a></li>{"".join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)}</ul></section>'''
-    return hub(TREND_SLUG,'Trending Gifts From Our Videos — The Worth Guide','Every gift featured in the Gift Finds Daily videos, in the order they were posted, with a link to check the current price on Amazon.',m,css=TREND_CSS+'.gift-links{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}')
+    return hub(TREND_SLUG,'Trending Gifts From Our Videos — The Worth Guide','Every gift featured in the Gift Finds Daily videos, in the order they were posted, with a link to check the current price on Amazon.',m,css=TREND_CSS+PLANNER_CSS+'.gift-links{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}')
 PRIVACY_UPDATED='October 4, 2026'
 def build_privacy():
     fam=', '.join(f'{s[1]}Worth ({s[0]}.theworthguide.com)' for s in SITES)
