@@ -178,12 +178,12 @@ def build_trending():
     def card(i,g):
         return (f'<article class="card pcard"><div class="ph"><span class="badge b-value">#{i}</span><span class="ico" aria-hidden="true">{g["icon"]}</span><span class="pn">{e(g["name"])}</span></div>'
                 f'<div class="bd"><p class="from">Gift #{i}</p><h3>{e(g["name"])}</h3><p>{e(g["line"])}</p><p class="seen">Seen in our video posted {fmt(g["posted"])}</p>'
-                f'<a class="btn amz" href="{link(g["asin"],HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></article>')
+                f'<a class="btn amz" data-g="{i}" href="{link(g["asin"],HUB_TAG)}" {AMZ}>Check price on Amazon</a></div></article>')
     cards=''.join(card(i,g) for i,g in enumerate(TREND,1))
     n=len(TREND)
     m=f'''<section class="hero solo">{NOTE}<div><p class="kicker">Trending gifts</p><h1>Gifts from our videos,<br><em>all in one place.</em></h1><p class="sub">Every gift from the Gift Finds Daily videos, listed in the order we posted them. New finds are added as the videos go up. Prices change often around the holidays, so check the current price on Amazon.</p>
 <p class="seen-note"><b>Seen in our videos.</b> These are the products featured in our short gift videos. We picked them from public listings and brand pages and have not tested them hands-on, so check sizes, colors and details on the listing before buying.</p></div></section>
-<section class="sec trend" id="gifts"><div class="sec-h"><div><h2>The list so far</h2><p>{n} gift{"s" if n!=1 else ""}, newest at the bottom.</p></div></div><div class="grid">{cards}</div></section>
+<script>document.addEventListener("click",function(e){{var a=e.target.closest&&e.target.closest("a[data-g]");if(!a)return;var u="https://dash.theworthguide.com/click?p=trending-gifts&g="+a.getAttribute("data-g");try{{navigator.sendBeacon?navigator.sendBeacon(u):fetch(u,{{method:"POST",mode:"no-cors",keepalive:true}})}}catch(x){{}}}})</script>\n<section class="sec trend" id="gifts"><div class="sec-h"><div><h2>The list so far</h2><p>{n} gift{"s" if n!=1 else ""}, newest at the bottom.</p></div></div><div class="grid">{cards}</div></section>
 <section class="sec"><div class="sec-h"><div><h2>More gift guides</h2><p>Picks across every budget tier, with pros and cons.</p></div></div><ul class="gift-links"><li><a href="/{GIFT_SLUG}">Budget-friendly gifts →</a></li>{"".join(f'<li><a href="{sub(k)}guides/{s}">{e(t)} →</a></li>' for k,s,t in GIFT_GUIDES)}</ul></section>'''
     return hub(TREND_SLUG,'Trending Gifts From Our Videos — The Worth Guide','Every gift featured in the Gift Finds Daily videos, in the order they were posted, with a link to check the current price on Amazon.',m,css=TREND_CSS+'.gift-links{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0;padding:0;list-style:none}.gift-links a{font-weight:600;color:var(--terra-deep)}')
 PRIVACY_UPDATED='October 4, 2026'
