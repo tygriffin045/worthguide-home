@@ -11,6 +11,7 @@ SITE_CSS=open(os.path.join(ROOT,'_src/site.css')).read()
 CAT_CSS=open(os.path.join(ROOT,'_src/cat.css')).read()
 PROSE_CSS=open(os.path.join(ROOT,'_src/prose.css')).read()
 from sites import SITES
+from guides import GUIDES
 HUB='https://theworthguide.com'
 LASTMOD='2026-10-04'
 HUB_TAG='theworthguide20-20'
@@ -79,10 +80,30 @@ def page(c,v):
 <div class="vs"><a href="{link(a1,tag)}" {AMZ}>{vsimg(a1)}<h3>{e(n1)}</h3><span class="tag">{e(lab(a1))}</span></a>
 <a href="{link(a2,tag)}" {AMZ}>{vsimg(a2)}<h3>{e(n2)}</h3><span class="tag">{e(lab(a2))}</span></a><span class="vs-or" aria-hidden="true">vs</span></div>
 <div class="tbl"><table><thead><tr><th></th><th>{e(n1)}</th><th>{e(n2)}</th></tr></thead><tbody>{trs}</tbody></table></div></section>
-<p class="back"><a class="btn ghost" href="{HUB}/categories">← All categories</a><a class="btn ghost" href="{HUB}/value">Value Picks</a></p>
+{"".join(f'<section class="vs-sec"><p class="kicker">Buying guide</p><h2><a href="{guide_url(c,g)}">{e(g["title"])}</a></h2><p>{e(g["desc"])}</p><p><a class="btn ghost" href="{guide_url(c,g)}">Read the guide →</a></p></section>\n' for g in GUIDES.get(c,[]))}<p class="back"><a class="btn ghost" href="{HUB}/categories">← All categories</a><a class="btn ghost" href="{HUB}/value">Value Picks</a></p>
 </main>
 {footer(wordmark(f"{e(short)}<b>Worth</b>",sub(c)),v["card"])}'''
     return doc(f'{nm} Top 10 — The Worth Guide',f'{nm}: {v["lede"]}',sub(c),body,SITE_CSS+CAT_CSS)
+def guide_url(c,g): return f'{sub(c)}guides/{g["slug"]}'
+def guide_page(c,g):
+    tag=TAGS[c]; v=CATS[c]; short=v['name'][:-5]; names={x[0]:x[1] for x in v['items']}; rows=[]
+    for i,(a,award,verdict,pros,cons,best) in enumerate(g['picks'],1):
+        assert a in names and a in VER, (c,a)
+        pl=''.join(f'<li>{e(x)}</li>' for x in pros); cl=''.join(f'<li>{e(x)}</li>' for x in cons)
+        rows.append(f'<article class="row gpick"><div class="im"><span class="rank">#{i}</span><img src="{e(VER[a]["img"])}" alt="{e(names[a])}" loading="lazy"></div><div><div class="tags"><span class="tag">{e(award)}</span></div><h2>{e(names[a])}</h2><p>{e(verdict)}</p><div class="pc"><div><h3>Pros</h3><ul>{pl}</ul></div><div><h3>Cons</h3><ul>{cl}</ul></div></div><p class="bf"><b>Best for:</b> {e(best)}</p><a class="btn" href="{link(a,tag)}" {AMZ}>Check price on Amazon</a></div></article>')
+    crit=''.join(f'<h3>{e(h)}</h3><p>{e(b)}</p>' for h,b in g['criteria'])
+    faq=''.join(f'<h3>{e(q)}</h3><p>{e(ans)}</p>' for q,ans in g['faqs'])
+    body=f'''{header(cat=c)}
+<main id="main" class="wrap">
+<section class="hero solo">{NOTE}<div><p class="kicker">Buying guide · {e(short)}Worth</p><h1>{e(g["title"])}</h1><p class="sub">{e(g["intro"])}</p><p class="gdate">Updated {e(g["date"])} · Picks from the {e(v["name"])} Top 10</p></div></section>
+<div class="list">{"".join(rows)}</div>
+<section class="gtext"><h2>How to choose</h2>{crit}</section>
+<section class="gtext"><h2>FAQ</h2>{faq}</section>
+<p class="back"><a class="btn ghost" href="{sub(c)}">← {e(v["name"])} Top 10</a><a class="btn ghost" href="{HUB}/guides">All guides</a></p>
+</main>
+{footer(wordmark(f"{e(short)}<b>Worth</b>",sub(c)),v["card"])}'''
+    css='.gpick .pc{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 10px}.gpick .pc h3{font-size:.95rem;margin:0 0 4px}.gpick .pc ul{margin:0;padding-left:1.1em;color:var(--ink2)}.gpick .bf{font-size:.95rem}.gdate{font-size:.85rem;color:var(--muted);margin:8px 0 0}.gtext{max-width:780px;margin:36px 0 0}.gtext h3{font-size:1.1rem;margin:16px 0 6px}.gtext p{color:var(--ink2);margin:0}@media(max-width:640px){.gpick .pc{grid-template-columns:1fr}}'
+    return doc(f'{g["title"]} — {v["name"]}',g['desc'],guide_url(c,g),body,SITE_CSS+CAT_CSS+css)
 # ---------- hub pages ----------
 def hub(slug,title,desc,main,extra='',css=''):
     canon=f'{HUB}/{slug}' if slug else f'{HUB}/'
@@ -281,7 +302,12 @@ def main():
     for c,v in CATS.items():
         d=os.path.join(ROOT,'c',c); os.makedirs(d,exist_ok=True)
         open(os.path.join(d,'index.html'),'w').write(page(c,v))
-        open(os.path.join(d,'sitemap.xml'),'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://{c}.theworthguide.com/</loc><lastmod>{LASTMOD}</lastmod></url>\n</urlset>\n')
+        gs=GUIDES.get(c,[])
+        for g in gs:
+            os.makedirs(os.path.join(d,'guides'),exist_ok=True)
+            open(os.path.join(d,'guides',g['slug']+'.html'),'w').write(guide_page(c,g))
+        gsm=''.join(f'  <url><loc>{guide_url(c,g)}</loc><lastmod>{g["date"]}</lastmod></url>\n' for g in gs)
+        open(os.path.join(d,'sitemap.xml'),'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://{c}.theworthguide.com/</loc><lastmod>{LASTMOD}</lastmod></url>\n{gsm}</urlset>\n')
         open(os.path.join(d,'robots.txt'),'w').write(f'User-agent: *\nAllow: /\n\nSitemap: https://{c}.theworthguide.com/sitemap.xml\n')
     for f,fn in (('index.html',build_index),('guides.html',build_guides),('value.html',build_value),('categories.html',build_categories),('privacy.html',build_privacy),('links.html',build_links),(GIFT_SLUG+'.html',build_gifts),(TREND_SLUG+'.html',build_trending)):
         open(os.path.join(ROOT,f),'w').write(fn())
@@ -290,7 +316,7 @@ def validate():
     err=[]
     for f in os.popen(f'find {ROOT} -name "*.html" -not -path "*/node_modules/*" -not -path "*/.git/*"').read().split():
         h=open(f).read(); rel=os.path.relpath(f,ROOT)
-        m=re.match(r'c/(\w+)/index\.html',rel); want=TAGS[m.group(1)] if m else 'theworthguide20-20'
+        m=re.match(r'c/(\w+)/index\.html',rel); gm=re.match(r'c/(\w+)/guides/[\w-]+\.html',rel); want=TAGS[m.group(1)] if m else TAGS[gm.group(1)] if gm else 'theworthguide20-20'
         tags=re.findall(r'amazon\.com/[^"]*?[?&]tag=([\w-]+)',h)
         amz=re.findall(r'href="https?://(?:www\.)?amazon\.com[^"]*"',h)
         if len(tags)!=len(amz): err.append(f'{rel}: amazon link without tag')
@@ -318,7 +344,16 @@ def validate():
     for c in CATS:
         for x in ('index.html','sitemap.xml','robots.txt'):
             if not os.path.exists(os.path.join(ROOT,'c',c,x)): err.append(f'missing c/{c}/{x}')
-    json.load(open(os.path.join(ROOT,'vercel.json')))
+    vj=json.load(open(os.path.join(ROOT,'vercel.json')))
+    for c,gs in GUIDES.items():
+        sm=open(os.path.join(ROOT,'c',c,'sitemap.xml')).read(); ix=open(os.path.join(ROOT,'c',c,'index.html')).read()
+        if gs and not any(r.get('dest')==f'/c/{c}/guides/$1.html' and r.get('has',[{}])[0].get('value')==f'{c}.theworthguide.com' for r in vj['routes']): err.append(f'vercel.json: no guides route for {c}')
+        for g in gs:
+            u=guide_url(c,g); gh=open(os.path.join(ROOT,'c',c,'guides',g['slug']+'.html')).read()
+            if f'<loc>{u}</loc>' not in sm: err.append(f'c/{c}/sitemap.xml: {u} missing')
+            if f'href="{u}"' not in ix: err.append(f'c/{c}/index.html: no link to {u}')
+            if gh.count('>Check price on Amazon<')!=len(g['picks']): err.append(f'{u}: button count')
+            if re.search(r"you'll love|effortlessly|guaranteed|must-have|under \\d",gh,re.I): err.append(f'{u}: seller voice / price phrasing')
     if '<loc>https://theworthguide.com/links</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: /links missing')
     if f'<loc>https://theworthguide.com/{GIFT_SLUG}</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: gift guide missing')
     if f'<loc>https://theworthguide.com/{TREND_SLUG}</loc>' not in open(os.path.join(ROOT,'sitemap.xml')).read(): err.append('sitemap.xml: trending gifts missing')
