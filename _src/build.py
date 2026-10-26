@@ -228,7 +228,7 @@ LINKS_CATS=[('kitchen','Kitchen','🍳'),('tool','Tools','🛠️'),('clean','Cl
 # /links extras (edit here, not in links.html). Simple brand links shown above the category grid.
 LINKS_PROMO=[('pet','Pet picks worth buying','PetWorth'),('desk','Desk picks worth buying','DeskWorth'),('kitchen','Kitchen picks worth buying','KitchenWorth')]
 # This week's featured guide tile, shown under the grid: (url, emoji, label, small text). Set to None to hide.
-LINKS_WEEKLY=('https://sleep.theworthguide.com/guides/best-earplugs-for-sleep','🎙️','Sleep earplugs',"This week's SleepWorth guide")
+LINKS_WEEKLY=('https://tech.theworthguide.com/guides/best-portable-bluetooth-speakers','🔊','Portable Bluetooth speakers',"This week's TechWorth guide")
 def build_links():
     """/links: standalone link-in-bio page for the 'Gift Finds Daily' social account (@gift_finds_daily on Instagram/TikTok).
     Own look (coral/teal/cream, _src/links.css), NOT in the hub nav, header or footer and not linked from any site page; listed in sitemap.xml."""
