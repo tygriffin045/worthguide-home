@@ -21,6 +21,16 @@
    "dest": "/c/kitchen/$1"
   },
   {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "kitchen.theworthguide.com"
+    }
+   ],
+   "dest": "/c/kitchen/guides/$1.html"
+  },
+  {
    "src": "^/(?!img/|favicon)(.+)$",
    "has": [
     {
@@ -52,6 +62,16 @@
     }
    ],
    "dest": "/c/clean/$1"
+  },
+  {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "clean.theworthguide.com"
+    }
+   ],
+   "dest": "/c/clean/guides/$1.html"
   },
   {
    "src": "^/(?!img/|favicon)(.+)$",
