@@ -269,6 +269,8 @@ LINKS_CATS=[('kitchen','Kitchen','🍳'),('tool','Tools','🛠️'),('clean','Cl
             ('bath','Bath','🛁'),('bag','Bags','🎒'),('yard','Yard','🌿'),('groom','Grooming','🪒'),('watch','Watches','⌚')]
 # /links extras (edit here, not in links.html). Simple brand links shown above the category grid.
 LINKS_PROMO=[('pet','Pet picks worth buying','PetWorth'),('desk','Desk picks worth buying','DeskWorth'),('kitchen','Kitchen picks worth buying','KitchenWorth')]
+# Our own Payhip printables, shown first in the promo list (live 2026-10-28).
+LINKS_PRODUCTS=[(GIFT_PLANNER_URL,'Holiday Gift Planner printable','Our own planner'),('https://payhip.com/b/Jj0Gw','Dog Lover Gift Planner printable','Our own planner'),(GIFT_PLANNER_SAMPLE_URL,'Free gift list + 12 gift tags','Free printable')]
 # This week's featured guide tile, shown under the grid: (url, emoji, label, small text). Set to None to hide.
 LINKS_WEEKLY=('https://tech.theworthguide.com/guides/best-portable-bluetooth-speakers','🔊','Portable Bluetooth speakers',"This week's TechWorth guide")
 def build_links():
@@ -282,7 +284,7 @@ def build_links():
         return (f'<a class="tile press{" wide" if w else ""}" href="{sub(k)}"><span class="ic" aria-hidden="true">{ic}</span>'
                 f'<span class="t"><b>{e(lab)}</b><small>Top 10 picks</small></span>'+(f'<span class="arr2" aria-hidden="true">{arrow}</span>' if w else '')+'</a>')
     tiles='\n'.join(tile(i,*c) for i,c in enumerate(LINKS_CATS))
-    promo=''.join(f'<a class="press" href="https://{k}.theworthguide.com"><span class="t"><b>{e(b)}</b><small>{e(sm)}</small></span></a>\n' for k,b,sm in LINKS_PROMO)
+    promo=''.join(f'<a class="press" href="{u}"><span class="t"><b>{e(b)}</b><small>{e(sm)}</small></span></a>\n' for u,b,sm in LINKS_PRODUCTS)+''.join(f'<a class="press" href="https://{k}.theworthguide.com"><span class="t"><b>{e(b)}</b><small>{e(sm)}</small></span></a>\n' for k,b,sm in LINKS_PROMO)
     weekly=(f'<a class="tile press wide" href="{LINKS_WEEKLY[0]}"><span class="ic" aria-hidden="true">{LINKS_WEEKLY[1]}</span><span class="t"><b>{e(LINKS_WEEKLY[2])}</b><small>{LINKS_WEEKLY[3]}</small></span></a>\n') if LINKS_WEEKLY else ''
     title='Gift Finds Daily'; desc='Gift ideas and top picks worth buying, from the Gift Finds Daily videos to The Worth Guide Top 10s 🎁'
     img=f'{HUB}/img/links/gift_finds_daily_pfp.png'
