@@ -42,6 +42,8 @@ def doc(title,desc,canon,body,css,extra=''):
 {extra}<title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{canon}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="The Worth Guide"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
+<meta property="og:url" content="{canon}"><meta property="og:image" content="{HUB}/img/og-default.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f4f1ea">
 {FAV}
 {FONTS}
@@ -105,8 +107,13 @@ def guide_page(c,g):
     css='.gpick .pc{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 10px}.gpick .pc h3{font-size:.95rem;margin:0 0 4px}.gpick .pc ul{margin:0;padding-left:1.1em;color:var(--ink2)}.gpick .bf{font-size:.95rem}.gdate{font-size:.85rem;color:var(--muted);margin:8px 0 0}.gtext{max-width:780px;margin:36px 0 0}.gtext h3{font-size:1.1rem;margin:16px 0 6px}.gtext p{color:var(--ink2);margin:0}@media(max-width:640px){.gpick .pc{grid-template-columns:1fr}}'
     return doc(f'{g["title"]} — {v["name"]}',g['desc'],guide_url(c,g),body,SITE_CSS+CAT_CSS+css)
 # ---------- hub pages ----------
+def crumbs(name,url):
+    """BreadcrumbList JSON-LD: Home > page."""
+    d={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"The Worth Guide","item":f"{HUB}/"},{"@type":"ListItem","position":2,"name":name,"item":url}]}
+    return '<script type="application/ld+json">'+json.dumps(d)+'</script>\n'
 def hub(slug,title,desc,main,extra='',css=''):
     canon=f'{HUB}/{slug}' if slug else f'{HUB}/'
+    if slug: extra+=crumbs(title.split(' — ')[0],canon)
     body=f'{header(active=slug)}\n<main id="main" class="wrap">{main}</main>\n{footer(wordmark("The <b>Worth</b> Guide","/"),HUB_ABOUT)}'
     return doc(title,desc,canon,body,SITE_CSS+css,extra)
 def mosaic(keys): return '<div class="mosaic" aria-hidden="true">'+''.join(f'<img src="/img/t/{k}.webp" alt="" width="720" height="560">' for k in keys)+'</div>'
@@ -125,7 +132,7 @@ def build_categories():
     cards=''.join(cat_card(s,s[6],'See top 10') for s in SITES)
     m=f'''<section class="hero">{NOTE}<div><p class="kicker">Categories</p><h1>Pick a category.<br><em>Get the Top 10.</em></h1><p class="sub">Each guide keeps a top 10 in the categories people already buy. A photo and a product page, or it does not ship.</p><ul class="stats"><li>{len(SITES)} categories</li><li>Our pick · Value pick · Most bought</li></ul></div>{mosaic(["tool","kitchen","watch"])}</section>
 <section class="sec"><div class="grid">{cards}</div></section>'''
-    return hub('categories','Categories — The Worth Guide','Every Worth Guide category: desk, coffee, sleep, pets, tech, car, kitchen, cleaning, tools, yard, bags, grooming, fitness, bath, travel and watches. Each with its own Top 10.',m)
+    return hub('categories','Categories — The Worth Guide','Every Worth Guide category, from desk, coffee, sleep and pets to tech, car, kitchen, tools, travel and watches. Each with its own Top 10.',m)
 def build_guides():
     g=''.join(f'<a class="card guide" href="{sub(s[0])}"><div class="ph">{chip(s)}<img src="/pins/t/{s[0]}.webp" alt="{s[1]}Worth guide cover" loading="lazy" width="480" height="720"></div><div class="bd"><h3>{s[1]}<b>Worth</b></h3><p>{e(s[5])}</p><span class="cta">Read the guide →</span></div></a>' for s in SITES)
     S={s[0]:s for s in SITES}; vs=[]
@@ -277,14 +284,14 @@ def build_links():
     tiles='\n'.join(tile(i,*c) for i,c in enumerate(LINKS_CATS))
     promo=''.join(f'<a class="press" href="https://{k}.theworthguide.com"><span class="t"><b>{e(b)}</b><small>{e(sm)}</small></span></a>\n' for k,b,sm in LINKS_PROMO)
     weekly=(f'<a class="tile press wide" href="{LINKS_WEEKLY[0]}"><span class="ic" aria-hidden="true">{LINKS_WEEKLY[1]}</span><span class="t"><b>{e(LINKS_WEEKLY[2])}</b><small>{LINKS_WEEKLY[3]}</small></span></a>\n') if LINKS_WEEKLY else ''
-    title='Gift Finds Daily'; desc='Gift ideas + top picks worth buying 🎁'
+    title='Gift Finds Daily'; desc='Gift ideas and top picks worth buying, from the Gift Finds Daily videos to The Worth Guide Top 10s 🎁'
     img=f'{HUB}/img/links/gift_finds_daily_pfp.png'
     return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title} — gift ideas + top picks</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{HUB}/links">
-<meta name="theme-color" content="#F9604E">
+{crumbs('Gift Finds Daily links',HUB+'/links')}<meta name="theme-color" content="#F9604E">
 <meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{HUB}/links"><meta property="og:image" content="{img}"><meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" sizes="48x48" href="/img/links/icon-48.png"><link rel="apple-touch-icon" href="/img/links/icon-180.png">
