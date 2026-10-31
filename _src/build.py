@@ -270,7 +270,7 @@ LINKS_CATS=[('kitchen','Kitchen','🍳'),('tool','Tools','🛠️'),('clean','Cl
 # /links extras (edit here, not in links.html). Simple brand links shown above the category grid.
 LINKS_PROMO=[('pet','Pet picks worth buying','PetWorth'),('desk','Desk picks worth buying','DeskWorth'),('kitchen','Kitchen picks worth buying','KitchenWorth')]
 # Our own Payhip printables, shown first in the promo list (live 2026-10-28).
-LINKS_PRODUCTS=[(GIFT_PLANNER_URL,'Holiday Gift Planner printable','Our own planner'),('https://payhip.com/b/qOsg0','Christmas Baking & Cookie Exchange Planner printable','Our own planner'),('https://payhip.com/b/Jj0Gw','Dog Lover Gift Planner printable','Our own planner'),(GIFT_PLANNER_SAMPLE_URL,'Free gift list + 12 gift tags','Free printable')]
+LINKS_PRODUCTS=[(GIFT_PLANNER_URL,'Holiday Gift Planner printable','Our own planner'),('https://payhip.com/b/qOsg0','Christmas Baking & Cookie Exchange Planner printable','Our own planner'),('https://payhip.com/b/xpS8w','Holiday Planner Bundle 2026 (both planners)','Our own bundle'),('https://payhip.com/b/Jj0Gw','Dog Lover Gift Planner printable','Our own planner'),('https://payhip.com/b/G6ybJ','Dog Care Planner & Calendar 2027 printable','Our own planner'),(GIFT_PLANNER_SAMPLE_URL,'Free gift list + 12 gift tags','Free printable')]
 # This week's featured guide tile, shown under the grid: (url, emoji, label, small text). Set to None to hide.
 LINKS_WEEKLY=('https://tech.theworthguide.com/guides/best-portable-bluetooth-speakers','🔊','Portable Bluetooth speakers',"This week's TechWorth guide")
 def build_links():
