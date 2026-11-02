@@ -107,6 +107,16 @@
    "dest": "/c/tool/$1"
   },
   {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "tool.theworthguide.com"
+    }
+   ],
+   "dest": "/c/tool/guides/$1.html"
+  },
+  {
    "src": "^/(?!img/|favicon)(.+)$",
    "has": [
     {
@@ -138,6 +148,16 @@
     }
    ],
    "dest": "/c/yard/$1"
+  },
+  {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "yard.theworthguide.com"
+    }
+   ],
+   "dest": "/c/yard/guides/$1.html"
   },
   {
    "src": "^/(?!img/|favicon)(.+)$",
@@ -173,6 +193,16 @@
    "dest": "/c/bag/$1"
   },
   {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bag.theworthguide.com"
+    }
+   ],
+   "dest": "/c/bag/guides/$1.html"
+  },
+  {
    "src": "^/(?!img/|favicon)(.+)$",
    "has": [
     {
@@ -204,6 +234,16 @@
     }
    ],
    "dest": "/c/groom/$1"
+  },
+  {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "groom.theworthguide.com"
+    }
+   ],
+   "dest": "/c/groom/guides/$1.html"
   },
   {
    "src": "^/(?!img/|favicon)(.+)$",
