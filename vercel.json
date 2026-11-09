@@ -279,6 +279,16 @@
    "dest": "/c/fit/$1"
   },
   {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "fit.theworthguide.com"
+    }
+   ],
+   "dest": "/c/fit/guides/$1.html"
+  },
+  {
    "src": "^/(?!img/|favicon)(.+)$",
    "has": [
     {
@@ -310,6 +320,16 @@
     }
    ],
    "dest": "/c/bath/$1"
+  },
+  {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "bath.theworthguide.com"
+    }
+   ],
+   "dest": "/c/bath/guides/$1.html"
   },
   {
    "src": "^/(?!img/|favicon)(.+)$",
@@ -345,6 +365,16 @@
    "dest": "/c/travel/$1"
   },
   {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "travel.theworthguide.com"
+    }
+   ],
+   "dest": "/c/travel/guides/$1.html"
+  },
+  {
    "src": "^/(?!img/|favicon)(.+)$",
    "has": [
     {
@@ -376,6 +406,16 @@
     }
    ],
    "dest": "/c/watch/$1"
+  },
+  {
+   "src": "^/guides/([a-z0-9-]+)/?$",
+   "has": [
+    {
+     "type": "host",
+     "value": "watch.theworthguide.com"
+    }
+   ],
+   "dest": "/c/watch/guides/$1.html"
   },
   {
    "src": "^/(?!img/|favicon)(.+)$",

@@ -139,4 +139,99 @@ GUIDES={
    ('Do I need a trimmer if I have clippers?','Not always. A trimmer like the Andis T-Outliner helps with clean lines around the neck, ears and beard that a full-size clipper handles less easily.'),
    ('OneBlade or a foil shaver?','Buy the OneBlade if you keep stubble and want one tool to trim and edge. Buy a foil shaver like the Braun if you want a clean shave every morning.'),
   ]}],
+
+
+ 'fit':[{
+  'slug':'best-home-gym-basics',
+  'title':'Best Home Gym Basics',
+  'desc':'Six home gym basics from the FitWorth Top 10: adjustable dumbbells, a kettlebell, a yoga mat, a foam roller, a jump rope and an air rower.',
+  'date':'2026-11-09',
+  'intro':'A home gym does not need a whole room. These six picks come from the FitWorth Top 10 and cover strength, cardio and recovery without taking much space.',
+  'picks':[
+   ('B0FRNG2N5H','Best for strength in a small space','Adjustable dumbbells that save floor space. The listing is for the BowFlex Results Series SelectTech set.',['Adjustable, so one set replaces many','Saves floor space'],['Costs more than a fixed pair'],'Lifters who want a full set of weights in a small space.'),
+   ('B0731DFTR2','Best kettlebell','A cast iron bell for swings and squats, from Amazon Basics.',['Cast iron','Made for swings and squats'],['One fixed weight per bell'],'Anyone who wants simple, compact strength work.'),
+   ('B0BYFFX51Z','Best yoga mat','A cushioned mat for yoga and floor work. The listing describes the Gaiam Premium mat as 6mm.',['6mm cushioning, per the listing','Works for yoga and floor work'],['Cushioned mats are less firm than thin ones'],'Yoga, stretching and floor exercises.'),
+   ('B0040EGNIU','Best for recovery','The roller for sore legs and backs: the TriggerPoint Grid 1.0 foam roller.',['Made for sore legs and backs'],['Recovery tool only'],'Anyone who wants to loosen up after a workout.'),
+   ('B09DF9NWC7','Best cheap cardio','Cheap cardio that fits in a bag. The listing describes a tangle-free rapid speed jump rope.',['Tangle-free, per the listing','Fits in a bag'],['Needs some open space to swing'],'Cardio at home or on the road.'),
+   ('B00NH9WEUA','Best for serious cardio','The air rower with the PM5 monitor, the Concept2 RowErg indoor rowing machine.',['Air rower','PM5 monitor, per the listing'],['A bigger purchase and a bigger machine than the rest'],'People who want a full cardio machine at home.'),
+  ],
+  'criteria':[
+   ('Start with how you want to train','Adjustable dumbbells or a kettlebell for strength, a mat for floor work, and a jump rope or rower for cardio.'),
+   ('Space matters','The BowFlex dumbbells are listed as saving floor space, and the jump rope fits in a bag. The rower is the largest item here.'),
+   ('Add accessories later','The Amazon Basics neoprene weights, Trideer yoga ball, wrist straps and gloves are in the FitWorth Top 10 too, if you want to add more.'),
+  ],
+  'faqs':[
+   ('Do I need a lot of equipment?','No. A pair of adjustable dumbbells or a kettlebell, plus a mat, covers a lot of ground. Add cardio gear if that is your goal.'),
+   ('Dumbbells or a kettlebell?','The BowFlex dumbbells adjust, which saves space. The kettlebell is a cast iron bell made for swings and squats.'),
+  ]}],
+ 'bath':[{
+  'slug':'best-bathroom-towels-and-basics',
+  'title':'Best Bathroom Towels and Basics',
+  'desc':'Six bathroom picks from the BathWorth Top 10: bath towels, a full towel set, washcloths, a bath rug, a shower curtain liner and a rain shower head.',
+  'date':'2026-11-09',
+  'intro':'Towels, a rug and a shower setup make most of a bathroom. These six picks come from the BathWorth Top 10, one for each job.',
+  'picks':[
+   ('B08LBN2JPS','Best big towels','Big towels that dry you off. The listing is a 4-piece set of extra large 30 x 60 bath towels from Tens Towels.',['4 pieces, per the listing','Extra large, 30 x 60, per the listing'],['Large towels take more room to store and dry'],'Anyone who wants a big towel after a shower.'),
+   ('B00Q7JESL0','Best towel set','A full towel set for less. The listing describes the Amazon Basics 6-piece cotton towel set.',['6 pieces, per the listing','Cotton, per the listing'],['Smaller towels than the extra large set'],'Stocking a bathroom with towels in one go.'),
+   ('B010S5VXKC','Best washcloths','Washcloths that dry between uses. The listing describes Amazon Basics fast drying cotton washcloths.',['Fast drying, per the listing','Cotton, per the listing'],['Washcloths only'],'Anyone who wants washcloths that do not stay damp.'),
+   ('B0CFGYFCYL','Best bath rug','A soft rug that soaks up the drips. The listing describes a 30x20 chenille bathroom rug from OLANLY.',['Soft chenille, per the listing','30x20 size, per the listing'],['Small enough that a wide tub may want a bigger rug'],'Keeping the floor by the tub or shower dry.'),
+   ('B08QRFZ6TH','Best liner','A clear liner that keeps the floor dry, the Barossa Design shower curtain liner.',['Clear','Keeps the floor dry'],['Liner only; it does not replace a curtain if you want a decorative one'],'Anyone replacing a worn shower liner.'),
+   ('B0DQHJR1YB','Best shower upgrade','Rain head plus a handheld for rinsing. The listing describes a rain shower head with a handheld showerhead.',['Rain head plus handheld, per the listing'],['Check that it fits your shower arm before you buy'],'Rinsing off and shower-time cleanup.'),
+  ],
+  'criteria':[
+   ('Towel size or set','Choose the Tens Towels for size, or the Amazon Basics 6-piece set if you want towels for the whole bathroom.'),
+   ('Dry between uses','Washcloths and rugs that dry quickly are what the Amazon Basics washcloths and the OLANLY chenille rug are listed for.'),
+   ('Other bathroom basics','The simplehuman soap pump and step can, the Etekcity scale and the Moen grab bar are in the BathWorth Top 10 too.'),
+  ],
+  'faqs':[
+   ('Bath towels or a full set?','Buy the Tens Towels for big bath towels. Buy the Amazon Basics set if you want bath, hand and washcloth pieces together for less.'),
+   ('Do I need a liner and a curtain?','A clear liner like the Barossa is listed as keeping the floor dry. Whether you also use a curtain is up to you.'),
+  ]}],
+ 'travel':[{
+  'slug':'best-travel-essentials',
+  'title':'Best Travel Essentials',
+  'desc':'Seven travel essentials from the TravelWorth Top 10: noise cancelling headphones, a power bank, a plug adapter, luggage scale, packing cubes and more.',
+  'date':'2026-11-09',
+  'intro':'The right small kit makes a trip easier. These seven picks come from the TravelWorth Top 10 and cover flights, power and packing.',
+  'picks':[
+   ('B09XS7JWHH','Best headphones for the plane','Noise cancelling for the plane. The listing is the Sony WH-1000XM5 noise cancelling wireless headphones.',['Noise cancelling','Wireless'],['Over-ear headphones take space in a bag'],'Frequent flyers who want quiet.'),
+   ('B0CCZ26B5V','Best for comfort','Comfortable noise cancelling for long trips: the Bose QuietComfort Headphones.',['Noise cancelling','Comfort on long trips'],['Over-ear headphones take space in a bag'],'Long flights where comfort matters most.'),
+   ('B0GJTXVN9Z','Best for tracking your bag','Know where your bag is. The listing is a 4 pack of Apple AirTag (2nd Generation).',['4 pack, per the listing'],['Tracks items only; it does not protect them'],'Checked bags and anything easy to lose.'),
+   ('B0CZ9M6X8Q','Best power bank','A pocket battery for a long travel day. The listing describes a 10,000mAh 30W Anker power bank.',['10,000mAh, per the listing','30W, per the listing'],['One bank will not charge everything forever'],'Long travel days away from an outlet.'),
+   ('B0B27HX6P7','Best plug adapter','Plug in across Europe. The listing is a 2 pack of TESSAN European travel plug adapters.',['2 pack, per the listing','Made for Europe'],['Europe only, per the listing'],'Trips to Europe.'),
+   ('B07QFTGGYF','Best luggage scale','Weigh the bag before the airline does. The listing is a travel inspira digital luggage scale.',['Digital','Weigh before you leave'],['Does one job'],'Staying under airline weight limits.'),
+   ('B08S35399Y','Best for packing','Pack by cube, unpack in seconds. The listing is an 8 set of BAGAIL packing cubes.',['8 cubes, per the listing'],['Cubes add a little bulk to an empty bag'],'Anyone who wants an organized suitcase.'),
+  ],
+  'criteria':[
+   ('Sony or Bose','Buy the Sony for the noise cancelling most travelers pick. Buy the Bose if comfort on long flights matters most.'),
+   ('Power and plugs','A pocket battery covers the day, and a plug adapter covers the destination. Check that the adapter fits where you are going.'),
+   ('Sleep and organization','The Loop and Mack\'s earplugs and the BAGSMART hanging toiletry bag are in the TravelWorth Top 10 too.'),
+  ],
+  'faqs':[
+   ('Do I need both headphones?','No. Both the Sony and the Bose are listed for noise cancelling; pick one by whether you want our pick or the comfort pick.'),
+   ('Is the plug adapter for every country?','The listing describes it as a European travel plug adapter, so check your destination.'),
+  ]}],
+ 'watch':[{
+  'slug':'best-watches-for-everyday-wear',
+  'title':'Best Watches for Everyday Wear',
+  'desc':'Six everyday watches from the WatchWorth Top 10, from the Seiko 5 Sports automatic and Casio digitals to a Timex field watch and a Citizen Eco-Drive.',
+  'date':'2026-11-09',
+  'intro':'A good everyday watch does not need to be fancy. These six come from the WatchWorth Top 10, from a classic digital to an automatic.',
+  'picks':[
+   ('B07ZJW4WZG','Best automatic','The automatic most people start with: the SEIKO 5 Sports Automatic watch for men.',['Automatic'],['Costs more than the Casio picks'],'Anyone who wants a mechanical watch to wear for years.'),
+   ('B000GAWSDG','Best cheap digital','The classic cheap digital: the Casio F91W.',['Digital','Low cost'],['Basic features'],'A simple, low-cost watch.'),
+   ('B009KYJAJY','Best value analog','A 200M water-resistant analog for less. The listing is the Casio MDV106 analog watch.',['200M water-resistant, per the listing','Analog'],['Quartz, not automatic'],'Everyday wear on a budget.'),
+   ('B071RN6K8C','Best field watch','A field watch that takes a beating. The listing is the Timex Men\'s Expedition Scout 40mm.',['40mm, per the listing','Field-watch style'],['A larger case than the Weekender'],'Rough everyday use.'),
+   ('B004VR9HP2','Best everyday','The easy everyday watch. The listing is the Timex Weekender 38mm.',['38mm, per the listing'],['Simple styling'],'Wearing every day without thinking about it.'),
+   ('B09X1B645K','Best no-battery-swaps','Eco-Drive, so no battery swaps. The listing is the Citizen Men\'s Classic Eco-Drive watch.',['Eco-Drive, per the listing','No battery swaps'],['Classic styling only'],'Anyone who wants a watch that needs little upkeep.'),
+  ],
+  'criteria':[
+   ('Automatic or quartz','The Seiko 5 is an automatic. The Casio MDV106 gives a similar look for far less in a quartz watch.'),
+   ('Digital or analog','The Casio F91W is the classic cheap digital; the Casio MDV106 and the Timex watches are analog picks.'),
+   ('More to look at','The Casio AE1200WH and AE1500WH, the G-Shock GA-2100 and the Garmin Forerunner 265 are in the WatchWorth Top 10 too.'),
+  ],
+  'faqs':[
+   ('Seiko or Casio?','Buy the Seiko if you want an automatic you will wear for years. Buy the Casio MDV106 if you want the same look for far less.'),
+   ('What does Eco-Drive mean?','The listing describes the Citizen as Eco-Drive, so no battery swaps.'),
+  ]}],
 }
