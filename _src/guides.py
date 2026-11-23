@@ -25,7 +25,28 @@ GUIDES={
   'faqs':[
    ('Do I need a knife set?','Not to start. One 8-inch chef’s knife covers most everyday cutting; add other knives later if you find a gap.'),
    ('Cast iron or nonstick first?','If you only buy one, choose by what you cook most: the Lodge for searing and long life, the Tramontina for eggs and easy release.'),
-  ]}],
+  ]},{
+  'slug':'best-small-kitchen-tools',
+  'title':'Best Small Kitchen Tools',
+  'desc':'Four small kitchen tools from the KitchenWorth Top 10: a digital scale, a swivel peeler, a can opener and an apple slicer, plus the stand mixer to add if you bake.',
+  'date':'2026-11-23',
+  'intro':'The small tools get used the most. These four come from the KitchenWorth Top 10, and each does one job. The KitchenAid Artisan mixer is in the Top 10 too if you bake.',
+  'picks':[
+   ('B0113UZJE2','Best for baking','Weigh it once and baking stops being guesswork. It reads in grams and ounces, with an 11 lb capacity per the listing.',['Grams and ounces','11 lb capacity, per the listing'],['Most useful if you bake or follow weighed recipes'],'Bakers and anyone following recipes by weight.'),
+   ('B00004OCIP','Best peeler','The swivel peeler that tends to replace a drawer of cheap ones, with a soft handle per the listing.',['Swivel blade','Soft, comfortable handle, per the listing'],['Does one job only'],'Anyone still peeling with a paring knife.'),
+   ('B07YP2VH4B','Best can opener','A plain can opener that keeps working. The listing adds a bottle opener and a stainless steel cutting wheel.',['Stainless steel cutting wheel, per the listing','Bottle opener built in, per the listing'],['Manual, not electric'],'Every kitchen; it is easy to forget until you need it.'),
+   ('B00004OCKT','Best for snacks','One press and the apple is done. It is an apple slicer, corer and cutter.',['Slices and cores in one press'],['Does one job only'],'Anyone who cuts a lot of apples.'),
+  ],
+  'criteria':[
+   ('Pick tools you use every week','A scale, a peeler and a can opener get daily use. A single-job tool like the apple slicer is worth it only if you do that job often.'),
+   ('Check the listing details','The scale lists an 11 lb capacity and the can opener lists a stainless steel cutting wheel and a bottle opener. Compare those to what you need.'),
+   ('Add a mixer if you bake','The KitchenAid Artisan 5-Qt Tilt Head Stand Mixer is in the KitchenWorth Top 10. Buy it if you bake and skip it if you do not.'),
+  ],
+  'faqs':[
+   ('Do I need a kitchen scale?','If you bake or follow recipes that list weights, yes. It reads in grams and ounces, so it covers both.'),
+   ('Is the can opener manual?','Yes. It is a manual opener that also has a bottle opener, per the listing.'),
+  ]
+  }],
  'clean':[{
   'slug':'best-cordless-vacuums',
   'title':'Best Cordless Vacuums',
@@ -47,7 +68,28 @@ GUIDES={
   'faqs':[
    ('Can a cordless vacuum replace an upright?','For many apartments and quick daily cleanups, often yes. For a large house cleaned all at once, a corded upright like the Shark Navigator avoids battery limits.'),
    ('Which has the longest runtime?','Of these, the Levoit lists up to 50 minutes. The Dyson V8 lists up to 40 minutes and the Shark Pet lists 40 minutes.'),
-  ]}],
+  ]},{
+  'slug':'best-mops-and-spot-cleaners',
+  'title':'Best Mops and Spot Cleaners',
+  'desc':'Four floor cleaners from the CleanWorth Top 10 for spills and everyday mess: a spin mop and bucket, a spray mop, a portable carpet spot cleaner and a robot vacuum and mop.',
+  'date':'2026-11-23',
+  'intro':'Vacuuming is only half of floor care. These four come from the CleanWorth Top 10 and cover mopping, spills and a robot that does some of the work for you.',
+  'picks':[
+   ('B00WSWGVZQ','Best mop and bucket','The spin mop people actually keep using. It is a microfiber spin mop with a bucket, as the listing title says.',['Microfiber mop head','Spin bucket included'],['Needs a bucket and some storage space'],'Homes with hard floors that want a proper mop.'),
+   ('B07YQDD94M','Best for quick weekday floors','Quick weekday floors without a bucket. The listing describes the WetJet as a spray mop starter kit.',['No bucket needed','Starter kit'],['Not a replacement for a full mop and bucket'],'Fast cleanups between deeper cleans.'),
+   ('B0DJMP6T3N','Best for spills and pets','The spot cleaner for spills, pets and car seats. It is a mini portable carpet cleaner.',['Portable and mini','Aimed at spills, pets and car seats'],['A spot cleaner, not a whole-floor tool'],'Pet owners and anyone with carpet or car seats to clean.'),
+   ('B0H34W2MS8','Best hands-off option','A robot that vacuums, mops and empties itself. The listing describes it as a combo robot vacuum and mop.',['Vacuums and mops','Empties itself, per our Top 10 note'],['A robot, so it works on its own schedule rather than as a manual tool'],'People who want floors cleaned without doing it by hand.'),
+  ],
+  'criteria':[
+   ('Mop or spot cleaner','A mop like the O-Cedar or Swiffer handles hard floors. The Bissell Little Green is a spot cleaner for carpets, pets and car seats.'),
+   ('Bucket or no bucket','The O-Cedar uses a bucket, while the Swiffer WetJet is a spray mop that skips it. Pick by how much floor you clean at once.'),
+   ('Add a vacuum','A mop does not replace a vacuum. The CleanWorth Top 10 has uprights and cordless sticks, and our cordless vacuum guide compares them.'),
+  ],
+  'faqs':[
+   ('Can the robot replace my mop?','The Roomba 115X Combo vacuums and mops, per the listing title, so it can take over some of the routine. Read the listing for what it can and cannot do.'),
+   ('Is the Bissell for whole floors?','No. It is a mini portable carpet cleaner meant for spills, pets and car seats.'),
+  ]
+  }],
  'tool':[{
   'slug':'starter-toolkit-for-a-first-home',
   'title':'Starter Toolkit for a First Home',
